@@ -1,0 +1,342 @@
+<!-- Date. February 26th, 2015 -->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+  <title>Clickbait Detection</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="copyright" content="&copy; 2015 Webis" />
+  <meta name="author" content="Webis" />
+  <link href="bootstrap.min.css" rel="stylesheet" />
+  <script src="jquery.min.js"></script>
+  <script src="bootstrap.min.js"></script>
+  <script src="masonry.pkgd.min.js"></script>
+  <script src="packery.pkgd.min.js"></script>
+  <style type="text/css">
+    .nowrap { white-space: nowrap; 
+      padding: 5px;
+    } 
+    tr{
+      border: 1px solid black;
+    }
+    .rightborder{
+      border-right: 1px solid black;
+    }
+    .messageText{
+      padding: 5px;
+    }
+    .clickbait{
+      color:black;
+      background-color:  lightcoral;
+    }
+    .no-clickbait{
+      color:black;
+      background-color:  chartreuse;
+    }
+    .tableheader{
+      text-align: center;
+      font-size: 15px;         
+    }
+    .link-image{
+      background:  url(link_symbol.png) repeat-x center top;
+      border-radius: 10px;
+    }
+    .tweet-image{
+      max-width:100%;
+      max-height:100%;
+    }
+    
+    .grid-item {
+      width: 225px;
+      float: left;
+      max-height: 250px;
+      border: 1px solid #333;
+      border-color: hsla(0, 0%, 0%, 0.5);
+      border-radius: 5px;
+      margin: 3px;
+      padding: 5px;
+      display: inline-table;
+      display: -moz-grid;
+    }
+    .bottom-align-text {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+    .row {
+      position: relative;
+    }
+    .grow:hover { transform: scale(2.0); }
+    .bottom{
+      font-size: 0.7vw;
+    }
+
+  }
+</style>
+<script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+  t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs); 
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+}(document, "script", "twitter-wjs"));</script>
+
+<script>    
+  function initMasonry(){
+    $('.grid').masonry({
+  // options
+  itemSelector: '.grid-item',
+  columnWidth: 200
+});
+  }
+
+  function initPackery(){
+    var grid = document.getElementById('grid'); 
+    var pckry = new Packery( grid, {
+      itemSelector: '.grid-item'
+    });
+
+    // initialize with selector string
+    var pckry = new Packery('.grid', {
+      itemSelector: '.grid-item'
+    });
+
+  }
+  var server = "http://141.54.172.31:8002/Webservice-ClickbaitDetection/ClickbaitModel?"
+  $(document).ready(function(){ 
+    $("#publisherdropdown").click(function(e){
+      var selected= $("#top20").val();      
+      request(selected);
+     
+    });
+  });
+  function request(publisher){
+    var modelName = $("#selected-model").val();
+    url =server+"user="+publisher;
+    $.getJSON(url, function(data) {
+      var text = makeText(data);
+      $("#demo-output").empty();
+      makeText(data, document.getElementById('demo-output'));
+    });
+
+  }
+  function makeText(data, element){
+   element=document.getElementById('demo-output');
+   var tweets = "<div grid>";
+   var maindiv = document.createElement( 'div' );
+   maindiv.className='grid';
+   maindiv.id='grid';
+   console.log(element);
+   element.appendChild(maindiv);
+   for (var i = 0; i < data.length; i++) { 
+    var el = document.createElement( 'div' );
+    var tweet =  data[i];
+    var text = "";
+    el.className='grid-item';
+    if(tweet.classToProbability.clickbait<0.6&&tweet.classToProbability.noclickbait<0.6){
+      el.className+=' alert alert-warning';
+    }else{
+      if(tweet.predictedClass=="no-clickbait"){
+        el.className+=' alert alert-success';
+      }else{
+        el.className+=' alert alert-danger';
+      }
+    }
+    if(tweet.status.mediaEntities.length>0){
+      el.className+=' grid-item--height2';
+    }
+    el.title='Probabilities: Clickbait ' + tweet.classToProbability.clickbait.toFixed(2) + ' No Clickbait ' + tweet.classToProbability.noclickbait.toFixed(2);
+    var text = document.createElement('div');
+    text.innerHTML=tweet.messageText.replace('?', '\'');
+    el.appendChild(text);
+    if(tweet.status.mediaEntities.length>0){
+      var image = document.createElement('div');
+      image.innerHTML='<img  class="tweet-image" src="'+tweet.status.mediaEntities[0].mediaURL+'">';
+      text+="</a>";
+      el.appendChild(image);
+    }else{
+
+      text+="<span class=\"ffpull-right glyphicon glyphicon-link\" aria-hidden=\"true\">";
+      text+="</a></span>";
+    }
+    var bottom = document.createElement('div');
+    bottom.className='bottom';
+    var link = document.createElement('a');
+    link.href='https://twitter.com/'+ tweet.status.user.screenName + '/status/' + tweet.id;
+    link.target='_blank';
+    link.innerHTML='<span class="pull-left glyphicon glyphicon-link" aria-hidden="true">';
+    bottom.appendChild(link);
+    var date = document.createElement('span');
+    date.className='pull-right tweet-date';
+    date.innerHTML=tweet.status.createdAt;
+    bottom.appendChild(date);
+    el.appendChild(bottom);    
+    text+="<br><p class=\"ffpull-right ffpull-down tweet-date\">"+tweet.status.createdAt +"</p>";
+    text+="</div></div>";       
+    tweets+=text;
+    maindiv.appendChild(el)
+  }
+  
+  tweets+='</div>';
+  initPackery();
+   setTimeout( function(){     
+      initPackery();
+      }, 1500);  
+  return maindiv;
+}
+
+
+function makeTable(data){
+  var tweets ="<table>";
+  tweets+="<tr class=\"tableheader\"><td class= \"rightborder\"> Klasse</td> <td> CB</td> <td> NO-CB</td> <td> Text</td> </tr>";
+  for (var i = 0; i < data.length; i++) { 
+    var text = "<div class= \"result\">";
+    text+="<tr>";
+    if(data[i].predictedClass=="no-clickbait"){
+      text+="<td class=\"nowrap rightborder no-clickbait\">";
+    }else{
+      text+="<td class=\"nowrap rightborder clickbait\">";
+    }    
+    if(data[i].predictedClass=="no-clickbait"){
+      text+= "Kein  Clickbait";
+    }else{
+      text+= "Clickbait ";
+    }
+    text+="</td>";
+    text+="<td class=\"nowrap rightborder\">";
+    text+=data[i].classToProbability.noclickbait.toFixed(2);
+    text+="</td >";
+    text+="<td class=\"nowrap rightborder\">";
+    text+=data[i].classToProbability.clickbait.toFixed(2);
+    text+="</td>";
+    text+="</div>";
+    text+="<td class=\"messageText\">";
+    text+=data[i].messageText;
+    text+="</td>";
+    text+="</tr>";
+    text+="</div>";
+    tweets+=text;
+
+  }   
+  text+="</table>"
+  return tweets
+}
+
+//  if(!(data.status==null)){
+//  var id = data.status.id.toString();
+//  twttr.widgets.createTweet(escape($("#demo-input").val()), document.getElementById('twitter-container'));
+//  }
+
+
+
+function isNumber(obj) { return !isNaN(parseFloat(obj)) }
+
+</script>
+</head>
+<body>
+  <div class="navbar navbar-default navbar-static-top navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse"
+        data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a id="brand" class="navbar-brand" href="home.html">Clickbait Detection Demo</a>
+    </div>
+    <div id="nav" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+       <!-- <li><a id="compare" href="compare.html" data-toggle="tab">Compare</a></li>-->
+       <!--<li><a href="api.html">API</a></li>-->
+
+       <li><a href="http://www.webis.de" target="_blank">About</a></li>
+
+     </ul>
+   </div>
+ </div>
+</div>
+
+<div class="container">
+  <div class="media">
+    <div class="media-body">
+      <h1 class="media-heading">Clickbait Detection</h1>
+
+      <h2 id="part-synopsis">Synopsis</h2>
+      <p>
+        This is a demonstration of a Clickbait detection model. <a href="https://en.wikipedia.org/wiki/Clickbait">Clickbait</a> are online news headlines that try to lure a reader into clicking them. 
+        Our automatic detection model was build using a self-compiled corpus and is using a wide range of features. These include the bag-of-words, part-of-speech-tags, several wordlists and many more.
+        This demo uses an random forest classifier with an expected ROC-AUC of 0.8. 
+      </p>
+      <p>
+        For more information on clickbait detection have a look at our <a href="https://www.uni-weimar.de/en/media/chairs/webis/research/selected-projects/clickbait/">project page</a>. 
+      </p>
+      <p>
+        This demo allows you to compare the top 20 twitter news publishers. Select on of them in the dropdown box and the application will show you the last 20 posted tweets, and the classifiers rating.        
+      </p>
+      <p>  
+        A red backround denotes clickbait, while a green one signifies that the tweet isn't clickbait.
+        If the classifier isn't confident in it's classification a yellow background is shown.
+      </p>     
+
+      <h2 id="part-demo">Demo</h2>
+      <p>
+        <form id="publisherdropdown" action="#"> 
+          <select id="top20" > 
+            <option value="ABC">ABC News</option>
+            <option value="BBCNews">BBC News (UK)</option>
+            <option value="BleacherReport">Bleacher Report</option>
+            <option value="businessinsider">Business Insider</option>
+            <option value="BuzzFeed">BuzzFeed</option>
+            <option value="CNN">CNN</option>
+            <option value="espn">ESPN</option>
+            <option value="Forbes">Forbes</option>
+            <option value="FoxNews">Fox News</option>
+            <option value="guardian">The Guardian </option>
+            <option value="HuffingtonPost">Huffington Post</option>
+            <option value="Independent">The Independent</option>
+            <option value="mashable">Mashable</option>
+            <option value="NBCNews">NBC News</option>
+            <option value="nytimes">The New York Times</option>
+            <option value="Telegraph">The Telegraph</option>
+            <option value="washingtonpost">Washington Post</option>
+            <option value="WSJ">Wall Street Journal</option>
+            <option value="Yahoo">Yahoo</option>
+          </select>
+       <!-- <select id="selected-model" > 
+          <option value="message">Alle Botschaften Attribute</option>
+          <option value="Top 100">Die besten 100 Attribute mit X^2</option>
+          <option value="text-only">Nur Botschaften Bag of Words</option>
+        </select>-->
+
+      </form>
+      <br>
+      <div id="demo-output"></div> 
+      <h2 id="part-people">People</h2>
+      <ul>
+       <li><a href="http://www.uni-weimar.de/en/media/chairs/webis/people/stein/" title="Benno Stein">Benno Stein</a></li>
+       <li><a href="http://www.uni-weimar.de/en/media/chairs/webis/people/stein/" title="Florian Echtler">Florian Echtler</a></li>
+
+       <li><a href="http://www.uni-weimar.de/en/media/chairs/big-data-analytics/people/matthias-hagen/" title="Matthias Hagen">Matthias Hagen</a></li>
+       <li><a href="https://www.uni-weimar.de/de/medien/professuren/mobile-media/people/" title="Martin Potthast">Martin Potthast</a></li>
+       <li>Sebastian Köpsel</li>
+     </ul>
+
+   </div>         
+ </p>
+</div>
+</div>
+</div>
+
+</body>
+</html>
+

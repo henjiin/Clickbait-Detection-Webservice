@@ -1,0 +1,3005 @@
+@relation 'clickbait-detection-weka.filters.unsupervised.attribute.RemoveType-Tstring-weka.filters.supervised.attribute.AttributeSelection-Eweka.attributeSelection.ChiSquaredAttributeEval-Sweka.attributeSelection.Ranker -T -1.7976931348623157E308 -N 8'
+
+@attribute M;ByUser {CNN,'Business Insider',Forbes,'Huffington Post',ESPN,'The Independent','The Guardian ','The Telegraph','Daily Mail Online','The New York Times','Washington Post',Yahoo,'ABC News','Bleacher Report','NBC News','Fox News',Mashable,'Wall Street Journal','BBC News (UK)',BuzzFeed}
+@attribute Msg;POSTT1:NNP numeric
+@attribute Msg;MessageCharLength numeric
+@attribute Msg;MessageReadability numeric
+@attribute Msg;POSTT1:WRB numeric
+@attribute I;You numeric
+@attribute Msg;EasyToAllWordsRatio numeric
+@attribute Msg;MTC3:you numeric
+@attribute clickbait-class {clickbait,no-clickbait}
+
+@data
+{0 'Wall Street Journal',1 1,2 99,3 56.25,6 0.4}
+{0 'Daily Mail Online',2 65,3 64.924545,6 0.636364,8 no-clickbait}
+{0 ESPN,1 2,2 117,3 53.971053,6 0.526316,8 no-clickbait}
+{0 'Bleacher Report',1 4,2 84,3 65.725,5 2,6 0.571429,7 1,8 no-clickbait}
+{0 Forbes,2 30,3 102.045,6 0.666667,8 no-clickbait}
+{0 'Washington Post',1 1,2 58,3 86.705,4 1,6 0.7,8 no-clickbait}
+{0 'BBC News (UK)',1 2,2 107,3 76.234211,6 0.473684,8 no-clickbait}
+{0 ESPN,1 2,2 90,3 103.654559,6 0.529412,8 no-clickbait}
+{0 Forbes,1 1,2 34,3 103.54,5 2,6 0.625,7 1}
+{0 'Bleacher Report',1 5,2 94,3 -9.795,6 0.25,8 no-clickbait}
+{0 'The Telegraph',1 2,2 46,3 71.815,6 0.625}
+{0 Yahoo,1 2,2 111,3 84.9,6 0.722222,8 no-clickbait}
+{0 ESPN,1 5,2 94,3 90.1325,6 0.5625}
+{0 'Wall Street Journal',2 68,3 29.515,6 0.25}
+{0 'NBC News',1 4,2 88,3 67.53,6 0.4,8 no-clickbait}
+{0 Yahoo,1 1,2 91,3 63.486154,6 0.384615}
+{0 'Bleacher Report',1 3,2 91,3 24.44,6 0.461538,8 no-clickbait}
+{0 ESPN,1 1,2 87,3 94.044737,6 0.526316,8 no-clickbait}
+{0 Forbes,2 112,3 59.635,5 1,6 0.75,7 1}
+{0 Yahoo,1 1,2 93,3 53.12,6 0.375,8 no-clickbait}
+{0 'Washington Post',1 3,2 70,3 67.755,6 0.333333,8 no-clickbait}
+{0 Mashable,1 2,2 60,3 69.785,6 0.3}
+{0 'Fox News',1 6,2 84,3 56.978462,6 0.153846,8 no-clickbait}
+{1 2,2 108,3 48.913382,6 0.294118,8 no-clickbait}
+{0 ESPN,1 3,2 94,3 107.855,6 0.55,8 no-clickbait}
+{0 Forbes,1 2,2 46,3 42.615714,6 0.285714,8 no-clickbait}
+{0 Yahoo,1 2,2 95,3 68.819265,6 0.647059,8 no-clickbait}
+{0 ESPN,1 4,2 75,3 67.755,6 0.416667,8 no-clickbait}
+{0 'BBC News (UK)',1 2,2 52,3 71.815,6 0.5,8 no-clickbait}
+{0 'Bleacher Report',1 3,2 55,3 70.339643,6 0.142857}
+{0 'NBC News',1 1,2 75,3 53.655,6 0.416667,8 no-clickbait}
+{0 ESPN,1 2,2 115,3 76.832273,6 0.590909}
+{0 'Wall Street Journal',1 1,2 76,3 69.993846,6 0.384615,8 no-clickbait}
+{0 ESPN,1 2,2 101,3 67.328947,6 0.368421,8 no-clickbait}
+{0 'Bleacher Report',1 4,2 73,3 41.851818,6 0.363636,8 no-clickbait}
+{0 ESPN,1 4,2 69,3 64.924545,6 0.363636,8 no-clickbait}
+{0 'ABC News',2 89,3 59.682143,6 0.285714,8 no-clickbait}
+{0 'Wall Street Journal',2 110,3 84.523182,6 0.681818,7 1,8 no-clickbait}
+{0 'NBC News',1 1,2 72,3 72.615455,6 0.454545,8 no-clickbait}
+{0 'Washington Post',1 1,2 75,3 56.978462,6 0.538462,8 no-clickbait}
+{0 ESPN,1 4,2 70,3 51.8675,6 0.222222,8 no-clickbait}
+{0 'Bleacher Report',1 6,2 89,3 53.639286,6 0.285714,8 no-clickbait}
+{0 'Washington Post',1 1,2 85,3 63.486154,6 0.307692}
+{0 ESPN,1 7,2 110,3 103.379091,6 0.5,8 no-clickbait}
+{0 'Wall Street Journal',2 80,3 76.501538,6 0.615385,8 no-clickbait}
+{0 ESPN,1 1,2 64,3 94.995,6 0.75}
+{0 'Fox News',1 3,2 90,3 95.42,6 0.375,8 no-clickbait}
+{0 'Bleacher Report',1 4,2 86,3 68.9825,6 0.4375,8 no-clickbait}
+{0 'Bleacher Report',1 2,2 70,3 81.855,6 0.416667,8 no-clickbait}
+{0 ESPN,1 1,2 32,3 97.025,8 no-clickbait}
+{2 105,3 61.24,6 0.375}
+{0 'Bleacher Report',1 4,2 82,3 78.81,6 0.4,8 no-clickbait}
+{0 Forbes,2 82,3 80.097647,6 0.529412,8 no-clickbait}
+{0 'BBC News (UK)',1 2,2 54,3 37.9,6 0.222222,8 no-clickbait}
+{0 'Bleacher Report',1 2,2 82,3 25.455,6 0.416667,8 no-clickbait}
+{0 ESPN,1 4,2 113,3 58.423684,6 0.526316,8 no-clickbait}
+{0 'Fox News',1 1,2 101,3 44.97,6 0.133333,8 no-clickbait}
+{1 1,2 62,3 69.785,6 0.2}
+{0 'BBC News (UK)',1 2,2 93,3 75.121176,6 0.588235,8 no-clickbait}
+{0 'Wall Street Journal',1 1,2 85,3 74.27,6 0.5625,8 no-clickbait}
+{0 'Washington Post',1 2,2 113,3 40.613158,6 0.368421}
+{0 Mashable,1 1,2 61,3 103.379091,6 0.454545}
+{2 125,3 83.3775,6 0.428571,8 no-clickbait}
+{0 'Fox News',1 5,2 88,3 43.963077,6 0.307692,8 no-clickbait}
+{0 ESPN,1 3,2 110,3 76.971447,6 0.526316,8 no-clickbait}
+{0 'Bleacher Report',1 3,2 75,3 76.501538,6 0.538462,8 no-clickbait}
+{0 'ABC News',1 1,2 84,3 84.45,6 0.6,8 no-clickbait}
+{0 'Fox News',1 2,2 60,3 78.245,6 0.4,8 no-clickbait}
+{0 'Wall Street Journal',1 1,2 111,3 63.613553,6 0.526316,8 no-clickbait}
+{0 'Bleacher Report',1 4,2 92,3 59.682143,6 0.357143,8 no-clickbait}
+{0 'Wall Street Journal',1 1,2 93,3 54.701429,6 0.428571,8 no-clickbait}
+{0 Forbes,1 1,2 60,3 80.306364,4 1,6 0.636364}
+{0 'Washington Post',2 84,3 68.9825,4 1,6 0.75}
+{0 'The Telegraph',1 3,2 70,3 101.37,6 0.733333,8 no-clickbait}
+{0 'ABC News',1 5,2 83,3 39.555,6 0.25,8 no-clickbait}
+{0 'Wall Street Journal',2 101,3 88.725147,6 0.470588,8 no-clickbait}
+{0 'Washington Post',1 4,2 87,3 43.963077,6 0.307692,8 no-clickbait}
+{0 'The Telegraph',2 60,3 69.785,6 0.5,8 no-clickbait}
+{0 Forbes,1 2,2 58,3 66.1,6 0.333333}
+{0 Mashable,1 2,2 56,3 87.997273,6 0.454545}
+{0 'The Telegraph',1 2,2 81,3 39.555,6 0.416667,8 no-clickbait}
+{0 Forbes,2 36,3 45.645,6 0.5}
+{0 'ABC News',1 3,2 51,3 54.701429,6 0.285714,8 no-clickbait}
+{0 'Washington Post',2 63,3 44.405,6 0.4,8 no-clickbait}
+{0 'BBC News (UK)',1 1,2 68,3 57.233636,6 0.636364,8 no-clickbait}
+{0 'Fox News',1 1,2 89,3 18.405,6 0.333333,8 no-clickbait}
+{0 'NBC News',2 59,3 56.7,6 0.444444,8 no-clickbait}
+{0 'The Telegraph',1 1,2 69,3 67.755,6 0.666667,8 no-clickbait}
+{0 'Washington Post',1 1,2 87,3 65.725,6 0.285714,8 no-clickbait}
+{0 'NBC News',2 70,3 72.615455,6 0.272727}
+{1 1,2 101,3 46.9425,6 0.333333,8 no-clickbait}
+{0 Forbes,2 90,3 56.978462,6 0.538462}
+{0 'BBC News (UK)',1 2,2 61,3 72.615455,6 0.454545,8 no-clickbait}
+{0 'BBC News (UK)',1 7,2 118,3 103.044286,5 2,6 0.47619,7 1,8 no-clickbait}
+{0 'Daily Mail Online',1 3,2 73,3 89.516923,6 0.615385,8 no-clickbait}
+{0 'Fox News',2 67,3 19.1,6 0.333333,8 no-clickbait}
+{0 'ABC News',1 2,2 65,3 52.865,6 0.3,8 no-clickbait}
+{0 'The Telegraph',1 3,2 55,3 56.7,6 0.444444}
+{1 1,2 110,3 68.095,6 0.45,8 no-clickbait}
+{2 101,3 83.748676,5 1,6 0.470588,7 1}
+{0 'The Telegraph',1 2,2 64,3 9.7,6 0.222222,8 no-clickbait}
+{0 'Wall Street Journal',1 2,2 87,3 103.54,6 0.625,8 no-clickbait}
+{0 'Daily Mail Online',1 3,2 54,3 86.705,6 0.3,8 no-clickbait}
+{0 'The Telegraph',1 2,2 79,3 56.978462,6 0.615385}
+{0 'NBC News',1 6,2 82,3 30.947692,6 0.230769,8 no-clickbait}
+{1 1,2 111,3 -6.789286,6 0.214286,8 no-clickbait}
+{0 Forbes,1 2,2 105,3 5.49,6 0.333333,8 no-clickbait}
+{0 'Wall Street Journal',1 2,2 97,3 53.639286,4 1,6 0.571429,8 no-clickbait}
+{0 Mashable,1 1,2 50,3 66.1,6 0.333333,8 no-clickbait}
+{0 'NBC News',1 1,2 85,3 -6.355,6 0.2,8 no-clickbait}
+{0 'NBC News',1 1,2 104,3 17.382143,6 0.285714,8 no-clickbait}
+{0 'Wall Street Journal',1 1,2 79,3 56.978462,6 0.461538,8 no-clickbait}
+{1 1,2 102,3 76.555,4 1,6 0.6}
+{0 'Wall Street Journal',2 71,3 2.105,6 0.3,8 no-clickbait}
+{0 'Daily Mail Online',2 79,3 49.542727,4 1,6 0.454545,8 no-clickbait}
+{0 'Fox News',2 87,3 -1.28,6 0.3,8 no-clickbait}
+{0 'Daily Mail Online',1 2,2 68,3 35.945,6 0.3,8 no-clickbait}
+{0 'The Telegraph',1 3,2 91,3 60.191765,6 0.529412}
+{0 'BBC News (UK)',1 4,2 98,3 97.705,6 0.45,8 no-clickbait}
+{0 'BBC News (UK)',1 4,2 93,3 30.947692,6 0.230769,8 no-clickbait}
+{0 Forbes,2 96,3 75.875,4 1,5 2,6 0.5,7 1}
+{0 Mashable,1 5,2 68,3 64.924545,6 0.272727,8 no-clickbait}
+{0 'NBC News',1 1,2 89,3 35.510714,6 0.357143,8 no-clickbait}
+{0 'NBC News',1 3,2 52,3 6.358571,6 0.142857,8 no-clickbait}
+{0 'Daily Mail Online',1 2,2 79,3 18.405,6 0.416667,8 no-clickbait}
+{0 Forbes,2 93,3 67.53,6 0.4,8 no-clickbait}
+{0 'BBC News (UK)',1 2,2 99,3 74.27,6 0.5,8 no-clickbait}
+{0 'Washington Post',1 3,2 98,3 80.465,6 0.555556,8 no-clickbait}
+{0 'BBC News (UK)',1 1,2 118,3 47.8325,4 1,6 0.4375,8 no-clickbait}
+{0 Forbes,1 4,2 76,3 83.009231,6 0.384615,8 no-clickbait}
+{0 'Washington Post',2 79,3 90.09,6 0.8,8 no-clickbait}
+{0 'Daily Mail Online',2 60,3 87.997273,6 0.545455}
+{0 'Daily Mail Online',2 88,3 59.682143,6 0.428571}
+{0 'Washington Post',2 89,3 61.89,6 0.533333,8 no-clickbait}
+{0 'Wall Street Journal',1 3,2 89,3 46.605,6 0.333333,8 no-clickbait}
+{0 'BBC News (UK)',1 3,2 94,3 47.596429,6 0.357143,8 no-clickbait}
+{0 'ABC News',1 3,2 58,3 80.306364,6 0.363636,8 no-clickbait}
+{0 'Bleacher Report',1 1,2 78,3 19.025,6 0.4,8 no-clickbait}
+{0 Forbes,1 1,2 99,3 53.12,6 0.4375,8 no-clickbait}
+{0 'Washington Post',1 1,2 91,3 53.639286,4 1,6 0.5,8 no-clickbait}
+{2 109,3 68.691429,6 0.52381,8 no-clickbait}
+{0 'NBC News',1 1,2 52,3 34.0825}
+{1 2,2 65,3 44.405,6 0.5,8 no-clickbait}
+{0 'Bleacher Report',1 4,2 84,3 43.963077,6 0.384615,8 no-clickbait}
+{0 'Washington Post',1 2,2 65,3 88.905,6 0.5}
+{0 Yahoo,1 2,2 116,3 91.434643,6 0.714286,8 no-clickbait}
+{0 Yahoo,1 4,2 118,3 47.3,6 0.388889,8 no-clickbait}
+{0 'ABC News',1 1,2 88,3 90.958571,6 0.357143,8 no-clickbait}
+{0 'Wall Street Journal',1 2,2 30,3 66.4,6 0.4}
+{0 'NBC News',1 2,2 52,3 50.665,6 0.5,8 no-clickbait}
+{0 Mashable,1 7,2 73,3 76.501538,6 0.230769,8 no-clickbait}
+{0 Yahoo,1 1,2 113,3 48.084167,6 0.5,8 no-clickbait}
+{0 'The Telegraph',1 4,2 99,3 44.97,6 0.4,8 no-clickbait}
+{0 'Daily Mail Online',1 2,2 63,3 64.924545,6 0.454545,8 no-clickbait}
+{0 'Bleacher Report',1 4,2 117,3 68.095,6 0.55,8 no-clickbait}
+{0 'NBC News',1 5,2 66,3 49.542727,6 0.181818,8 no-clickbait}
+{0 Yahoo,1 3,2 73,3 53.655,6 0.25,8 no-clickbait}
+{0 Forbes,1 2,2 48,3 78.872857,6 0.142857}
+{0 'Bleacher Report',1 4,2 84,3 -14.815,6 0.1,8 no-clickbait}
+{0 'NBC News',1 3,2 64,3 44.405,6 0.6,8 no-clickbait}
+{0 'ABC News',1 5,2 112,3 42.865,6 0.222222,8 no-clickbait}
+{2 88,3 69.5025,6 0.533333,8 no-clickbait}
+{0 'Fox News',1 3,2 84,3 34.160909,6 0.181818,8 no-clickbait}
+{0 'NBC News',1 4,2 86,3 50.470769,6 0.384615}
+{0 'BBC News (UK)',1 2,2 118,3 78.245,4 1,6 0.55}
+{0 ESPN,1 5,2 107,3 70.8,6 0.333333}
+{0 'Washington Post',1 3,2 82,3 100.7075,4 1,5 2,6 0.5625,7 1,8 no-clickbait}
+{0 Mashable,2 74,3 81.855,4 1,6 0.666667}
+{0 'Daily Mail Online',1 2,2 88,3 77.810714,5 2,6 0.5,7 1}
+{0 Yahoo,1 1,2 77,3 89.606731,5 2,6 0.538462,7 1,8 no-clickbait}
+{0 'Washington Post',1 4,2 67,3 67.755,6 0.5,8 no-clickbait}
+{0 'ABC News',1 3,2 74,3 76.501538,6 0.461538}
+{0 'Wall Street Journal',1 2,2 111,3 33.69,6 0.333333,8 no-clickbait}
+{0 ESPN,1 3,2 114,3 95.463214,6 0.571429,8 no-clickbait}
+{0 'The Telegraph',1 3,2 60,3 44.405,6 0.3,8 no-clickbait}
+{0 'Washington Post',1 1,2 64,3 61.325,6 0.5,8 no-clickbait}
+{0 ESPN,2 91,3 78.872857,6 0.285714,8 no-clickbait}
+{0 'Wall Street Journal',1 4,2 140,3 91.47,6 0.458333,8 no-clickbait}
+{0 'Wall Street Journal',2 130,3 57.922456,5 1,6 0.315789,7 1,8 no-clickbait}
+{0 Yahoo,1 1,2 107,3 50.665,6 0.1875,8 no-clickbait}
+{0 'Wall Street Journal',1 2,2 71,3 69.785,6 0.3}
+{0 Yahoo,1 2,2 121,3 24.031029,6 0.294118,8 no-clickbait}
+{1 2,2 105,3 23.425,6 0.428571,8 no-clickbait}
+{0 'NBC News',1 3,2 71,3 52.865,6 0.2,8 no-clickbait}
+{0 'Wall Street Journal',1 3,2 118,3 59.635,6 0.3,8 no-clickbait}
+{0 'ABC News',1 5,2 84,3 43.963077,6 0.307692,8 no-clickbait}
+{0 'Bleacher Report',1 4,2 77,3 34.160909,6 0.272727}
+{0 'The Telegraph',2 23,3 97.025,6 0.5}
+{0 Yahoo,1 1,2 114,3 50.238824,6 0.529412,8 no-clickbait}
+{0 'Daily Mail Online',1 1,2 61,3 37.9,6 0.333333,8 no-clickbait}
+{0 'Wall Street Journal',1 1,2 88,3 71.767857,6 0.428571,8 no-clickbait}
+{0 'Fox News',1 7,2 103,3 45.262353,6 0.294118,8 no-clickbait}
+{0 'Washington Post',1 2,2 78,3 63.486154,6 0.307692,8 no-clickbait}
+{0 'Daily Mail Online',1 1,2 81,3 46.605,6 0.416667,8 no-clickbait}
+{0 'Washington Post',1 2,2 82,3 79.5575,6 0.5,8 no-clickbait}
+{0 ESPN,1 2,2 93,3 60.744286,6 0.642857,7 1,8 no-clickbait}
+{0 'ABC News',1 5,2 87,3 50.470769,6 0.307692,8 no-clickbait}
+{0 Yahoo,1 1,2 109,3 47.565,6 0.555556,8 no-clickbait}
+{0 Yahoo,1 2,2 131,3 36.160526,6 0.315789,8 no-clickbait}
+{0 'ABC News',1 1,2 84,3 84.45,6 0.6,8 no-clickbait}
+{0 'BBC News (UK)',2 128,3 92.383768,6 0.608696,8 no-clickbait}
+{0 'ABC News',1 4,2 89,3 11.355,6 0.333333,8 no-clickbait}
+{0 'Washington Post',1 1,2 116,3 16.1075,6 0.25,8 no-clickbait}
+{0 Forbes,2 99,3 88.725147,6 0.529412,8 no-clickbait}
+{0 'ABC News',1 1,2 81,3 63.486154,6 0.538462,8 no-clickbait}
+{0 'Bleacher Report',1 2,2 92,3 65.725,6 0.428571,8 no-clickbait}
+{0 Mashable,2 24,3 75.875,5 2,6 0.5,7 1}
+{0 'Fox News',1 2,2 89,3 67.53,6 0.6,8 no-clickbait}
+{1 2,2 92,3 83.748676,6 0.470588,8 no-clickbait}
+{0 Forbes,1 3,2 76,3 104.98,6 0.117647,8 no-clickbait}
+{0 'The Telegraph',1 3,2 35,3 -1.28,4 1,6 0.2,8 no-clickbait}
+{0 Forbes,1 1,2 46,3 82.39,6 0.375,8 no-clickbait}
+{0 Mashable,1 1,2 63,3 74.86,6 0.4,8 no-clickbait}
+{0 'Bleacher Report',1 6,2 79,3 47.596429,6 0.285714,8 no-clickbait}
+{0 Forbes,2 132,3 68.77,6 0.409091,8 no-clickbait}
+{0 'Washington Post',1 2,2 90,3 58.4075,6 0.3125,8 no-clickbait}
+{0 'NBC News',1 1,2 45,3 82.39,6 0.5}
+{0 Yahoo,1 1,2 128,3 90.088667,6 0.56,8 no-clickbait}
+{0 'Daily Mail Online',1 4,2 91,3 58.4075,6 0.3125}
+{0 'Fox News',1 1,2 57,3 72.615455,6 0.545455,8 no-clickbait}
+{0 ESPN,1 3,2 92,3 93.543509,6 0.473684,8 no-clickbait}
+{0 Mashable,1 3,2 73,3 83.009231,6 0.461538,8 no-clickbait}
+{0 Yahoo,1 1,2 91,3 43.963077,6 0.615385,8 no-clickbait}
+{0 'Wall Street Journal',1 2,2 101,3 103.7,6 0.333333,8 no-clickbait}
+{0 ESPN,1 4,2 107,3 68.9825,6 0.3125,8 no-clickbait}
+{0 'The Telegraph',2 78,3 72.83,6 0.428571,8 no-clickbait}
+{0 'ABC News',1 1,2 84,3 46.605,6 0.5,8 no-clickbait}
+{0 'ABC News',1 2,2 80,3 32.505,6 0.416667,8 no-clickbait}
+{0 'Fox News',1 1,2 49,3 103.7,5 2,6 0.666667,7 1,8 no-clickbait}
+{0 'Daily Mail Online',2 68,3 53.655,6 0.333333,8 no-clickbait}
+{0 'BBC News (UK)',2 118,3 70.8,4 1,5 3,6 0.5,7 3,8 no-clickbait}
+{0 Mashable,1 3,2 93,3 75.1425,6 0.333333,8 no-clickbait}
+{0 'ABC News',1 4,2 93,3 32.505,6 0.25,8 no-clickbait}
+{0 'Fox News',1 1,2 86,3 59.682143,6 0.571429}
+{0 Forbes,1 1,2 73,3 39.555,6 0.416667}
+{1 3,2 107,3 67.328947,5 2,6 0.473684,7 1,8 no-clickbait}
+{0 'Bleacher Report',1 3,2 80,3 71.767857,6 0.428571,8 no-clickbait}
+{0 Mashable,1 2,2 85,3 84.845,6 0.5,8 no-clickbait}
+{0 ESPN,1 5,2 115,3 87.406071,6 0.47619,8 no-clickbait}
+{0 Yahoo,2 87,3 32.0525}
+{0 ESPN,1 1,2 105,3 89.6,6 0.388889,8 no-clickbait}
+{0 Forbes,1 1,2 103,3 70.144706,6 0.352941,8 no-clickbait}
+{0 'Daily Mail Online',2 85,3 71.767857,6 0.5,8 no-clickbait}
+{0 'Wall Street Journal',2 103,3 66.365,6 0.666667,8 no-clickbait}
+{0 'NBC News',1 4,2 77,3 26.47,6 0.181818,8 no-clickbait}
+{0 'BBC News (UK)',1 3,2 118,3 61.665,6 0.444444,8 no-clickbait}
+{0 'Fox News',1 1,2 93,3 87.6775,6 0.375,8 no-clickbait}
+{0 Yahoo,1 3,2 121,3 76.832273,4 1,6 0.454545}
+{0 'The Telegraph',1 2,2 63,3 72.615455,6 0.363636,8 no-clickbait}
+{0 'NBC News',1 5,2 47,3 75.5,6 0.222222,8 no-clickbait}
+{0 'The Telegraph',1 5,2 92,3 43.963077,6 0.307692,8 no-clickbait}
+{0 'Washington Post',1 2,2 85,3 26.47,6 0.181818,8 no-clickbait}
+{0 'Bleacher Report',2 87,3 68.9825,6 0.5,8 no-clickbait}
+{0 'BBC News (UK)',1 1,2 107,3 76.234211,6 0.473684,8 no-clickbait}
+{0 'Fox News',1 2,2 87,3 30.947692,6 0.230769,8 no-clickbait}
+{0 'Daily Mail Online',2 69,3 49.542727,6 0.272727}
+{0 'Fox News',1 1,2 63,3 80.306364,6 0.727273,7 1,8 no-clickbait}
+{0 'NBC News',1 3,2 64,3 52.865,6 0.4}
+{0 Yahoo,2 75,3 74.805,6 0.583333,8 no-clickbait}
+{0 Mashable,1 3,2 76,3 65.725,5 2,6 0.5,7 1,8 no-clickbait}
+{0 Mashable,1 1,2 63,3 89.896429,5 1,6 0.571429,7 1,8 no-clickbait}
+{0 'Washington Post',2 131,3 76.337121,6 0.5}
+{0 Yahoo,2 93,3 24.495,6 0.333333,8 no-clickbait}
+{0 'Fox News',1 4,2 87,3 43.963077,6 0.384615,8 no-clickbait}
+{0 'The Telegraph',1 2,2 88,3 53.655,6 0.5,8 no-clickbait}
+{2 110,3 71.065,6 0.333333,8 no-clickbait}
+{0 'Daily Mail Online',1 1,2 59,3 66.1,6 0.333333,8 no-clickbait}
+{0 Forbes,2 108,3 99.533636,5 2,6 0.636364,7 1}
+{1 5,2 118,3 91.434643,6 0.380952}
+{0 Forbes,2 129,3 81.348986,4 1,6 0.652174}
+{0 'Daily Mail Online',1 3,2 63,3 52.865,6 0.3,8 no-clickbait}
+{0 'Wall Street Journal',1 4,2 110,3 40.285882,6 0.411765,8 no-clickbait}
+{0 Yahoo,1 2,2 98,3 41.553571,6 0.285714,8 no-clickbait}
+{0 ESPN,1 3,2 94,3 84.45,6 0.333333}
+{2 91,3 86.4225,5 2,6 0.733333,7 1,8 no-clickbait}
+{0 'ABC News',2 85,3 74.27,6 0.625,8 no-clickbait}
+{0 Mashable,1 2,2 63,3 96.024615,5 1,6 0.769231,7 1,8 no-clickbait}
+{0 'ABC News',1 5,2 76,3 53.655,6 0.333333,8 no-clickbait}
+{0 ESPN,2 98,3 56.755,6 0.083333,8 no-clickbait}
+{0 Yahoo,2 92,3 -14.815,6 0.3,8 no-clickbait}
+{0 'Bleacher Report',1 3,2 52,3 69.785,6 0.4,8 no-clickbait}
+{0 'BBC News (UK)',1 2,2 105,3 38.960441,6 0.235294}
+{0 ESPN,1 2,2 91,3 65.725,6 0.5,8 no-clickbait}
+{0 'Daily Mail Online',2 84,3 78.81,6 0.6}
+{0 'BBC News (UK)',1 1,2 98,3 81.648039,5 2,6 0.470588,7 1}
+{0 'NBC News',1 1,2 59,3 40.09,6 0.375,8 no-clickbait}
+{0 'Daily Mail Online',1 3,2 89,3 90.1325,6 0.375,8 no-clickbait}
+{0 Yahoo,2 89,3 39.555,6 0.25,8 no-clickbait}
+{0 Mashable,1 2,2 57,3 95.688182,6 0.636364,8 no-clickbait}
+{1 3,2 77,3 19.025,6 0.1,8 no-clickbait}
+{0 Forbes,1 2,2 110,3 26.855476,6 0.285714}
+{0 ESPN,1 4,2 94,3 63.8625,6 0.466667}
+{0 'Fox News',1 1,2 68,3 49.542727,6 0.272727,8 no-clickbait}
+{0 Mashable,2 58,3 80.306364,4 1,6 0.636364,8 no-clickbait}
+{0 'Fox News',1 4,2 66,3 44.405,8 no-clickbait}
+{0 'Washington Post',1 1,2 68,3 74.805,4 1,6 0.75}
+{0 'Bleacher Report',1 3,2 84,3 67.53,4 1,6 0.4,8 no-clickbait}
+{0 Mashable,1 5,2 97,3 89.592105,6 0.631579,8 no-clickbait}
+{0 'Daily Mail Online',2 47,3 103.379091,5 2,6 0.909091,7 2,8 no-clickbait}
+{0 'Daily Mail Online',1 1,2 88,3 70.144706,6 0.529412,8 no-clickbait}
+{0 'The Telegraph',1 2,2 122,3 45.065789,5 1,6 0.473684,7 1,8 no-clickbait}
+{0 'Fox News',1 1,2 54,3 47.3,6 0.555556}
+{0 ESPN,1 2,2 113,3 55.215294,6 0.588235}
+{0 'ABC News',1 3,2 78,3 32.505,6 0.333333,8 no-clickbait}
+{0 Forbes,2 61,3 69.785,6 0.5,8 no-clickbait}
+{0 Mashable,1 3,2 89,3 53.639286,5 2,6 0.357143,7 2,8 no-clickbait}
+{0 'Washington Post',2 54,3 94.3,6 0.333333}
+{0 'NBC News',1 2,2 60,3 72.615455,6 0.272727,8 no-clickbait}
+{0 ESPN,2 94,3 90.958571,6 0.5,8 no-clickbait}
+{0 Yahoo,2 106,3 -29.474773,6 0.090909,8 no-clickbait}
+{0 'Fox News',1 3,2 95,3 41.553571,6 0.357143,8 no-clickbait}
+{0 'Bleacher Report',1 2,2 81,3 78.81,6 0.466667}
+{0 'The Telegraph',1 7,2 53,3 95.165,6 0.2,8 no-clickbait}
+{0 'BBC News (UK)',1 2,2 108,3 71.695098,6 0.235294,8 no-clickbait}
+{0 Yahoo,1 3,2 53,3 86.705,4 1,6 0.3}
+{0 'Wall Street Journal',2 92,3 94.3,4 1,6 0.611111,8 no-clickbait}
+{0 'Wall Street Journal',1 1,2 110,3 46.812745,4 1,6 0.352941,8 no-clickbait}
+{0 'Washington Post',1 3,2 50,3 50.665,6 0.375,8 no-clickbait}
+{0 'ABC News',1 1,2 91,3 50.470769,6 0.307692,8 no-clickbait}
+{0 ESPN,2 109,3 91.434643,4 1,5 3,6 0.761905,7 2}
+{0 'Wall Street Journal',1 2,2 105,3 29.467857,6 0.142857,8 no-clickbait}
+{0 Forbes,1 1,2 81,3 96.114423,6 0.538462,8 no-clickbait}
+{0 'Washington Post',1 3,2 64,3 80.306364,6 0.363636,8 no-clickbait}
+{1 1,2 118,3 68.819265,6 0.411765,8 no-clickbait}
+{0 'Wall Street Journal',1 2,2 30,3 66.4,6 0.4}
+{0 Yahoo,2 81,3 44.405,5 3,6 0.3,7 2,8 no-clickbait}
+{0 ESPN,1 2,2 94,3 37.455385,6 0.615385,8 no-clickbait}
+{0 Mashable,2 54,3 103.379091,6 0.818182,8 no-clickbait}
+{0 Mashable,1 1,2 67,3 64.924545,6 0.454545,8 no-clickbait}
+{0 'Washington Post',2 49,3 103.7,6 0.444444}
+{1 1,2 90,3 43.963077,6 0.307692,8 no-clickbait}
+{2 78,3 41.851818,6 0.363636,8 no-clickbait}
+{0 'Bleacher Report',1 2,2 82,3 74.805,6 0.416667,8 no-clickbait}
+{0 'Wall Street Journal',1 1,2 109,3 66.365,6 0.555556,8 no-clickbait}
+{0 Yahoo,1 2,2 59,3 87.997273,5 2,6 0.454545,7 1,8 no-clickbait}
+{0 BuzzFeed,2 117,3 67.328947,6 0.526316,8 no-clickbait}
+{0 'The Telegraph',1 1,2 46,3 84.9,6 0.555556,8 no-clickbait}
+{0 'Wall Street Journal',2 105,3 58.423684,4 1,6 0.736842,8 no-clickbait}
+{0 Forbes,1 1,2 114,3 84.176957,6 0.695652,8 no-clickbait}
+{0 'ABC News',1 5,2 96,3 56.25,6 0.266667,8 no-clickbait}
+{0 'The New York Times',1 3,2 113,3 63.613553,6 0.315789,8 no-clickbait}
+{0 'Bleacher Report',1 6,2 109,3 47.8325,6 0.3125,8 no-clickbait}
+{0 BuzzFeed,1 1,2 71,3 77.810714,6 0.357143}
+{0 'Fox News',1 2,2 59,3 35.945,4 1,6 0.3,8 no-clickbait}
+{0 'ABC News',1 1,2 109,3 37.2575,6 0.25,8 no-clickbait}
+{0 ESPN,1 3,2 93,3 74.27,6 0.5,8 no-clickbait}
+{1 3,2 76,3 53.655,6 0.333333,8 no-clickbait}
+{0 'ABC News',1 3,2 51,3 94.3,6 0.333333,8 no-clickbait}
+{1 1,2 91,3 71.815,4 1,6 0.5625,8 no-clickbait}
+{1 4,2 118,3 69.785,6 0.45,8 no-clickbait}
+{0 Forbes,2 51,3 75.5,6 0.555556,8 no-clickbait}
+{0 'The New York Times',1 1,2 74,3 49.48,6 0.2}
+{0 'BBC News (UK)',2 109,3 63.695,6 0.1875,8 no-clickbait}
+{0 BuzzFeed,2 91,3 63.486154,6 0.615385,8 no-clickbait}
+{0 ESPN,1 2,2 77,3 84.915714,5 2,6 0.571429,7 1}
+{0 Forbes,2 44,3 92.965,6 0.5}
+{0 'Wall Street Journal',1 3,2 79,3 52.695,6 0.5,8 no-clickbait}
+{0 'Fox News',1 1,2 81,3 49.542727,6 0.181818}
+{0 BuzzFeed,2 42,3 45.645,8 no-clickbait}
+{0 'ABC News',1 3,2 94,3 37.455385,6 0.153846,8 no-clickbait}
+{0 'Wall Street Journal',2 42,3 90.958571,4 1,6 0.571429}
+{0 'The New York Times',1 3,2 93,3 41.553571,6 0.428571,8 no-clickbait}
+{0 BuzzFeed,2 87,3 56.25,6 0.666667,8 no-clickbait}
+{0 Mashable,1 4,2 67,3 74.805,6 0.416667,8 no-clickbait}
+{0 'The New York Times',1 2,2 110,3 74.015,6 0.55,8 no-clickbait}
+{0 'Bleacher Report',1 2,2 94,3 37.545192,6 0.538462,8 no-clickbait}
+{0 'ABC News',1 1,2 93,3 50.61,6 0.6,8 no-clickbait}
+{2 105,3 102.448772,6 0.315789,8 no-clickbait}
+{0 'ABC News',1 1,2 91,3 50.470769,6 0.307692,8 no-clickbait}
+{0 BuzzFeed,1 1,2 59,3 87.997273,6 0.636364}
+{0 'ABC News',1 1,2 114,3 63.865,6 0.7,8 no-clickbait}
+{0 'Wall Street Journal',1 1,2 111,3 58.423684,6 0.368421,8 no-clickbait}
+{0 'Fox News',1 5,2 66,3 72.615455,6 0.181818,8 no-clickbait}
+{2 91,3 50.560577,6 0.230769,8 no-clickbait}
+{0 'The New York Times',2 71,3 41.851818,6 0.545455}
+{0 'NBC News',1 1,2 70,3 44.405,6 0.7,8 no-clickbait}
+{0 'Bleacher Report',1 3,2 93,3 56.25,4 1,6 0.466667}
+{0 Mashable,1 3,2 73,3 89.606731,5 2,6 0.307692,7 1,8 no-clickbait}
+{0 'Fox News',1 2,2 61,3 87.997273,6 0.363636,8 no-clickbait}
+{0 Mashable,1 2,2 106,3 71.781579,6 0.578947}
+{0 Yahoo,1 2,2 100,3 66.365,6 0.388889,8 no-clickbait}
+{0 'Wall Street Journal',2 99,3 58.4075,6 0.4375,8 no-clickbait}
+{0 ESPN,1 2,2 93,3 95.671667,6 0.4375,8 no-clickbait}
+{0 BuzzFeed,2 100,3 71.065,6 0.666667}
+{0 'ABC News',1 2,2 80,3 32.505,6 0.416667,8 no-clickbait}
+{0 BuzzFeed,2 88,3 59.682143,5 2,6 0.642857,7 1}
+{1 1,2 103,3 42.545,6 0.4375,8 no-clickbait}
+{0 'BBC News (UK)',1 1,2 62,3 37.9,6 0.333333,8 no-clickbait}
+{0 'Washington Post',2 97,3 63.695,6 0.5625}
+{0 'Wall Street Journal',1 2,2 140,3 62.745109,6 0.434783,8 no-clickbait}
+{0 ESPN,1 1,2 102,3 74.521667,6 0.375,8 no-clickbait}
+{0 'The New York Times',1 1,2 72,3 89.516923,6 0.538462,8 no-clickbait}
+{0 'Wall Street Journal',2 40,3 103.7,4 1,6 0.666667}
+{0 'Washington Post',1 3,2 69,3 49.542727,4 1,6 0.363636}
+{0 'Bleacher Report',2 63,3 69.785,6 0.5}
+{2 106,3 78.772206,6 0.588235,8 no-clickbait}
+{0 'Washington Post',1 2,2 89,3 3.397273,6 0.272727,8 no-clickbait}
+{0 Forbes,1 2,2 115,3 37.2575,4 1,6 0.4375,8 no-clickbait}
+{0 'ABC News',1 3,2 91,3 24.44,6 0.461538,8 no-clickbait}
+{1 2,2 85,3 87.284048,6 0.428571,8 no-clickbait}
+{0 'Wall Street Journal',1 4,2 53,3 86.705,6 0.4,8 no-clickbait}
+{2 99,3 63.8625,4 1,6 0.333333}
+{0 'BBC News (UK)',2 37,3 15.64,6 0.4}
+{0 'ABC News',1 3,2 51,3 94.3,6 0.333333,8 no-clickbait}
+{0 'The New York Times',1 4,2 118,3 66.1,6 0.277778,8 no-clickbait}
+{0 'Washington Post',2 54,3 94.3,6 0.333333}
+{0 'The New York Times',1 3,2 73,3 67.755,6 0.333333,8 no-clickbait}
+{1 1,2 61,3 37.9,6 0.333333,8 no-clickbait}
+{0 BuzzFeed,1 3,2 67,3 81.855,6 0.416667}
+{0 'Washington Post',1 1,2 68,3 74.805,4 1,6 0.75}
+{0 Forbes,2 52,3 42.615714,6 0.571429,8 no-clickbait}
+{0 'ABC News',1 4,2 76,3 41.851818,6 0.363636,8 no-clickbait}
+{0 'Bleacher Report',1 4,2 92,3 74.27,6 0.1875,8 no-clickbait}
+{0 'ABC News',1 1,2 62,3 109.04,6 0.230769}
+{0 'Washington Post',1 4,2 110,3 63.865,6 0.6,8 no-clickbait}
+{0 'Fox News',1 1,2 74,3 44.405,6 0.4,8 no-clickbait}
+{0 'NBC News',1 1,2 69,3 35.945,6 0.4,8 no-clickbait}
+{0 Forbes,1 2,2 90,3 -23.275,4 1,6 0.3,8 no-clickbait}
+{0 'ABC News',1 2,2 71,3 67.755,6 0.666667,8 no-clickbait}
+{0 'ABC News',1 2,2 73,3 95.73,6 0.466667,8 no-clickbait}
+{0 BuzzFeed,1 1,2 40,3 103.54,6 0.375,8 no-clickbait}
+{0 'Wall Street Journal',1 5,2 62,3 52.865,6 0.2,8 no-clickbait}
+{0 Mashable,1 4,2 64,3 44.405,6 0.2,8 no-clickbait}
+{0 'Washington Post',1 2,2 73,3 43.963077,4 1,6 0.615385}
+{0 BuzzFeed,1 2,2 63,3 61.325,6 0.5,8 no-clickbait}
+{0 'The New York Times',1 1,2 53,3 103.379091,6 0.636364}
+{0 'Washington Post',2 63,3 76.501538,4 1,6 0.769231}
+{0 BuzzFeed,2 45,3 54.701429,6 0.571429,8 no-clickbait}
+{0 'Wall Street Journal',1 2,2 82,3 90.958571,6 0.285714,8 no-clickbait}
+{0 Forbes,1 1,2 82,3 32.505,4 1,6 0.583333}
+{0 'Washington Post',1 2,2 75,3 57.233636,4 1,6 0.636364}
+{0 Mashable,1 3,2 64,3 80.306364,6 0.363636}
+{0 'The Telegraph',1 2,2 53,3 78.245,6 0.2,8 no-clickbait}
+{0 Forbes,1 2,2 90,3 99.265,6 0.666667,8 no-clickbait}
+{0 'The New York Times',1 5,2 102,3 52.5825,6 0.466667,8 no-clickbait}
+{0 'The Telegraph',1 2,2 76,3 67.755,5 2,6 0.75,7 1}
+{0 BuzzFeed,2 47,3 84.9,5 3,6 0.555556,7 2}
+{0 'Washington Post',1 2,2 49,3 75.5,6 0.444444}
+{0 'Fox News',1 4,2 57,3 37.9,6 0.222222,8 no-clickbait}
+{0 'Daily Mail Online',1 1,2 80,3 41.851818,6 0.363636,8 no-clickbait}
+{0 'The New York Times',2 78,3 76.591346,4 1,6 0.538462,8 no-clickbait}
+{0 Forbes,2 81,3 84.845,6 0.5,8 no-clickbait}
+{0 'The New York Times',1 1,2 113,3 76.234211,6 0.684211,8 no-clickbait}
+{0 'Wall Street Journal',1 3,2 55,3 61.24,6 0.125,8 no-clickbait}
+{0 'Fox News',1 5,2 91,3 74.27,6 0.4375,8 no-clickbait}
+{0 'ABC News',1 1,2 70,3 18.779091,6 0.545455,8 no-clickbait}
+{0 'BBC News (UK)',1 1,2 80,3 65.725,6 0.642857,8 no-clickbait}
+{1 3,2 88,3 70.083654,4 1,6 0.384615,8 no-clickbait}
+{0 'Daily Mail Online',1 1,2 85,3 95.42,6 0.75,7 1,8 no-clickbait}
+{0 'The New York Times',1 3,2 93,3 41.553571,6 0.428571,8 no-clickbait}
+{0 Mashable,1 2,2 38,3 32.56,6 0.2,8 no-clickbait}
+{0 'Wall Street Journal',1 1,2 63,3 28.5,6 0.333333}
+{0 Mashable,2 59,3 47.3,6 0.777778}
+{0 'Daily Mail Online',2 108,3 67.328947,6 0.473684,8 no-clickbait}
+{0 Forbes,1 3,2 93,3 79.5575,6 0.3125,8 no-clickbait}
+{1 1,2 100,3 73.795735,5 2,6 0.588235,7 1,8 no-clickbait}
+{1 2,2 104,3 75.5,6 0.333333}
+{0 'Daily Mail Online',2 91,3 79.5575,6 0.5625}
+{0 'The Telegraph',1 2,2 76,3 77.810714,6 0.571429,8 no-clickbait}
+{0 'BBC News (UK)',2 117,3 16.1075,6 0.375,8 no-clickbait}
+{1 1,2 107,3 40.285882,6 0.294118,8 no-clickbait}
+{0 Forbes,2 81,3 74.27,6 0.5,8 no-clickbait}
+{0 'NBC News',1 5,2 67,3 64.924545,6 0.181818,8 no-clickbait}
+{0 'Daily Mail Online',1 1,2 85,3 67.53,6 0.6,8 no-clickbait}
+{0 BuzzFeed,1 1,2 68,3 89.516923,6 0.538462,8 no-clickbait}
+{0 'Wall Street Journal',1 4,2 140,3 55.575,6 0.458333}
+{1 1,2 110,3 50.238824,6 0.235294,8 no-clickbait}
+{1 2,2 73,3 83.853571,6 0.428571,8 no-clickbait}
+{0 'NBC News',1 3,2 68,3 8.365,6 0.125,8 no-clickbait}
+{0 'The Telegraph',1 1,2 75,3 95.73,6 0.533333,8 no-clickbait}
+{0 Mashable,2 63,3 96.024615,5 2,6 0.846154,7 1,8 no-clickbait}
+{1 1,2 108,3 76.234211,6 0.421053,8 no-clickbait}
+{0 'NBC News',1 1,2 55,3 40.09,6 0.125,8 no-clickbait}
+{0 'The New York Times',1 3,2 113,3 63.613553,6 0.315789,8 no-clickbait}
+{0 Mashable,1 2,2 44,3 92.965,6 0.375,8 no-clickbait}
+{0 'Daily Mail Online',1 2,2 86,3 34.160909,6 0.090909}
+{0 'The New York Times',2 90,3 31.545,6 0.5,8 no-clickbait}
+{0 'Wall Street Journal',1 1,2 38,3 73.845,6 0.333333,8 no-clickbait}
+{0 Mashable,1 2,2 57,3 86.705,6 0.4,8 no-clickbait}
+{1 3,2 79,3 56.978462,6 0.615385,8 no-clickbait}
+{0 Mashable,2 63,3 74.805,5 2,6 0.666667,7 1}
+{0 Mashable,2 65,3 56.7,5 1,6 0.555556,7 1}
+{0 'Daily Mail Online',2 89,3 56.25,6 0.533333,8 no-clickbait}
+{0 Mashable,2 66,3 89.516923,6 0.538462,8 no-clickbait}
+{0 'ABC News',2 97,3 66.365,6 0.444444,8 no-clickbait}
+{0 'NBC News',2 57,3 56.7,6 0.444444,8 no-clickbait}
+{0 'Wall Street Journal',2 85,3 67.53,6 0.333333}
+{0 'Washington Post',2 74,3 69.993846,6 0.538462,8 no-clickbait}
+{0 Mashable,2 64,3 80.306364,4 1,5 1,6 0.727273,7 2}
+{0 BuzzFeed,1 6,2 100,3 63.695,6 0.3125,8 no-clickbait}
+{0 BuzzFeed,2 94,3 80.686842,4 1,6 0.736842}
+{1 1,2 93,3 103.687237,6 0.526316,8 no-clickbait}
+{0 'NBC News',1 4,2 118,3 42.6,4 1,6 0.222222}
+{0 'Wall Street Journal',1 1,2 55,3 47.3,6 0.222222,8 no-clickbait}
+{0 'Washington Post',2 67,3 76.501538,5 2,6 0.769231,7 1,8 no-clickbait}
+{0 'Daily Mail Online',1 2,2 64,3 80.306364,6 0.454545,8 no-clickbait}
+{0 'BBC News (UK)',1 1,2 100,3 45.262353,4 2,6 0.470588,8 no-clickbait}
+{0 'The New York Times',2 78,3 97.001429,5 3,6 0.642857,7 2}
+{0 'BBC News (UK)',1 2,2 58,3 95.165,6 0.5,8 no-clickbait}
+{0 'Bleacher Report',1 3,2 58,3 47.3,6 0.222222,8 no-clickbait}
+{0 'BBC News (UK)',1 1,2 118,3 69.141364,6 0.454545,8 no-clickbait}
+{0 'Washington Post',1 1,2 69,3 64.924545,6 0.545455}
+{0 'NBC News',2 73,3 60.705,6 0.5,8 no-clickbait}
+{0 'NBC News',1 2,2 67,3 64.924545,6 0.545455,8 no-clickbait}
+{0 Forbes,2 104,3 65.168235,5 2,6 0.705882,7 1,8 no-clickbait}
+{0 'Washington Post',1 5,2 50,3 71.815,6 0.25,8 no-clickbait}
+{0 'BBC News (UK)',1 2,2 109,3 103.520357,6 0.571429,8 no-clickbait}
+{0 'Daily Mail Online',1 1,2 83,3 90.1325,5 2,6 0.75,7 1,8 no-clickbait}
+{0 'ABC News',1 1,2 93,3 50.61,6 0.6,8 no-clickbait}
+{0 BuzzFeed,1 2,2 71,3 64.924545,5 2,6 0.545455,7 1}
+{0 'Washington Post',1 2,2 48,3 84.9,6 0.333333,8 no-clickbait}
+{0 'The New York Times',1 1,2 81,3 53.639286,6 0.714286,8 no-clickbait}
+{0 'Fox News',1 2,2 69,3 27.485,6 0.1,8 no-clickbait}
+{0 Forbes,1 3,2 63,3 101.982143,4 1,6 0.428571,8 no-clickbait}
+{0 'Wall Street Journal',2 83,3 50.470769,4 1,6 0.538462}
+{0 Mashable,1 3,2 56,3 95.165,6 0.6}
+{0 'NBC News',1 3,2 78,3 -31.735,6 0.2,8 no-clickbait}
+{0 Mashable,1 1,2 70,3 81.855,6 0.416667,8 no-clickbait}
+{0 'BBC News (UK)',1 2,2 93,3 47.596429,6 0.214286,8 no-clickbait}
+{0 'Bleacher Report',1 2,2 84,3 65.725,6 0.5}
+{0 'The Telegraph',2 49,3 103.7,6 0.444444,8 no-clickbait}
+{0 'BBC News (UK)',2 54,3 94.3,5 1,6 0.444444,7 1}
+{2 102,3 68.9825,5 1,6 0.625,7 1,8 no-clickbait}
+{0 Yahoo,1 4,2 118,3 70.8,4 1,6 0.444444}
+{0 'Daily Mail Online',1 1,2 78,3 39.555,6 0.5,8 no-clickbait}
+{0 Forbes,2 119,3 57.922456,6 0.526316,8 no-clickbait}
+{0 'BBC News (UK)',1 2,2 105,3 26.6825,4 1,6 0.125,8 no-clickbait}
+{0 'Daily Mail Online',1 1,2 89,3 25.455,6 0.416667}
+{0 Mashable,1 1,2 83,3 65.725,6 0.571429,8 no-clickbait}
+{0 'Fox News',2 76,3 46.605,6 0.5,8 no-clickbait}
+{0 'Wall Street Journal',1 1,2 40,3 42.615714,6 0.571429,8 no-clickbait}
+{0 'Daily Mail Online',2 77,3 83.853571,5 2,6 0.714286,7 1}
+{0 'ABC News',1 1,2 83,3 63.486154,6 0.538462,8 no-clickbait}
+{0 'The Telegraph',1 2,2 75,3 77.810714,6 0.5,8 no-clickbait}
+{0 BuzzFeed,2 74,3 63.486154,6 0.769231,8 no-clickbait}
+{0 'Fox News',1 4,2 54,3 29.515,6 0.25,8 no-clickbait}
+{0 Mashable,1 1,2 83,3 46.605,6 0.583333,8 no-clickbait}
+{0 Forbes,1 6,2 100,3 60.191765,6 0.470588,8 no-clickbait}
+{0 'Daily Mail Online',1 1,2 57,3 40.09,6 0.25,8 no-clickbait}
+{0 'NBC News',1 2,2 75,3 95.939286,4 1,6 0.357143}
+{0 'Daily Mail Online',1 3,2 88,3 90.1325,4 1,6 0.5625,8 no-clickbait}
+{0 ESPN,1 1,2 91,3 75.121176,6 0.470588,8 no-clickbait}
+{0 'Daily Mail Online',2 89,3 68.9825,6 0.4375,8 no-clickbait}
+{0 Yahoo,1 3,2 77,3 57.94,6 0.4}
+{0 'ABC News',1 3,2 65,3 47.3,8 no-clickbait}
+{0 'NBC News',1 1,2 133,3 44.52,6 0.333333,8 no-clickbait}
+{0 BuzzFeed,1 3,2 124,3 84.02803,6 0.227273,8 no-clickbait}
+{0 'ABC News',1 1,2 89,3 18.405,6 0.5,8 no-clickbait}
+{0 ESPN,1 4,2 117,3 99.527717,6 0.521739,8 no-clickbait}
+{0 'Bleacher Report',1 3,2 85,3 65.725,6 0.428571}
+{0 'The New York Times',1 4,2 120,3 95.564394,6 0.590909}
+{0 BuzzFeed,2 94,3 58.4075,6 0.4375,8 no-clickbait}
+{0 'Daily Mail Online',2 98,3 50.238824,6 0.411765,8 no-clickbait}
+{0 'Wall Street Journal',2 42,3 90.958571,4 1,6 0.571429,8 no-clickbait}
+{0 'NBC News',2 48,3 94.3,6 0.333333,8 no-clickbait}
+{0 Yahoo,1 3,2 110,3 68.819265,6 0.294118,8 no-clickbait}
+{0 'The Telegraph',1 2,2 45,3 31.545,6 0.166667,8 no-clickbait}
+{0 Forbes,1 5,2 68,3 66.4,8 no-clickbait}
+{0 Mashable,2 64,3 93.471667,6 0.4,8 no-clickbait}
+{0 Forbes,2 98,3 11.424615,6 0.230769,8 no-clickbait}
+{0 Mashable,1 1,2 62,3 80.306364,6 0.181818,8 no-clickbait}
+{0 'Bleacher Report',1 7,2 91,3 79.5575,6 0.375,8 no-clickbait}
+{0 'BBC News (UK)',1 1,2 140,3 38.485,6 0.4,8 no-clickbait}
+{1 1,2 39,3 78.872857,6 0.428571,8 no-clickbait}
+{0 Forbes,1 1,2 66,3 49.542727,6 0.454545,8 no-clickbait}
+{0 'Daily Mail Online',1 1,2 60,3 66.1,6 0.666667,8 no-clickbait}
+{0 'Daily Mail Online',2 79,3 95.939286,5 2,6 0.642857,7 1,8 no-clickbait}
+{0 ESPN,1 3,2 118,3 86.93,6 0.380952,8 no-clickbait}
+{0 'Fox News',1 1,2 54,3 50.665,6 0.375,8 no-clickbait}
+{0 Forbes,1 4,2 66,3 47.3,6 0.333333}
+{0 'ABC News',1 5,2 110,3 61.665,6 0.333333,8 no-clickbait}
+{0 'Bleacher Report',1 5,2 80,3 67.755,6 0.333333,8 no-clickbait}
+{0 ESPN,1 3,2 91,3 78.872857,6 0.5}
+{0 'Fox News',1 2,2 77,3 53.655,6 0.416667,8 no-clickbait}
+{0 Forbes,1 2,2 68,3 64.924545,4 1,6 0.454545}
+{0 'Bleacher Report',1 1,2 83,3 67.53,6 0.333333,8 no-clickbait}
+{0 Yahoo,1 7,2 91,3 30.947692,6 0.230769,8 no-clickbait}
+{0 'Daily Mail Online',1 2,2 87,3 77.810714,6 0.428571}
+{0 Forbes,1 1,2 105,3 71.065,4 1,6 0.444444,8 no-clickbait}
+{0 'Fox News',2 45,3 31.545,6 0.333333,8 no-clickbait}
+{0 Forbes,2 80,3 76.501538,6 0.461538,8 no-clickbait}
+{0 'BBC News (UK)',1 2,2 108,3 95.165,6 0.2,8 no-clickbait}
+{0 'Washington Post',2 104,3 78.772206,4 1,6 0.588235,8 no-clickbait}
+{0 Yahoo,1 2,2 104,3 58.659167,6 0.25,8 no-clickbait}
+{0 'Bleacher Report',1 3,2 93,3 59.682143,6 0.142857,8 no-clickbait}
+{0 'ABC News',1 3,2 108,3 26.6825,6 0.4375,8 no-clickbait}
+{0 'BBC News (UK)',2 55,3 40.09,6 0.125,8 no-clickbait}
+{0 ESPN,1 2,2 111,3 81.424079,6 0.368421,8 no-clickbait}
+{0 'The New York Times',1 6,2 117,3 16.1075,6 0.5625,8 no-clickbait}
+{0 ESPN,1 6,2 92,3 67.53,6 0.466667,8 no-clickbait}
+{0 'Fox News',2 69,3 19.1,6 0.444444,8 no-clickbait}
+{0 'Daily Mail Online',1 3,2 75,3 76.501538,5 1,6 0.384615,7 1,8 no-clickbait}
+{0 'Daily Mail Online',1 1,2 83,3 56.978462,6 0.153846,8 no-clickbait}
+{0 'Washington Post',1 1,2 71,3 64.924545,4 1,6 0.363636,8 no-clickbait}
+{0 'Wall Street Journal',1 3,2 82,3 46.605,6 0.25,8 no-clickbait}
+{0 'Wall Street Journal',1 2,2 74,3 63.575962,6 0.615385}
+{0 Mashable,1 2,2 55,3 81.855,6 0.666667,8 no-clickbait}
+{0 'NBC News',1 1,2 84,3 60.705,6 0.666667,8 no-clickbait}
+{0 BuzzFeed,1 2,2 67,3 80.895,8 no-clickbait}
+{0 'The New York Times',1 1,2 86,3 113.6075,6 0.588235}
+{0 BuzzFeed,2 68,3 90.09,6 0.866667,8 no-clickbait}
+{0 'Washington Post',2 74,3 97.001429,5 2,6 0.714286,7 2}
+{0 Yahoo,1 1,2 72,3 41.851818,6 0.636364}
+{0 'Washington Post',1 2,2 57,3 37.9,6 0.444444,8 no-clickbait}
+{0 'The Telegraph',2 79,3 67.755,6 0.583333}
+{0 'The New York Times',2 110,3 37.2575,6 0.375,8 no-clickbait}
+{0 'BBC News (UK)',2 77,3 87.997273,6 0.363636,8 no-clickbait}
+{0 'Bleacher Report',1 2,2 93,3 56.25,6 0.466667,8 no-clickbait}
+{0 Yahoo,2 110,3 -1.500962,6 0.230769,8 no-clickbait}
+{0 Yahoo,1 1,2 70,3 64.924545,6 0.454545,8 no-clickbait}
+{0 'Washington Post',1 1,2 62,3 47.3,4 1,6 0.555556,8 no-clickbait}
+{0 'Wall Street Journal',1 5,2 113,3 35.309412,6 0.411765,8 no-clickbait}
+{0 'ABC News',1 1,2 92,3 41.553571,6 0.571429,8 no-clickbait}
+{0 'The New York Times',1 5,2 96,3 61.89,6 0.266667,8 no-clickbait}
+{0 Forbes,1 3,2 107,3 68.095,6 0.45,8 no-clickbait}
+{0 'The Telegraph',1 1,2 81,3 43.963077,6 0.307692,8 no-clickbait}
+{0 'The Telegraph',1 5,2 111,3 76.555,6 0.5,8 no-clickbait}
+{0 'Bleacher Report',1 3,2 80,3 65.725,6 0.642857,8 no-clickbait}
+{0 'Fox News',1 4,2 63,3 41.02,6 0.3,8 no-clickbait}
+{0 BuzzFeed,2 47,3 84.9,8 no-clickbait}
+{0 'BBC News (UK)',1 5,2 107,3 89.6,6 0.388889,8 no-clickbait}
+{0 'Bleacher Report',1 6,2 84,3 84.845,6 0.3125,8 no-clickbait}
+{0 'The Telegraph',1 1,2 59,3 40.09,6 0.25,8 no-clickbait}
+{0 'Fox News',2 79,3 35.945,6 0.4,8 no-clickbait}
+{0 'Wall Street Journal',1 2,2 105,3 31.97,6 0.375,8 no-clickbait}
+{0 'Wall Street Journal',1 1,2 109,3 58.4075,6 0.625,8 no-clickbait}
+{0 'Washington Post',1 3,2 95,3 29.467857,6 0.428571,8 no-clickbait}
+{0 'The New York Times',1 2,2 111,3 55.405,6 0.55,8 no-clickbait}
+{0 'Fox News',1 2,2 51,3 54.701429,6 0.142857,8 no-clickbait}
+{0 'Wall Street Journal',2 54,3 87.997273,4 1,5 2,6 0.454545,7 2}
+{0 'NBC News',1 6,2 65,3 35.945,6 0.1,8 no-clickbait}
+{0 Mashable,2 57,3 61.2675,6 0.333333,8 no-clickbait}
+{0 'The Telegraph',1 2,2 88,3 50.470769,6 0.307692,8 no-clickbait}
+{0 'Daily Mail Online',2 71,3 67.755,6 0.5}
+{1 2,2 75,3 49.542727,6 0.363636,8 no-clickbait}
+{0 Yahoo,1 4,2 108,3 42.545,6 0.1875,8 no-clickbait}
+{0 'NBC News',1 2,2 79,3 53.655,6 0.416667,8 no-clickbait}
+{0 Yahoo,2 82,3 59.745,5 1,6 0.333333,7 1,8 no-clickbait}
+{0 'The New York Times',1 6,2 109,3 26.6825,6 0.1875,8 no-clickbait}
+{0 'Bleacher Report',1 3,2 93,3 67.53,6 0.4,8 no-clickbait}
+{1 2,2 114,3 72.325,6 0.5,8 no-clickbait}
+{0 'Daily Mail Online',2 72,3 89.896429,6 0.571429,8 no-clickbait}
+{0 'BBC News (UK)',2 49,3 82.39,6 0.625}
+{0 'Daily Mail Online',1 2,2 51,3 75.5,6 0.222222}
+{0 'Washington Post',1 3,2 99,3 73.795735,4 1,6 0.352941}
+{0 'BBC News (UK)',1 3,2 77,3 60.705,6 0.25,8 no-clickbait}
+{0 'The Telegraph',2 89,3 44.97,6 0.6,8 no-clickbait}
+{0 'Fox News',1 5,2 107,3 47.8325,6 0.3125,8 no-clickbait}
+{0 'Bleacher Report',1 1,2 93,3 61.89,6 0.533333,8 no-clickbait}
+{0 Mashable,1 3,2 86,3 34.160909,6 0.454545,8 no-clickbait}
+{0 BuzzFeed,1 3,2 87,3 57.068269}
+{1 3,2 93,3 85.074118,6 0.470588,8 no-clickbait}
+{0 ESPN,1 5,2 87,3 90.09,6 0.4,8 no-clickbait}
+{0 'Fox News',1 2,2 64,3 44.405,6 0.4,8 no-clickbait}
+{0 Yahoo,1 4,2 101,3 50.665,6 0.25,8 no-clickbait}
+{0 'Wall Street Journal',2 107,3 52,6 0.5,8 no-clickbait}
+{0 'NBC News',1 2,2 42,3 54.701429,6 0.142857,8 no-clickbait}
+{0 BuzzFeed,2 54,3 61.325,6 0.6,8 no-clickbait}
+{0 'Daily Mail Online',1 1,2 102,3 44.97,6 0.4,8 no-clickbait}
+{0 'Fox News',1 2,2 55,3 86.705,6 0.4,8 no-clickbait}
+{0 Forbes,2 49,3 92.965,6 0.625}
+{0 Yahoo,1 1,2 104,3 24.487143,6 0.285714,8 no-clickbait}
+{0 'Bleacher Report',1 5,2 95,3 73.795735,6 0.529412,8 no-clickbait}
+{0 'Fox News',1 4,2 75,3 34.160909,6 0.181818,8 no-clickbait}
+{0 Yahoo,1 1,2 108,3 17.932308,6 0.153846,8 no-clickbait}
+{0 ESPN,1 3,2 88,3 71.767857,6 0.428571,8 no-clickbait}
+{0 'Fox News',2 73,3 64.924545,6 0.545455,8 no-clickbait}
+{0 Mashable,2 89,3 24.529808,5 2,6 0.307692,7 1}
+{0 BuzzFeed,1 1,2 79,3 39.555,8 no-clickbait}
+{0 'Wall Street Journal',1 4,2 116,3 43.936912,6 0.411765,8 no-clickbait}
+{0 Mashable,2 89,3 73.17,6 0.533333,8 no-clickbait}
+{0 'Wall Street Journal',1 1,2 49,3 94.3,6 0.444444,8 no-clickbait}
+{0 'NBC News',1 2,2 50,3 42.615714,6 0.428571,8 no-clickbait}
+{0 'Daily Mail Online',2 82,3 76.501538,6 0.615385,8 no-clickbait}
+{0 ESPN,1 1,2 94,3 80.097647,6 0.647059,8 no-clickbait}
+{0 'Bleacher Report',1 7,2 94,3 37.455385,6 0.230769}
+{0 'ABC News',1 3,2 90,3 53.639286,6 0.285714,8 no-clickbait}
+{0 Forbes,1 5,2 111,3 55.045,6 0.222222,8 no-clickbait}
+{0 'Wall Street Journal',2 64,3 66.1,6 0.333333,8 no-clickbait}
+{1 1,2 90,3 41.553571,6 0.428571,8 no-clickbait}
+{0 Mashable,1 1,2 79,3 62.816136,6 0.363636,8 no-clickbait}
+{0 'NBC News',1 5,2 55,3 29.515,6 0.125,8 no-clickbait}
+{0 Mashable,1 3,2 100,3 11.424615,6 0.307692,8 no-clickbait}
+{0 'Wall Street Journal',2 76,3 69.993846,5 1,6 0.615385,7 2,8 no-clickbait}
+{0 'Fox News',1 1,2 71,3 60.705,6 0.333333,8 no-clickbait}
+{0 'ABC News',1 3,2 93,3 80.097647,6 0.176471,8 no-clickbait}
+{0 Mashable,2 97,3 44.97,6 0.533333,8 no-clickbait}
+{0 'Bleacher Report',1 2,2 91,3 30.947692,6 0.307692,8 no-clickbait}
+{0 ESPN,1 4,2 94,3 77.1025,6 0.375,8 no-clickbait}
+{0 Yahoo,1 3,2 85,3 78.81,6 0.466667,8 no-clickbait}
+{0 'The New York Times',2 36,3 73.845,6 0.333333,8 no-clickbait}
+{0 Forbes,2 93,3 93.475,5 2,6 0.55,7 1,8 no-clickbait}
+{0 Mashable,1 5,2 93,3 17.932308,6 0.384615,8 no-clickbait}
+{0 'Bleacher Report',1 3,2 73,3 81.855,6 0.5,8 no-clickbait}
+{0 Mashable,1 5,2 77,3 34.160909,6 0.454545,8 no-clickbait}
+{0 'NBC News',2 46,3 54.701429,6 0.285714}
+{0 Yahoo,1 3,2 106,3 50.238824,6 0.235294,8 no-clickbait}
+{0 'Washington Post',2 47,3 42.615714,4 1,6 0.571429}
+{0 'Wall Street Journal',1 1,2 74,3 107.402632,6 0.272727,8 no-clickbait}
+{1 1,2 115,3 78.245,5 3,6 0.55,7 2,8 no-clickbait}
+{0 BuzzFeed,1 1,2 63,3 89.516923,6 0.615385,8 no-clickbait}
+{0 Yahoo,1 4,2 57,3 47.3,6 0.333333,8 no-clickbait}
+{0 BuzzFeed,1 2,2 82,3 46.605,4 1,6 0.083333}
+{0 'The New York Times',1 1,2 108,3 -40.636923,6 0.076923,8 no-clickbait}
+{0 'Washington Post',2 71,3 23.6675,6 0.444444,8 no-clickbait}
+{0 BuzzFeed,2 72,3 83.853571,6 0.785714,8 no-clickbait}
+{1 2,2 65,3 44.405,6 0.3,8 no-clickbait}
+{1 1,2 108,3 23.425,6 0.214286,8 no-clickbait}
+{0 'Bleacher Report',1 6,2 82,3 43.963077,6 0.384615,8 no-clickbait}
+{0 'ABC News',1 1,2 91,3 29.467857,6 0.5,8 no-clickbait}
+{0 Forbes,1 3,2 84,3 58.4075,5 3,6 0.6875,7 2,8 no-clickbait}
+{0 'Wall Street Journal',1 4,2 66,3 61.325,6 0.4}
+{0 'Fox News',1 2,2 54,3 37.9,6 0.444444,8 no-clickbait}
+{0 'Bleacher Report',1 2,2 74,3 69.785,6 0.3,8 no-clickbait}
+{1 4,2 91,3 17.932308,6 0.384615,8 no-clickbait}
+{0 Yahoo,2 62,3 78.245,6 0.5}
+{0 'Washington Post',1 1,2 65,3 19.1,6 0.555556,8 no-clickbait}
+{0 Mashable,1 1,2 63,3 80.306364,6 0.545455,8 no-clickbait}
+{0 ESPN,1 2,2 94,3 89.6,6 0.5,8 no-clickbait}
+{0 'Washington Post',2 88,3 16.670682,6 0.545455,8 no-clickbait}
+{0 'Daily Mail Online',2 74,3 47.3,6 0.333333,8 no-clickbait}
+{1 1,2 83,3 47.596429,6 0.428571,8 no-clickbait}
+{0 'NBC News',1 2,2 71,3 10.565,6 0.5,8 no-clickbait}
+{0 Forbes,2 50,3 95.688182,6 0.818182,8 no-clickbait}
+{0 Yahoo,1 3,2 84,3 50.470769,6 0.461538,8 no-clickbait}
+{0 'Bleacher Report',1 2,2 92,3 63.695,6 0.4375,8 no-clickbait}
+{0 Mashable,1 7,2 67,3 80.306364,8 no-clickbait}
+{1 1,2 118,3 58.423684,6 0.368421,8 no-clickbait}
+{1 3,2 104,3 44.97,6 0.4,8 no-clickbait}
+{0 'Daily Mail Online',2 85,3 73.17,6 0.733333,8 no-clickbait}
+{0 'Washington Post',2 103,3 31.97,6 0.375,8 no-clickbait}
+{0 'ABC News',1 2,2 118,3 30.332941,6 0.235294,8 no-clickbait}
+{0 'Fox News',1 5,2 78,3 53.655,6 0.333333,8 no-clickbait}
+{0 'The New York Times',1 1,2 58,3 66.1,6 0.555556,8 no-clickbait}
+{0 'Washington Post',2 74,3 69.993846,6 0.538462,8 no-clickbait}
+{0 Mashable,2 65,3 69.785,5 2,6 0.7,7 1}
+{0 'Bleacher Report',2 86,3 35.945,6 0.2,8 no-clickbait}
+{0 Mashable,1 4,2 96,3 94.781974,5 1,6 0.421053,7 1,8 no-clickbait}
+{0 'Wall Street Journal',1 2,2 105,3 69.145,5 1,6 0.5,7 1,8 no-clickbait}
+{0 'NBC News',2 70,3 69.993846,6 0.615385,8 no-clickbait}
+{0 'NBC News',1 1,2 56,3 29.515,6 0.25}
+{0 Mashable,1 5,2 67,3 95.73,6 0.466667,8 no-clickbait}
+{0 Yahoo,1 1,2 71,3 57.233636,6 0.545455,8 no-clickbait}
+{0 'Bleacher Report',1 2,2 88,3 88.96,6 0.266667,8 no-clickbait}
+{0 BuzzFeed,2 47,3 66.787143,5 2,6 0.428571,7 1}
+{0 'ABC News',2 87,3 -11.984545,6 0.090909,8 no-clickbait}
+{0 'Wall Street Journal',1 1,2 93,3 29.467857,6 0.285714,8 no-clickbait}
+{0 'ABC News',1 1,2 72,3 18.779091,6 0.545455,8 no-clickbait}
+{0 'Daily Mail Online',2 83,3 84.45,6 0.666667,8 no-clickbait}
+{0 'Bleacher Report',1 2,2 93,3 47.596429,6 0.428571,8 no-clickbait}
+{0 'ABC News',1 3,2 93,3 80.097647,6 0.176471,8 no-clickbait}
+{0 'Bleacher Report',1 1,2 72,3 46.605,6 0.5,8 no-clickbait}
+{0 ESPN,2 63,3 91.78,6 0.5,8 no-clickbait}
+{0 BuzzFeed,1 2,2 52,3 86.705,4 1,6 0.4}
+{0 Yahoo,2 69,3 103.044286,4 1,5 1,6 0.785714,7 1}
+{0 'NBC News',2 66,3 52.865,6 0.6,8 no-clickbait}
+{0 'The New York Times',1 3,2 94,3 42.615714,6 0.357143,8 no-clickbait}
+{0 ESPN,1 4,2 85,3 61.89,6 0.466667,8 no-clickbait}
+{0 'BBC News (UK)',1 1,2 97,3 50.61,6 0.533333,8 no-clickbait}
+{0 'ABC News',2 85,3 -6.355,6 0.3,8 no-clickbait}
+{0 'Wall Street Journal',1 2,2 76,3 95.955,6 0.333333,8 no-clickbait}
+{0 'The New York Times',1 3,2 101,3 40.285882,6 0.352941,8 no-clickbait}
+{0 'Bleacher Report',1 4,2 81,3 32.505,6 0.166667,8 no-clickbait}
+{0 'Fox News',1 3,2 92,3 35.510714,6 0.642857,8 no-clickbait}
+{0 'Bleacher Report',1 3,2 85,3 68.9825,6 0.3125,8 no-clickbait}
+{0 ESPN,1 2,2 78,3 76.591346,6 0.538462}
+{0 Forbes,2 51,3 95.165,5 1,6 0.9,7 1}
+{0 'ABC News',1 1,2 83,3 37.455385,6 0.538462,8 no-clickbait}
+{0 Yahoo,2 43,3 71.815,5 1,6 0.375,7 1,8 no-clickbait}
+{0 'Wall Street Journal',1 2,2 82,3 99.265,6 0.555556}
+{0 'NBC News',1 2,2 106,3 82.39,6 0.1875,8 no-clickbait}
+{0 ESPN,1 5,2 94,3 63.112619,6 0.214286,8 no-clickbait}
+{0 'ABC News',1 3,2 90,3 53.639286,6 0.285714,8 no-clickbait}
+{0 'ABC News',1 1,2 87,3 25.455,6 0.416667,8 no-clickbait}
+{1 1,2 91,3 32.505,6 0.5,8 no-clickbait}
+{1 2,2 102,3 61.4,6 0.611111}
+{0 ESPN,1 2,2 117,3 99.527717,6 0.565217,8 no-clickbait}
+{0 Yahoo,1 2,2 87,3 56.978462,6 0.384615,8 no-clickbait}
+{0 ESPN,1 6,2 113,3 85.876711,6 0.421053,8 no-clickbait}
+{0 Forbes,1 2,2 88,3 75.765,4 1,5 2,6 0.611111,7 3}
+{0 BuzzFeed,1 2,2 103,3 89.592105}
+{0 BuzzFeed,1 6,2 90,3 43.963077,8 no-clickbait}
+{0 'Bleacher Report',1 5,2 87,3 63.575962,6 0.230769,8 no-clickbait}
+{0 'Wall Street Journal',1 2,2 33,3 94.511071,4 1,6 0.142857}
+{0 Mashable,2 69,3 60.705,6 0.583333,8 no-clickbait}
+{0 Forbes,2 64,3 69.785,6 0.8,8 no-clickbait}
+{1 1,2 80,3 19.025,6 0.3,8 no-clickbait}
+{0 'The New York Times',1 5,2 74,3 35.945,6 0.1,8 no-clickbait}
+{0 'Bleacher Report',1 3,2 74,3 66.795,6 0.333333,8 no-clickbait}
+{0 ESPN,1 5,2 106,3 84.9,6 0.5}
+{0 ESPN,1 3,2 89,3 37.545192,6 0.461538,8 no-clickbait}
+{0 'Bleacher Report',1 4,2 75,3 69.993846,6 0.384615,8 no-clickbait}
+{0 'Fox News',1 8,2 79,3 60.705,6 0.166667,8 no-clickbait}
+{0 Forbes,2 95,3 80.465,5 3,6 0.777778,7 2,8 no-clickbait}
+{0 'Daily Mail Online',2 64,3 44.405,4 1,5 1,6 0.5,7 1,8 no-clickbait}
+{0 'ABC News',1 5,2 93,3 61.89,6 0.4,8 no-clickbait}
+{0 ESPN,1 3,2 114,3 91.434643,6 0.52381}
+{0 'Bleacher Report',1 4,2 69,3 49.542727,6 0.363636,8 no-clickbait}
+{0 ESPN,1 2,2 98,3 83.748676,6 0.647059,8 no-clickbait}
+{0 'ABC News',1 1,2 83,3 63.486154,6 0.538462,8 no-clickbait}
+{0 ESPN,1 2,2 98,3 44.984048,6 0.571429}
+{0 'Bleacher Report',1 2,2 83,3 61.89,6 0.533333,8 no-clickbait}
+{0 ESPN,1 1,2 94,3 50.560577,6 0.384615,8 no-clickbait}
+{0 'NBC News',1 4,2 111,3 66.365,6 0.222222,8 no-clickbait}
+{0 Mashable,1 1,2 67,3 64.924545,6 0.363636,8 no-clickbait}
+{0 'Fox News',1 5,2 75,3 84.45,6 0.333333,8 no-clickbait}
+{0 'The New York Times',1 2,2 86,3 65.725,6 0.571429,8 no-clickbait}
+{0 ESPN,1 2,2 94,3 98.678088,6 0.705882,8 no-clickbait}
+{0 'Bleacher Report',1 3,2 84,3 56.978462,6 0.230769,8 no-clickbait}
+{0 Mashable,1 2,2 52,3 92.965,6 0.5,8 no-clickbait}
+{0 ESPN,1 2,2 74,3 89.975,6 0.166667,8 no-clickbait}
+{0 'BBC News (UK)',1 1,2 86,3 61.89,6 0.6,8 no-clickbait}
+{0 Mashable,1 3,2 68,3 35.945,6 0.5}
+{0 Forbes,2 88,3 46.605,6 0.416667}
+{0 ESPN,1 2,2 93,3 60.76,6 0.533333,8 no-clickbait}
+{0 Mashable,1 2,2 40,3 92.965,5 2,6 0.5,7 1}
+{0 BuzzFeed,1 1,2 86,3 56.978462}
+{0 Mashable,1 3,2 75,3 41.851818,6 0.454545,8 no-clickbait}
+{0 'Wall Street Journal',1 2,2 58,3 95.955,6 0.5,8 no-clickbait}
+{0 BuzzFeed,2 55,3 29.515,6 0.5}
+{0 Forbes,2 45,3 17.445,6 0.166667}
+{0 BuzzFeed,1 1,2 111,3 37.2575}
+{0 BuzzFeed,2 66,3 52.865,6 0.5}
+{0 'Fox News',1 4,2 90,3 25.455,6 0.25,8 no-clickbait}
+{0 'BBC News (UK)',1 5,2 107,3 80.465,6 0.222222,8 no-clickbait}
+{0 'The Telegraph',1 1,2 56,3 123.195,4 1,6 0.75,8 no-clickbait}
+{0 Forbes,2 52,3 40.09,6 0.25,8 no-clickbait}
+{0 'NBC News',2 69,3 47.3,6 0.555556,8 no-clickbait}
+{0 'BBC News (UK)',2 54,3 80.0675,5 2,6 0.444444,7 1}
+{0 Forbes,2 60,3 29.515,6 0.25,8 no-clickbait}
+{0 'BBC News (UK)',1 3,2 82,3 65.725,4 1,6 0.285714,8 no-clickbait}
+{0 'Fox News',1 3,2 89,3 30.947692,6 0.230769,8 no-clickbait}
+{0 'Washington Post',1 4,2 93,3 44.97,6 0.333333,8 no-clickbait}
+{0 'Fox News',2 58,3 66.1,6 0.444444,8 no-clickbait}
+{0 'The Telegraph',1 3,2 78,3 71.767857,6 0.642857,8 no-clickbait}
+{0 'BBC News (UK)',2 62,3 56.7,6 0.333333}
+{0 'Daily Mail Online',2 75,3 77.810714,6 0.5,8 no-clickbait}
+{0 'Daily Mail Online',2 110,3 50.665,6 0.25,8 no-clickbait}
+{0 'Daily Mail Online',2 111,3 82.475,4 1,5 2,6 0.5,7 1,8 no-clickbait}
+{0 'The Telegraph',1 5,2 83,3 90.050588,6 0.470588,8 no-clickbait}
+{0 'The Telegraph',1 3,2 64,3 88.905,5 2,6 0.5,7 1,8 no-clickbait}
+{0 'Fox News',1 2,2 58,3 80.306364,6 0.454545,8 no-clickbait}
+{0 'The New York Times',1 5,2 83,3 65.725,6 0.142857,8 no-clickbait}
+{0 'BBC News (UK)',1 4,2 93,3 37.455385,6 0.076923,8 no-clickbait}
+{0 'BBC News (UK)',1 1,2 106,3 80.785,4 1,6 0.6,8 no-clickbait}
+{0 'The New York Times',1 2,2 50,3 40.09,6 0.125}
+{0 Mashable,1 1,2 69,3 74.805,5 1,6 0.666667,7 1}
+{0 BuzzFeed,1 2,2 75,3 83.009231,6 0.461538,8 no-clickbait}
+{0 'The New York Times',1 3,2 68,3 74.805,6 0.416667,8 no-clickbait}
+{0 'BBC News (UK)',1 1,2 75,3 80.306364,6 0.454545,8 no-clickbait}
+{0 'Washington Post',1 3,2 47,3 71.815,6 0.125,8 no-clickbait}
+{0 'The Telegraph',1 3,2 58,3 56.7,6 0.222222,8 no-clickbait}
+{0 'BBC News (UK)',1 3,2 68,3 47.3,6 0.111111,8 no-clickbait}
+{0 Mashable,2 79,3 77.810714,6 0.5}
+{0 'Wall Street Journal',1 1,2 55,3 30.53,6 0.285714}
+{1 1,2 118,3 45.065789,6 0.368421,8 no-clickbait}
+{0 'Fox News',1 1,2 62,3 37.9,6 0.555556,8 no-clickbait}
+{0 'The Telegraph',1 1,2 68,3 74.805,6 0.666667,8 no-clickbait}
+{0 'BBC News (UK)',1 4,2 69,3 64.924545,6 0.272727,8 no-clickbait}
+{0 'The New York Times',1 1,2 93,3 27.828558,6 0.307692,8 no-clickbait}
+{0 'Fox News',1 1,2 70,3 64.924545,6 0.363636,8 no-clickbait}
+{0 'Washington Post',1 2,2 60,3 40.09,4 1,6 0.25,8 no-clickbait}
+{0 Forbes,1 2,2 60,3 50.665,6 0.375}
+{0 'BBC News (UK)',1 3,2 97,3 71.065,6 0.5,8 no-clickbait}
+{0 'NBC News',2 70,3 72.615455,6 0.454545}
+{0 'Fox News',1 4,2 107,3 39.33,6 0.266667,8 no-clickbait}
+{0 'Daily Mail Online',2 78,3 41.851818,6 0.454545,8 no-clickbait}
+{0 'The New York Times',1 1,2 115,3 84.814674,6 0.652174}
+{0 'NBC News',2 73,3 35.945,6 0.1,8 no-clickbait}
+{0 Forbes,2 90,3 44.97,6 0.533333,8 no-clickbait}
+{0 'NBC News',2 98,3 58.4075,6 0.375,8 no-clickbait}
+{0 'BBC News (UK)',1 2,2 107,3 47.8325,6 0.25,8 no-clickbait}
+{0 'BBC News (UK)',1 4,2 62,3 47.3,6 0.222222,8 no-clickbait}
+{0 'Daily Mail Online',1 1,2 103,3 50.665,4 1,6 0.3125,8 no-clickbait}
+{0 'BBC News (UK)',1 3,2 91,3 84.45,6 0.533333,8 no-clickbait}
+{0 'BBC News (UK)',1 2,2 103,3 80.785,6 0.6,8 no-clickbait}
+{0 Mashable,1 3,2 48,3 82.39,6 0.125,8 no-clickbait}
+{0 Forbes,2 92,3 89.865,5 2,6 0.777778,7 2}
+{0 'Daily Mail Online',2 69,3 81.855,6 0.75}
+{0 'The Telegraph',2 79,3 60.705,6 0.333333,8 no-clickbait}
+{1 2,2 65,3 72.615455,6 0.454545,8 no-clickbait}
+{0 'Fox News',1 1,2 97,3 39.33,6 0.4,8 no-clickbait}
+{0 'Wall Street Journal',1 1,2 53,3 42.615714,6 0.428571,8 no-clickbait}
+{0 'Daily Mail Online',2 109,3 35.309412,4 1,6 0.411765,8 no-clickbait}
+{0 'The New York Times',1 1,2 37,3 90.958571,4 1,6 0.285714}
+{0 Forbes,2 60,3 29.515,6 0.375,8 no-clickbait}
+{0 'BBC News (UK)',1 5,2 84,3 84.845,4 1,6 0.1875}
+{0 BuzzFeed,2 55,3 29.515,6 0.5}
+{0 'The New York Times',1 3,2 33,3 102.045,8 no-clickbait}
+{0 'BBC News (UK)',1 5,2 40,3 54.701429,6 0.142857,8 no-clickbait}
+{0 'NBC News',1 1,2 57,3 134.514091,6 0.5,8 no-clickbait}
+{0 Mashable,2 85,3 50.560577,6 0.461538,8 no-clickbait}
+{0 'The Telegraph',1 4,2 89,3 37.455385,6 0.230769,8 no-clickbait}
+{0 'BBC News (UK)',1 2,2 79,3 49.542727,6 0.181818,8 no-clickbait}
+{0 'Washington Post',1 3,2 91,3 74.27,4 1,6 0.4375,8 no-clickbait}
+{0 BuzzFeed,1 1,2 45,3 42.615714}
+{0 'Daily Mail Online',1 1,2 61,3 72.615455,6 0.363636,8 no-clickbait}
+{0 'Daily Mail Online',1 2,2 79,3 69.993846,6 0.461538,8 no-clickbait}
+{0 'BBC News (UK)',1 3,2 111,3 55.215294,6 0.294118,8 no-clickbait}
+{0 'The Telegraph',1 1,2 66,3 69.785,8 no-clickbait}
+{0 'NBC News',2 91,3 43.963077,6 0.461538,8 no-clickbait}
+{0 Mashable,2 90,3 53.639286,6 0.714286}
+{0 'NBC News',1 2,2 65,3 52.865,6 0.1,8 no-clickbait}
+{0 Mashable,1 2,2 64,3 72.615455,6 0.636364,8 no-clickbait}
+{0 Mashable,1 3,2 71,3 57.233636,6 0.181818}
+{0 'NBC News',1 2,2 57,3 56.7,6 0.444444,8 no-clickbait}
+{0 'The Telegraph',1 2,2 70,3 44.405,6 0.4}
+{0 'The New York Times',1 2,2 73,3 83.099038,5 2,6 0.538462,7 1,8 no-clickbait}
+{0 Yahoo,1 6,2 124,3 46.945,5 2,6 0.45,7 1,8 no-clickbait}
+{0 'NBC News',1 3,2 69,3 57.233636,6 0.272727,8 no-clickbait}
+{0 'Washington Post',1 2,2 140,3 53.264394,5 2,6 0.409091,7 1}
+{0 'Fox News',1 2,2 59,3 80.306364,6 0.454545,8 no-clickbait}
+{0 'BBC News (UK)',2 108,3 37.2575,6 0.375,8 no-clickbait}
+{0 'NBC News',1 2,2 87,3 79.5575,6 0.5,8 no-clickbait}
+{0 Mashable,1 1,2 62,3 61.325,6 0.6,8 no-clickbait}
+{0 'Daily Mail Online',1 2,2 69,3 83.009231,4 1,5 2,6 0.538462,7 1,8 no-clickbait}
+{0 Yahoo,1 4,2 81,3 49.542727,6 0.272727}
+{0 'ABC News',1 3,2 93,3 80.097647,6 0.176471,8 no-clickbait}
+{0 Yahoo,1 3,2 112,3 18.022115,6 0.153846,8 no-clickbait}
+{0 ESPN,1 4,2 93,3 90.050588,6 0.588235,8 no-clickbait}
+{0 'Fox News',2 77,3 19.025,6 0.4,8 no-clickbait}
+{0 Forbes,1 2,2 84,3 63.486154,6 0.307692,8 no-clickbait}
+{0 'Daily Mail Online',1 4,2 89,3 53.639286,6 0.285714,8 no-clickbait}
+{0 'NBC News',1 2,2 75,3 49.542727,6 0.636364,8 no-clickbait}
+{0 'ABC News',1 1,2 110,3 58.423684,6 0.578947,8 no-clickbait}
+{0 'Wall Street Journal',2 87,3 3.397273,6 0.181818,8 no-clickbait}
+{0 Mashable,1 1,2 73,3 60.705,6 0.5,8 no-clickbait}
+{0 'Daily Mail Online',2 102,3 75.765,6 0.555556}
+{0 Yahoo,2 59,3 61.2675,4 1,6 0.555556,8 no-clickbait}
+{0 BuzzFeed,1 2,2 54,3 42.615714,5 1,6 0.142857,7 1,8 no-clickbait}
+{0 'Bleacher Report',1 6,2 91,3 59.682143,6 0.428571,8 no-clickbait}
+{0 'The New York Times',2 100,3 46.9425,6 0.4,8 no-clickbait}
+{0 'Washington Post',1 1,2 96,3 85.165,6 0.611111}
+{0 'Bleacher Report',1 2,2 98,3 83.748676,6 0.470588,8 no-clickbait}
+{0 BuzzFeed,1 2,2 71,3 83.009231,5 2,6 0.461538,7 1,8 no-clickbait}
+{0 Forbes,2 50,3 66.787143,6 0.428571}
+{0 'Bleacher Report',1 5,2 92,3 76.234211,6 0.315789,8 no-clickbait}
+{0 'Wall Street Journal',1 1,2 97,3 44.97,6 0.533333,8 no-clickbait}
+{0 BuzzFeed,1 2,2 80,3 49.542727,8 no-clickbait}
+{0 'ABC News',2 88,3 -11.984545,6 0.090909,8 no-clickbait}
+{0 Forbes,1 6,2 118,3 68.77,8 no-clickbait}
+{0 'Bleacher Report',1 2,2 81,3 47.596429,6 0.5,8 no-clickbait}
+{0 'Daily Mail Online',2 76,3 76.501538,6 0.538462,8 no-clickbait}
+{0 ESPN,1 1,2 93,3 94.781974,4 1,6 0.631579}
+{0 'Wall Street Journal',1 3,2 33,3 59.745,6 0.5}
+{0 'Washington Post',1 2,2 52,3 50.665,6 0.25,8 no-clickbait}
+{0 'BBC News (UK)',2 34,3 49.48,6 0.2,8 no-clickbait}
+{0 Yahoo,1 4,2 77,3 26.47,4 1,6 0.181818}
+{0 'NBC News',2 52,3 103.379091,6 0.545455,8 no-clickbait}
+{0 'Fox News',1 1,2 60,3 51.8675,6 0.222222,8 no-clickbait}
+{0 BuzzFeed,1 1,2 45,3 103.54,6 0.75,8 no-clickbait}
+{0 BuzzFeed,2 67,3 60.705,6 0.75}
+{0 Forbes,1 1,2 98,3 56.25,6 0.4,8 no-clickbait}
+{0 'Daily Mail Online',1 1,2 70,3 52.865,6 0.7,8 no-clickbait}
+{0 BuzzFeed,1 2,2 43,3 113.1,6 0.555556,8 no-clickbait}
+{1 3,2 67,3 78.245,4 1,6 0.3}
+{0 Yahoo,1 2,2 83,3 50.470769,6 0.538462}
+{0 BuzzFeed,2 71,3 37.9,8 no-clickbait}
+{0 'NBC News',2 45,3 82.39,4 1,6 0.625,8 no-clickbait}
+{0 Mashable,1 1,2 62,3 80.895,5 2,6 0.75,7 1}
+{0 'Fox News',2 70,3 57.233636,6 0.636364,8 no-clickbait}
+{0 'Washington Post',2 37,3 73.845,6 0.333333}
+{0 Forbes,1 3,2 91,3 71.065,6 0.5,8 no-clickbait}
+{0 'The Telegraph',1 3,2 63,3 47.3,6 0.444444,8 no-clickbait}
+{0 ESPN,1 5,2 116,3 58.866324,6 0.352941,8 no-clickbait}
+{0 BuzzFeed,2 51,3 61.24,5 2,6 0.625,7 1}
+{0 'Wall Street Journal',1 2,2 89,3 56.25,6 0.533333,8 no-clickbait}
+{0 'Fox News',1 1,2 77,3 65.725,6 0.5,8 no-clickbait}
+{0 'Washington Post',2 81,3 77.810714,5 2,6 0.642857,7 1}
+{0 Forbes,1 2,2 98,3 36.572857,4 1,5 1,6 0.214286,7 1}
+{0 'Fox News',1 1,2 61,3 70.6675,6 0.333333,8 no-clickbait}
+{0 'BBC News (UK)',1 1,2 72,3 81.855,4 1,6 0.5}
+{0 BuzzFeed,2 62,3 44.405,6 0.4,8 no-clickbait}
+{0 Yahoo,1 1,2 68,3 44.405,6 0.5,8 no-clickbait}
+{0 'Daily Mail Online',2 89,3 65.725,6 0.428571,8 no-clickbait}
+{0 Mashable,1 1,2 76,3 53.655,6 0.5}
+{0 Yahoo,1 2,2 106,3 80.2,6 0.333333,8 no-clickbait}
+{0 'ABC News',1 4,2 104,3 67.328947,6 0.315789,8 no-clickbait}
+{2 73,3 96.024615,4 1,6 0.692308,8 no-clickbait}
+{0 'The Telegraph',1 1,2 71,3 103.044286,6 0.571429}
+{0 BuzzFeed,1 5,2 62,3 52.865,6 0.4,8 no-clickbait}
+{0 Yahoo,2 84,3 67.53,5 1,6 0.533333,7 1}
+{0 'Washington Post',1 2,2 69,3 89.516923,6 0.461538,8 no-clickbait}
+{0 Forbes,1 8,2 96,3 19.461932,6 0.090909,8 no-clickbait}
+{0 'The Telegraph',1 2,2 66,3 44.405,6 0.4,8 no-clickbait}
+{0 BuzzFeed,1 2,2 31,3 49.48,8 no-clickbait}
+{1 6,2 117,3 60.634286,6 0.380952,8 no-clickbait}
+{0 'NBC News',1 3,2 75,3 94.044737,6 0.4,8 no-clickbait}
+{0 'Bleacher Report',1 6,2 94,3 63.695,6 0.25,8 no-clickbait}
+{0 'The New York Times',1 4,2 67,3 64.924545,6 0.090909,8 no-clickbait}
+{0 Mashable,1 3,2 82,3 25.455,6 0.416667,8 no-clickbait}
+{0 'Fox News',1 4,2 63,3 87.997273,6 0.545455}
+{0 ESPN,2 110,3 72.518816,6 0.578947,8 no-clickbait}
+{0 'BBC News (UK)',1 6,2 111,3 55.215294,6 0.352941,8 no-clickbait}
+{0 'BBC News (UK)',1 4,2 115,3 53.971053,6 0.526316,8 no-clickbait}
+{0 'Fox News',2 53,3 50.665,6 0.125}
+{0 'The Telegraph',1 1,2 58,3 61.325,6 0.6,8 no-clickbait}
+{0 'Bleacher Report',2 86,3 32.56,6 0.3,8 no-clickbait}
+{0 ESPN,1 1,2 84,3 80.7825,4 1,6 0.666667,8 no-clickbait}
+{0 'Fox News',2 85,3 37.455385,6 0.307692,8 no-clickbait}
+{0 'Washington Post',1 2,2 80,3 72.83,6 0.5}
+{2 91,3 92.965,5 1,6 0.625,7 1,8 no-clickbait}
+{0 BuzzFeed,1 1,2 79,3 49.542727,8 no-clickbait}
+{0 Yahoo,1 3,2 79,3 67.755,8 no-clickbait}
+{0 'Daily Mail Online',1 1,2 66,3 40.09,6 0.125,8 no-clickbait}
+{0 'Washington Post',1 1,2 76,3 71.767857,6 0.5,8 no-clickbait}
+{0 'Daily Mail Online',1 1,2 99,3 39.33,6 0.2,8 no-clickbait}
+{2 110,3 68.691429,6 0.47619}
+{0 'NBC News',2 94,3 59.682143,6 0.5,8 no-clickbait}
+{0 ESPN,1 6,2 89,3 18.779091,6 0.090909,8 no-clickbait}
+{0 'ABC News',1 2,2 85,3 32.505,6 0.5,8 no-clickbait}
+{0 'The Telegraph',2 47,3 58.253929,6 0.428571,8 no-clickbait}
+{0 'Bleacher Report',1 6,2 86,3 35.510714,6 0.357143,8 no-clickbait}
+{0 ESPN,1 5,2 116,3 83.245,6 0.444444,8 no-clickbait}
+{0 Forbes,1 4,2 52,3 66.1,6 0.333333,8 no-clickbait}
+{0 'Daily Mail Online',1 1,2 59,3 72.615455,6 0.818182,8 no-clickbait}
+{0 BuzzFeed,2 76,3 46.605,6 0.083333}
+{0 'Wall Street Journal',2 92,3 75.1425,6 0.466667,8 no-clickbait}
+{0 'BBC News (UK)',1 3,2 98,3 66.5275,6 0.1875,8 no-clickbait}
+{0 BuzzFeed,1 4,2 93,3 68.9825,6 0.4375,8 no-clickbait}
+{0 'ABC News',1 1,2 106,3 65.168235,6 0.470588,8 no-clickbait}
+{0 'The Telegraph',1 2,2 78,3 41.851818,8 no-clickbait}
+{0 ESPN,1 4,2 91,3 61.89,6 0.6,8 no-clickbait}
+{0 'Fox News',1 3,2 61,3 52.865,6 0.6,8 no-clickbait}
+{0 'The Telegraph',1 4,2 43,3 92.965,6 0.25,8 no-clickbait}
+{0 Mashable,1 3,2 58,3 80.306364,6 0.636364,8 no-clickbait}
+{0 'ABC News',1 1,2 94,3 41.553571,6 0.428571,8 no-clickbait}
+{0 'Fox News',1 3,2 66,3 72.615455,6 0.363636}
+{0 'Fox News',1 5,2 69,3 41.851818,6 0.090909,8 no-clickbait}
+{0 'Bleacher Report',1 2,2 75,3 102.532308,6 0.461538,8 no-clickbait}
+{0 'The Telegraph',1 1,2 75,3 60.705,6 0.333333}
+{0 ESPN,2 90,3 43.963077,6 0.461538,8 no-clickbait}
+{0 'BBC News (UK)',1 3,2 107,3 61.665,6 0.611111,8 no-clickbait}
+{0 'Daily Mail Online',2 41,3 66.787143,5 3,6 0.571429,7 2}
+{0 BuzzFeed,1 4,2 98,3 42.545,6 0.25,8 no-clickbait}
+{0 Yahoo,2 18,3 97.025,5 2,6 0.5,7 1}
+{1 5,2 106,3 55.9525,6 0.25,8 no-clickbait}
+{0 'Fox News',2 71,3 66.4,6 0.7,8 no-clickbait}
+{0 'Bleacher Report',1 1,2 92,3 24.44,6 0.230769,8 no-clickbait}
+{0 'Washington Post',1 2,2 90,3 67.53,5 2,6 0.533333,7 1}
+{0 'The Telegraph',1 4,2 68,3 47.3,6 0.222222,8 no-clickbait}
+{0 'The New York Times',1 3,2 84,3 50.470769,6 0.384615,8 no-clickbait}
+{0 ESPN,1 2,2 93,3 32.505,6 0.666667,8 no-clickbait}
+{0 'Wall Street Journal',2 54,3 95.688182,5 2,6 0.727273,7 1}
+{0 'The Telegraph',1 5,2 58,3 78.245,6 0.4,8 no-clickbait}
+{1 3,2 118,3 63.946667,6 0.4375,8 no-clickbait}
+{0 Yahoo,1 1,2 84,3 39.555,6 0.5}
+{0 'Daily Mail Online',2 79,3 56.978462,4 1,6 0.615385,8 no-clickbait}
+{0 'Fox News',1 3,2 93,3 35.510714,6 0.214286,8 no-clickbait}
+{0 'The New York Times',2 109,3 52.265,6 0.555556,8 no-clickbait}
+{2 93,3 103.54,6 0.5625,8 no-clickbait}
+{0 'Fox News',1 5,2 62,3 69.785,6 0.1,8 no-clickbait}
+{0 ESPN,1 5,2 117,3 46.9425,6 0.333333,8 no-clickbait}
+{0 'NBC News',1 2,2 54,3 47.3,6 0.333333,8 no-clickbait}
+{0 'The New York Times',2 89,3 67.53,6 0.6,8 no-clickbait}
+{0 'The Telegraph',1 4,2 65,3 71.815,6 0.25,8 no-clickbait}
+{0 Yahoo,1 1,2 79,3 80.7825,6 0.6}
+{0 'The New York Times',1 1,2 36,3 15.64,6 0.2,8 no-clickbait}
+{0 BuzzFeed,1 4,2 69,3 64.924545,6 0.272727,8 no-clickbait}
+{0 'NBC News',1 1,2 68,3 64.924545,6 0.454545,8 no-clickbait}
+{0 'Bleacher Report',1 6,2 90,3 53.639286,6 0.428571,8 no-clickbait}
+{0 'Fox News',1 1,2 59,3 37.9,6 0.444444,8 no-clickbait}
+{1 1,2 111,3 47.8325,6 0.375,8 no-clickbait}
+{0 'Daily Mail Online',1 1,2 102,3 56.965,6 0.666667,8 no-clickbait}
+{0 ESPN,1 1,2 93,3 70.083654,6 0.615385,8 no-clickbait}
+{0 'Washington Post',1 3,2 92,3 41.553571,4 1,6 0.5}
+{0 BuzzFeed,2 94,3 73.17,5 2,6 0.666667,7 1}
+{0 'Daily Mail Online',1 2,2 65,3 83.009231,6 0.538462,8 no-clickbait}
+{0 'The Telegraph',1 2,2 57,3 61.24,6 0.25,8 no-clickbait}
+{0 Yahoo,2 83,3 34.160909,6 0.181818,8 no-clickbait}
+{0 Yahoo,2 89,3 85.139474,4 1,5 2,6 0.684211,7 1,8 no-clickbait}
+{0 Yahoo,1 4,2 101,3 17.932308,6 0.076923,8 no-clickbait}
+{0 BuzzFeed,2 80,3 89.896429,6 0.714286,8 no-clickbait}
+{0 BuzzFeed,1 1,2 90,3 75.1425,6 0.466667,8 no-clickbait}
+{0 'Washington Post',1 1,2 96,3 85.165,6 0.611111,8 no-clickbait}
+{0 'NBC News',1 1,2 58,3 80.306364,6 0.727273,8 no-clickbait}
+{0 Yahoo,1 1,2 59,3 78.245,6 0.7,8 no-clickbait}
+{0 'Bleacher Report',1 2,2 86,3 25.455,6 0.25,8 no-clickbait}
+{0 'Wall Street Journal',1 4,2 84,3 67.755,6 0.166667,8 no-clickbait}
+{0 'NBC News',1 1,2 60,3 56.7,6 0.333333}
+{0 'The Telegraph',1 5,2 77,3 49.542727,6 0.181818,8 no-clickbait}
+{1 4,2 112,3 86.93,6 0.380952,8 no-clickbait}
+{0 'The Telegraph',1 1,2 50,3 75.5,6 0.333333}
+{0 BuzzFeed,2 37,3 103.044286,5 1,6 0.571429,7 1}
+{0 'Bleacher Report',1 2,2 104,3 61.665,6 0.5,8 no-clickbait}
+{0 'NBC News',1 3,2 35,3 59.745,6 0.5,8 no-clickbait}
+{0 Mashable,2 98,3 53.12,6 0.625}
+{0 Yahoo,2 74,3 34.160909,6 0.272727,8 no-clickbait}
+{0 'The Telegraph',2 78,3 83.853571,6 0.857143,8 no-clickbait}
+{0 'ABC News',1 3,2 89,3 61.89,6 0.4,8 no-clickbait}
+{0 BuzzFeed,1 2,2 106,3 81.424079,6 0.368421,8 no-clickbait}
+{0 BuzzFeed,1 4,2 80,3 63.486154,6 0.307692,8 no-clickbait}
+{0 Mashable,2 68,3 61.325,6 0.4,8 no-clickbait}
+{0 'NBC News',1 5,2 93,3 61.89,6 0.466667,8 no-clickbait}
+{0 'Wall Street Journal',1 7,2 104,3 63.8625,6 0.133333,8 no-clickbait}
+{1 1,2 118,3 69.145,6 0.388889,8 no-clickbait}
+{0 'ABC News',1 1,2 88,3 76.591346,6 0.230769}
+{0 BuzzFeed,2 84,3 84.45,6 0.733333}
+{0 'Wall Street Journal',1 1,2 95,3 38.595,6 0.416667,8 no-clickbait}
+{0 Yahoo,1 3,2 77,3 95.939286,6 0.642857,8 no-clickbait}
+{0 'Daily Mail Online',2 51,3 94.3,4 1,6 0.555556}
+{0 'Fox News',1 1,2 85,3 67.53,6 0.4,8 no-clickbait}
+{0 'The New York Times',2 97,3 63.695,6 0.625,8 no-clickbait}
+{0 'Bleacher Report',1 1,2 94,3 47.8325,6 0.1875,8 no-clickbait}
+{0 BuzzFeed,1 2,2 73,3 60.705,8 no-clickbait}
+{0 Mashable,1 4,2 82,3 85.074118,6 0.588235,8 no-clickbait}
+{0 'Bleacher Report',1 2,2 84,3 80.7825,6 0.466667,8 no-clickbait}
+{0 'Wall Street Journal',2 88,3 59.682143,6 0.5,8 no-clickbait}
+{0 'ABC News',1 3,2 60,3 61.325,6 0.2,8 no-clickbait}
+{0 Yahoo,1 4,2 73,3 34.160909,4 1,6 0.272727,8 no-clickbait}
+{2 103,3 80.2,6 0.444444,8 no-clickbait}
+{0 'Wall Street Journal',1 1,2 72,3 84.915714,6 0.642857}
+{0 'ABC News',1 2,2 95,3 56.25,6 0.533333}
+{0 Yahoo,1 2,2 108,3 58.4075,6 0.4375,8 no-clickbait}
+{0 BuzzFeed,1 6,2 102,3 71.065,8 no-clickbait}
+{0 'Fox News',1 2,2 101,3 17.382143,6 0.285714,8 no-clickbait}
+{1 2,2 111,3 56.965,6 0.5,8 no-clickbait}
+{0 Mashable,1 2,2 72,3 64.924545,6 0.363636,8 no-clickbait}
+{0 'Huffington Post',1 2,2 48,3 95.688182,6 0.636364,8 no-clickbait}
+{0 BuzzFeed,2 64,3 61.325,6 0.6}
+{0 ESPN,1 1,2 90,3 45.645,4 1,6 0.25}
+{0 Yahoo,1 3,2 77,3 83.853571,6 0.428571,8 no-clickbait}
+{1 1,2 93,3 65.725,6 0.5,8 no-clickbait}
+{0 'Huffington Post',1 3,2 69,3 83.009231,6 0.461538,8 no-clickbait}
+{1 1,2 54,3 -37.3,6 0.444444}
+{0 Forbes,2 74,3 69.993846,6 0.538462,8 no-clickbait}
+{0 Mashable,1 1,2 72,3 27.485,6 0.4,8 no-clickbait}
+{0 ESPN,1 5,2 91,3 60.744286,6 0.285714,8 no-clickbait}
+{0 'Washington Post',2 79,3 84.45,6 0.466667}
+{0 Forbes,1 2,2 69,3 57.233636,6 0.636364,8 no-clickbait}
+{0 'ABC News',1 1,2 94,3 41.553571,6 0.428571}
+{0 'Wall Street Journal',1 1,2 58,3 115.13,4 1,6 0.714286,8 no-clickbait}
+{0 'Huffington Post',1 1,2 78,3 56.978462,6 0.461538,8 no-clickbait}
+{0 'Bleacher Report',1 4,2 89,3 80.465,6 0.611111,8 no-clickbait}
+{0 'The New York Times',1 3,2 67,3 80.306364,6 0.363636,8 no-clickbait}
+{0 'The New York Times',1 2,2 64,3 80.306364,6 0.181818,8 no-clickbait}
+{0 Forbes,2 70,3 46.605,6 0.5,8 no-clickbait}
+{0 'Wall Street Journal',1 2,2 140,3 36.160526,6 0.315789,8 no-clickbait}
+{0 'Daily Mail Online',1 2,2 79,3 10.565,6 0.4,8 no-clickbait}
+{0 'NBC News',1 6,2 92,3 31.0375,6 0.307692,8 no-clickbait}
+{1 3,2 80,3 25.455,6 0.333333,8 no-clickbait}
+{0 'NBC News',2 54,3 78.245,6 0.3,8 no-clickbait}
+{0 'The New York Times',1 2,2 75,3 65.725,6 0.428571,8 no-clickbait}
+{0 'Bleacher Report',1 2,2 91,3 79.5575,6 0.5,8 no-clickbait}
+{0 'Huffington Post',1 1,2 44,3 30.53,6 0.285714,8 no-clickbait}
+{0 'Wall Street Journal',1 3,2 109,3 63.842794,6 0.352941,8 no-clickbait}
+{0 'Washington Post',1 2,2 85,3 67.53,6 0.533333,8 no-clickbait}
+{1 1,2 105,3 37.2575,6 0.1875,8 no-clickbait}
+{0 'Wall Street Journal',1 2,2 108,3 61.665,6 0.444444,8 no-clickbait}
+{0 'ABC News',1 1,2 84,3 60.705,6 0.583333,8 no-clickbait}
+{0 'ABC News',1 5,2 100,3 56.25,6 0.066667,8 no-clickbait}
+{0 BuzzFeed,1 4,2 93,3 68.9825,6 0.4375}
+{0 Yahoo,2 103,3 68.9825,6 0.8125,8 no-clickbait}
+{1 1,2 63,3 -2.21,6 0.125,8 no-clickbait}
+{0 BuzzFeed,1 4,2 69,3 64.924545,6 0.272727,8 no-clickbait}
+{0 'Daily Mail Online',1 1,2 60,3 57.233636,6 0.545455,8 no-clickbait}
+{2 108,3 50.61,6 0.333333,8 no-clickbait}
+{0 BuzzFeed,2 84,3 84.45,6 0.733333}
+{0 'ABC News',1 1,2 89,3 50.470769,6 0.384615,8 no-clickbait}
+{0 'Wall Street Journal',1 3,2 89,3 24.361591,6 0.363636,8 no-clickbait}
+{0 'The New York Times',1 1,2 93,3 70.144706,6 0.705882,8 no-clickbait}
+{0 'Bleacher Report',1 3,2 94,3 63.695,6 0.3125,8 no-clickbait}
+{0 Mashable,1 1,2 62,3 96.024615,6 0.615385,8 no-clickbait}
+{0 'Fox News',1 1,2 70,3 41.851818,6 0.363636,8 no-clickbait}
+{0 'NBC News',1 6,2 94,3 71.065,6 0.388889,8 no-clickbait}
+{0 BuzzFeed,1 2,2 43,3 113.1,6 0.555556,8 no-clickbait}
+{0 'Wall Street Journal',1 3,2 70,3 72.615455,6 0.272727,8 no-clickbait}
+{0 'Huffington Post',1 4,2 65,3 41.851818,6 0.090909,8 no-clickbait}
+{1 3,2 66,3 57.94,6 0.4,8 no-clickbait}
+{0 BuzzFeed,1 2,2 80,3 77.810714,6 0.5,8 no-clickbait}
+{1 2,2 105,3 85.165,6 0.388889}
+{0 'Fox News',1 1,2 61,3 72.615455,6 0.454545,8 no-clickbait}
+{0 BuzzFeed,2 66,3 28.5,6 0.555556,8 no-clickbait}
+{0 'Huffington Post',2 29,3 103.044286,6 0.428571}
+{0 Forbes,2 110,3 40.09,4 1,6 0.5625}
+{0 'ABC News',1 2,2 73,3 34.160909,6 0.363636,8 no-clickbait}
+{0 'BBC News (UK)',2 98,3 74.27,6 0.625,8 no-clickbait}
+{0 'Huffington Post',1 1,2 63,3 56.7,6 0.444444,8 no-clickbait}
+{0 'Fox News',1 1,2 63,3 52.865,6 0.3,8 no-clickbait}
+{0 'NBC News',1 1,2 62,3 66.4,6 0.3,8 no-clickbait}
+{0 'Wall Street Journal',2 23,3 117.16,6 0.2}
+{0 Mashable,2 70,3 57.233636,6 0.363636}
+{0 'Wall Street Journal',1 3,2 83,3 90.09,6 0.6,8 no-clickbait}
+{0 Mashable,2 76,3 89.896429,6 0.642857}
+{2 63,3 66.4,6 0.4}
+{0 'Huffington Post',2 73,3 83.853571,6 0.642857,8 no-clickbait}
+{0 'The Telegraph',1 1,2 51,3 75.5,6 0.555556}
+{0 'Huffington Post',1 3,2 54,3 84.9,6 0.333333,8 no-clickbait}
+{0 'The New York Times',1 1,2 57,3 69.785,6 0.3,8 no-clickbait}
+{0 'Huffington Post',2 66,3 64.924545,6 0.545455,8 no-clickbait}
+{0 'The Telegraph',2 44,3 -18.2}
+{0 'Washington Post',1 5,2 140,3 44.52,6 0.333333,8 no-clickbait}
+{0 Mashable,2 68,3 52.865,6 0.5}
+{0 Forbes,1 2,2 63,3 81.855,6 0.416667,8 no-clickbait}
+{0 'NBC News',1 2,2 92,3 79.5575,6 0.625,8 no-clickbait}
+{0 'Wall Street Journal',2 42,3 45.645,6 0.333333,8 no-clickbait}
+{0 'Washington Post',2 55,3 61.24,5 1,6 0.375,7 1}
+{0 'Huffington Post',1 1,2 75,3 -9.1,6 0.555556}
+{0 'BBC News (UK)',2 118,3 95.165,5 3,6 0.55,7 3}
+{0 'The Telegraph',1 3,2 43,3 82.39,6 0.375}
+{0 'Huffington Post',1 3,2 61,3 95.165,6 0.7}
+{0 'ABC News',1 3,2 81,3 65.725,6 0.5,8 no-clickbait}
+{0 'Wall Street Journal',1 1,2 131,3 32.445132,6 0.368421,8 no-clickbait}
+{0 'Washington Post',2 88,3 67.53,6 0.666667}
+{0 'The Telegraph',2 68,3 76.501538,6 0.615385,8 no-clickbait}
+{0 'Huffington Post',2 54,3 80.306364,5 2,6 0.636364,7 1}
+{0 'The Telegraph',1 4,2 107,3 48.658571,6 0.285714,8 no-clickbait}
+{0 'Wall Street Journal',1 1,2 90,3 72.83,6 0.571429,8 no-clickbait}
+{0 'Huffington Post',1 2,2 59,3 103.005,6 0.75}
+{0 'Daily Mail Online',1 1,2 49,3 141.205714,6 0.714286,8 no-clickbait}
+{0 'BBC News (UK)',1 3,2 118,3 45.262353,6 0.235294,8 no-clickbait}
+{0 'BBC News (UK)',1 4,2 118,3 53.971053,6 0.210526,8 no-clickbait}
+{0 'Fox News',1 4,2 58,3 66.1,6 0.222222,8 no-clickbait}
+{0 'The Telegraph',1 1,2 55,3 75.5,6 0.444444}
+{1 2,2 45,3 54.701429,6 0.285714,8 no-clickbait}
+{2 89,3 52.695,6 0.166667,8 no-clickbait}
+{0 'BBC News (UK)',1 2,2 110,3 61.4,6 0.277778,8 no-clickbait}
+{0 'BBC News (UK)',1 5,2 85,3 56.978462,4 1,6 0.307692,8 no-clickbait}
+{0 'Wall Street Journal',1 3,2 72,3 64.924545,6 0.363636,8 no-clickbait}
+{0 'BBC News (UK)',2 68,3 64.924545,6 0.454545}
+{1 1,2 85,3 69.993846,4 1,6 0.461538,8 no-clickbait}
+{0 'BBC News (UK)',1 2,2 79,3 89.896429,6 0.571429}
+{0 'The Telegraph',1 3,2 71,3 57.233636,6 0.272727,8 no-clickbait}
+{0 'The New York Times',1 3,2 75,3 56.978462,6 0.384615,8 no-clickbait}
+{0 'The Telegraph',1 1,2 67,3 44.405,6 0.1,8 no-clickbait}
+{0 'Daily Mail Online',2 103,3 53.12,6 0.5,8 no-clickbait}
+{0 'Daily Mail Online',1 2,2 59,3 56.7,8 no-clickbait}
+{0 Forbes,2 86,3 46.605,6 0.666667}
+{0 BuzzFeed,2 63,3 96.024615,6 0.769231}
+{0 'The Telegraph',1 2,2 99,3 58.4075,6 0.4375,8 no-clickbait}
+{0 'Washington Post',2 77,3 89.896429,6 0.571429,8 no-clickbait}
+{0 'Daily Mail Online',1 4,2 89,3 59.682143,6 0.428571,8 no-clickbait}
+{0 'The Guardian ',1 3,2 68,3 27.485,6 0.4,8 no-clickbait}
+{0 BuzzFeed,2 66,3 72.615455,4 1,6 0.636364}
+{0 'The Telegraph',2 58,3 86.705,6 0.7,8 no-clickbait}
+{0 'Huffington Post',2 43,3 122.5,6 0.666667,8 no-clickbait}
+{0 'The New York Times',1 1,2 76,3 65.725,6 0.357143,8 no-clickbait}
+{0 Mashable,1 1,2 67,3 35.945,6 0.5,8 no-clickbait}
+{0 'Daily Mail Online',1 1,2 90,3 56.978462,6 0.230769,8 no-clickbait}
+{0 'The Guardian ',1 4,2 74,3 72.83,6 0.428571,8 no-clickbait}
+{0 BuzzFeed,1 2,2 92,3 41.553571,8 no-clickbait}
+{0 'The New York Times',1 3,2 55,3 61.24,6 0.625}
+{0 'The Guardian ',2 59,3 56.7,5 1,6 0.333333,7 1,8 no-clickbait}
+{0 'The Telegraph',1 2,2 67,3 44.405,6 0.3,8 no-clickbait}
+{0 'The Telegraph',1 1,2 118,3 16.77,6 0.333333,8 no-clickbait}
+{0 'Fox News',2 101,3 23.425,6 0.142857,8 no-clickbait}
+{0 'The Guardian ',2 58,3 61.325,6 0.4,8 no-clickbait}
+{0 'NBC News',1 1,2 59,3 72.615455,4 1,6 0.727273,8 no-clickbait}
+{0 'BBC News (UK)',1 1,2 78,3 27.485,6 0.2,8 no-clickbait}
+{0 'NBC News',2 76,3 49.48,6 0.3,8 no-clickbait}
+{0 'Fox News',1 1,2 66,3 49.542727,6 0.454545,8 no-clickbait}
+{0 'The Guardian ',1 1,2 100,3 50.238824,6 0.411765,8 no-clickbait}
+{0 'NBC News',1 2,2 67,3 49.542727,6 0.363636,8 no-clickbait}
+{0 'Daily Mail Online',1 1,2 98,3 79.5575,6 0.5625,8 no-clickbait}
+{0 'BBC News (UK)',1 5,2 122,3 81.136413,6 0.434783,8 no-clickbait}
+{2 113,3 78.772206,6 0.470588,8 no-clickbait}
+{0 Mashable,1 1,2 60,3 102.532308,6 0.692308,8 no-clickbait}
+{0 'Huffington Post',1 1,2 92,3 65.168235,6 0.764706}
+{0 BuzzFeed,2 47,3 94.3,6 0.555556}
+{0 'Wall Street Journal',1 3,2 97,3 50.61,6 0.4,8 no-clickbait}
+{0 'NBC News',1 1,2 83,3 50.470769,6 0.615385,8 no-clickbait}
+{0 'Huffington Post',2 61,3 80.306364,5 1,6 0.636364,7 2}
+{0 'The Telegraph',1 2,2 64,3 52.865,6 0.3,8 no-clickbait}
+{0 'The Guardian ',1 3,2 69,3 27.485,6 0.3,8 no-clickbait}
+{0 Mashable,1 2,2 77,3 90.958571,6 0.5}
+{0 'Daily Mail Online',1 1,2 56,3 87.997273,6 0.454545,8 no-clickbait}
+{0 'The Guardian ',2 73,3 26.47,6 0.454545,8 no-clickbait}
+{0 'Wall Street Journal',1 1,2 105,3 28.05,6 0.266667,8 no-clickbait}
+{0 'BBC News (UK)',1 4,2 92,3 43.963077,6 0.230769,8 no-clickbait}
+{0 'The New York Times',1 5,2 62,3 78.245,6 0.2}
+{0 'Daily Mail Online',1 1,2 75,3 63.486154,6 0.538462,8 no-clickbait}
+{0 'NBC News',1 1,2 57,3 69.785,6 0.5,8 no-clickbait}
+{0 Mashable,2 45,3 94.3,6 0.666667}
+{0 'The New York Times',1 4,2 77,3 19.025,8 no-clickbait}
+{0 'The Telegraph',1 2,2 91,3 44.052885,6 0.153846,8 no-clickbait}
+{0 'Wall Street Journal',1 1,2 93,3 68.9825,6 0.5}
+{0 'The Guardian ',1 2,2 61,3 66.1,6 0.111111,8 no-clickbait}
+{0 Mashable,2 58,3 52.865,4 1,6 0.6}
+{0 'NBC News',1 1,2 46,3 31.545,6 0.666667}
+{0 'The Guardian ',1 2,2 75,3 26.47,6 0.363636,8 no-clickbait}
+{0 'The New York Times',1 2,2 74,3 95.211739,6 0.333333,8 no-clickbait}
+{0 'Huffington Post',2 82,3 39.555,6 0.5}
+{0 'The Guardian ',1 2,2 69,3 -9.1,6 0.333333,8 no-clickbait}
+{0 'The Telegraph',1 1,2 75,3 41.851818,6 0.454545,8 no-clickbait}
+{0 'Huffington Post',2 48,3 54.701429,6 0.285714}
+{0 Mashable,2 79,3 39.555,6 0.75}
+{0 'Washington Post',2 79,3 43.963077,4 1,6 0.461538}
+{0 'The Guardian ',1 3,2 68,3 40.09,8 no-clickbait}
+{0 'Wall Street Journal',2 92,3 67.53,6 0.466667,8 no-clickbait}
+{0 'NBC News',1 1,2 63,3 28.5,6 0.222222}
+{0 'Business Insider',1 2,2 35,3 103.044286,6 0.571429}
+{0 'Washington Post',1 2,2 62,3 44.405,6 0.3,8 no-clickbait}
+{0 'NBC News',1 2,2 72,3 69.993846,6 0.461538,8 no-clickbait}
+{0 Yahoo,1 3,2 140,3 73.2,6 0.416667,8 no-clickbait}
+{0 'Huffington Post',1 2,2 51,3 94.3,6 0.444444,8 no-clickbait}
+{0 'NBC News',1 3,2 46,3 61.24,6 0.375,8 no-clickbait}
+{0 'Daily Mail Online',1 1,2 82,3 49.542727,6 0.363636,8 no-clickbait}
+{0 'The Guardian ',2 57,3 66.1,6 0.444444,8 no-clickbait}
+{0 'ABC News',1 2,2 93,3 37.455385,6 0.307692,8 no-clickbait}
+{0 'Huffington Post',1 2,2 77,3 46.605,6 0.583333,8 no-clickbait}
+{0 'NBC News',1 1,2 70,3 64.924545,6 0.545455,8 no-clickbait}
+{0 'Fox News',1 2,2 74,3 69.993846,6 0.461538,8 no-clickbait}
+{0 'Huffington Post',1 4,2 64,3 72.615455,6 0.363636,8 no-clickbait}
+{0 'The Guardian ',1 5,2 62,3 19.1,6 0.222222,8 no-clickbait}
+{0 'ABC News',1 3,2 113,3 56.965,6 0.444444,8 no-clickbait}
+{0 'NBC News',2 86,3 56.25,6 0.6,8 no-clickbait}
+{0 'The Guardian ',1 2,2 50,3 30.53,6 0.285714,8 no-clickbait}
+{0 'BBC News (UK)',1 1,2 140,3 72.896667,6 0.555556}
+{0 'Business Insider',2 80,3 50.470769,6 0.538462,8 no-clickbait}
+{1 4,2 92,3 90.050588,6 0.470588,8 no-clickbait}
+{0 'Huffington Post',1 2,2 60,3 40.09,6 0.25,8 no-clickbait}
+{0 'The New York Times',2 84,3 26.47,6 0.181818,8 no-clickbait}
+{0 'Huffington Post',1 2,2 67,3 67.755,6 0.5}
+{0 'The New York Times',1 2,2 113,3 71.291786,6 0.52381}
+{0 'ABC News',1 3,2 89,3 61.89,6 0.4,8 no-clickbait}
+{0 'BBC News (UK)',1 2,2 118,3 42.865,6 0.277778,8 no-clickbait}
+{0 'Business Insider',2 67,3 67.755,6 0.333333,8 no-clickbait}
+{0 'NBC News',1 1,2 54,3 75.5,6 0.555556}
+{0 'Business Insider',1 3,2 65,3 61.325,6 0.4,8 no-clickbait}
+{0 'Daily Mail Online',2 50,3 103.625,5 2,6 0.7,7 1}
+{0 'Daily Mail Online',2 78,3 43.963077,6 0.384615,8 no-clickbait}
+{0 Mashable,1 3,2 82,3 65.725,6 0.357143,8 no-clickbait}
+{0 'Fox News',1 1,2 64,3 64.924545,6 0.636364,8 no-clickbait}
+{2 92,3 66.787143,6 0.357143,8 no-clickbait}
+{0 Mashable,1 1,2 67,3 8.365,6 0.375,8 no-clickbait}
+{0 'The Guardian ',1 2,2 60,3 37.9,6 0.333333,8 no-clickbait}
+{0 'ABC News',1 4,2 89,3 43.963077,6 0.384615,8 no-clickbait}
+{0 'Washington Post',2 31,3 116.145,6 0.666667}
+{0 'Daily Mail Online',2 84,3 100.003529,5 1,6 0.882353,7 1}
+{0 'ABC News',2 61,3 61.325,8 no-clickbait}
+{0 'BBC News (UK)',1 4,2 111,3 81.424079,6 0.315789,8 no-clickbait}
+{0 BuzzFeed,1 1,2 80,3 60.705,6 0.333333,8 no-clickbait}
+{0 'Business Insider',1 3,2 118,3 47.565,4 1,6 0.444444,8 no-clickbait}
+{0 'NBC News',1 5,2 78,3 95.73,6 0.4,8 no-clickbait}
+{0 Forbes,2 87,3 84.45,6 0.666667,8 no-clickbait}
+{0 'Business Insider',2 49,3 71.815,4 1,5 2,6 0.625,7 1,8 no-clickbait}
+{0 'Daily Mail Online',1 1,2 89,3 85.074118,4 1,6 0.529412,8 no-clickbait}
+{0 'The New York Times',1 3,2 83,3 59.682143,6 0.357143,8 no-clickbait}
+{0 'Fox News',1 2,2 91,3 26.47,6 0.272727,8 no-clickbait}
+{1 1,2 82,3 65.725,6 0.642857,8 no-clickbait}
+{0 BuzzFeed,1 3,2 63,3 89.516923,6 0.461538,8 no-clickbait}
+{0 'Business Insider',1 3,2 66,3 49.542727,6 0.363636}
+{0 BuzzFeed,1 4,2 63,3 61.325,8 no-clickbait}
+{0 'The Telegraph',1 3,2 41,3 94.3,6 0.555556,8 no-clickbait}
+{1 3,2 91,3 84.845,6 0.3125,8 no-clickbait}
+{0 'NBC News',1 1,2 115,3 61.665,6 0.777778,8 no-clickbait}
+{0 'Business Insider',2 46,3 103.54,6 0.875,8 no-clickbait}
+{0 ESPN,1 4,2 89,3 68.9825,6 0.4375,8 no-clickbait}
+{0 'Huffington Post',1 1,2 63,3 72.615455,5 1,6 0.636364,7 1}
+{0 'Bleacher Report',1 5,2 89,3 56.25,6 0.533333,8 no-clickbait}
+{0 'NBC News',1 4,2 74,3 53.655,6 0.5,8 no-clickbait}
+{0 'The Guardian ',1 4,2 63,3 49.542727,6 0.363636,8 no-clickbait}
+{0 BuzzFeed,2 86,3 63.8625,6 0.466667,8 no-clickbait}
+{0 Yahoo,1 2,2 91,3 41.604242,6 0.090909,8 no-clickbait}
+{0 'The Guardian ',2 60,3 37.9,6 0.333333,8 no-clickbait}
+{0 'The New York Times',1 5,2 75,3 81.855,6 0.25,8 no-clickbait}
+{0 Mashable,1 2,2 58,3 56.7,6 0.222222,8 no-clickbait}
+{0 'Fox News',1 1,2 60,3 80.306364,6 0.454545,8 no-clickbait}
+{0 'ABC News',1 3,2 97,3 70.144706,6 0.411765,8 no-clickbait}
+{0 'The Guardian ',2 77,3 49.542727,6 0.363636}
+{0 'Huffington Post',2 116,3 40.285882,6 0.529412,8 no-clickbait}
+{0 'Huffington Post',2 72,3 19.1,6 0.222222,8 no-clickbait}
+{0 'The New York Times',1 1,2 118,3 91.434643,6 0.52381,8 no-clickbait}
+{0 BuzzFeed,2 87,3 95.027059,6 0.764706,7 1}
+{0 'BBC News (UK)',1 3,2 98,3 37.455385,6 0.153846,8 no-clickbait}
+{0 'Business Insider',2 46,3 66.787143,6 0.571429}
+{0 'The Guardian ',1 3,2 67,3 64.924545,6 0.363636,8 no-clickbait}
+{0 Yahoo,1 2,2 115,3 88.492935,6 0.608696,8 no-clickbait}
+{0 ESPN,1 3,2 112,3 56.7,6 0.444444}
+{0 'The Guardian ',1 1,2 50,3 50.665,6 0.375,8 no-clickbait}
+{0 'Business Insider',1 1,2 84,3 25.455,6 0.416667,8 no-clickbait}
+{2 107,3 66.365,6 0.444444,8 no-clickbait}
+{0 'The Telegraph',1 3,2 53,3 89.4675,6 0.333333}
+{0 'Wall Street Journal',1 1,2 58,3 115.13,4 1,6 0.714286,8 no-clickbait}
+{0 'NBC News',1 1,2 67,3 35.945,6 0.3,8 no-clickbait}
+{0 'Daily Mail Online',1 1,2 62,3 72.615455,6 0.727273,8 no-clickbait}
+{0 'Wall Street Journal',1 3,2 108,3 56.965,6 0.555556,8 no-clickbait}
+{0 'Washington Post',2 34,3 90.958571,4 1,5 1,6 0.714286,7 1,8 no-clickbait}
+{0 Forbes,1 1,2 101,3 70.144706,6 0.588235}
+{0 'The Telegraph',2 61,3 37.9,6 0.111111}
+{0 'The Guardian ',1 3,2 73,3 57.233636,6 0.636364,8 no-clickbait}
+{0 'Bleacher Report',1 4,2 76,3 67.53,6 0.533333}
+{0 'Business Insider',1 1,2 105,3 67.328947,6 0.631579}
+{0 ESPN,2 94,3 99,6 0.722222}
+{0 'The New York Times',2 116,3 61.665,6 0.444444,8 no-clickbait}
+{0 'ABC News',1 3,2 102,3 29.467857,6 0.214286,8 no-clickbait}
+{0 Yahoo,1 2,2 112,3 76.971447,6 0.526316,8 no-clickbait}
+{0 'The Guardian ',1 2,2 90,3 41.851818,6 0.545455,8 no-clickbait}
+{0 'Washington Post',1 2,2 90,3 63.575962,6 0.538462}
+{0 'Washington Post',2 92,3 93.701618,5 2,6 0.470588,7 1,8 no-clickbait}
+{0 'ABC News',1 1,2 92,3 63.695,6 0.625,8 no-clickbait}
+{0 'Fox News',2 67,3 41.851818,6 0.545455,8 no-clickbait}
+{0 'The Guardian ',1 5,2 68,3 64.924545,6 0.363636,8 no-clickbait}
+{0 Mashable,2 132,3 69.788,6 0.72,8 no-clickbait}
+{0 'Washington Post',1 2,2 102,3 11.424615,6 0.230769,8 no-clickbait}
+{0 'Wall Street Journal',2 65,3 44.405,6 0.5,8 no-clickbait}
+{0 'NBC News',1 4,2 81,3 0.3,8 no-clickbait}
+{0 'The Guardian ',2 45,3 31.545,6 0.333333}
+{0 Forbes,1 4,2 85,3 78.81,6 0.466667,8 no-clickbait}
+{0 'The Telegraph',1 1,2 80,3 92.0625,5 2,6 0.666667,7 1,8 no-clickbait}
+{0 'Huffington Post',2 73,3 76.501538,6 0.692308,8 no-clickbait}
+{0 'Bleacher Report',1 4,2 83,3 53.639286,6 0.5,8 no-clickbait}
+{0 Yahoo,1 1,2 116,3 45.262353,6 0.411765,8 no-clickbait}
+{0 'Washington Post',2 73,3 62.816136,4 1,6 0.363636}
+{0 'Washington Post',1 3,2 79,3 56.978462,6 0.384615,8 no-clickbait}
+{0 'The Guardian ',1 4,2 79,3 10.565,6 0.1,8 no-clickbait}
+{0 ESPN,1 3,2 92,3 63.695,6 0.5,8 no-clickbait}
+{0 'The Guardian ',1 2,2 64,3 56.7,6 0.111111,8 no-clickbait}
+{0 'The New York Times',1 3,2 78,3 56.978462,6 0.538462,8 no-clickbait}
+{0 'NBC News',2 48,3 71.815,6 0.5,8 no-clickbait}
+{0 'The Guardian ',2 70,3 76.501538,6 0.615385}
+{0 'Business Insider',2 82,3 59.682143,6 0.642857,8 no-clickbait}
+{0 'Daily Mail Online',2 70,3 76.501538,6 0.692308}
+{0 Mashable,2 66,3 51.8675,6 0.555556,8 no-clickbait}
+{0 'The New York Times',1 4,2 78,3 90.1325,6 0.5,8 no-clickbait}
+{0 'Business Insider',1 2,2 56,3 28.5,6 0.222222,8 no-clickbait}
+{0 'BBC News (UK)',1 3,2 86,3 56.978462,6 0.384615,8 no-clickbait}
+{0 Yahoo,1 2,2 112,3 55.9525,4 1,6 0.4375,8 no-clickbait}
+{0 'Fox News',2 92,3 67.53,4 1,6 0.666667,8 no-clickbait}
+{0 'NBC News',1 1,2 35,3 103.044286,6 0.428571,8 no-clickbait}
+{0 'Bleacher Report',1 6,2 79,3 63.486154,6 0.538462,8 no-clickbait}
+{0 'Fox News',2 84,3 26.47,6 0.181818,8 no-clickbait}
+{0 'BBC News (UK)',1 2,2 93,3 59.682143,6 0.285714,8 no-clickbait}
+{0 'Wall Street Journal',2 37,3 115.13,6 0.571429}
+{0 BuzzFeed,1 4,2 118,3 25.356471,8 no-clickbait}
+{0 'Daily Mail Online',1 1,2 78,3 65.725,6 0.642857}
+{0 'ABC News',1 3,2 113,3 -18.875,6 0.357143,8 no-clickbait}
+{0 ESPN,1 3,2 94,3 98.678088,6 0.588235}
+{0 'BBC News (UK)',1 1,2 62,3 28.5,6 0.444444,8 no-clickbait}
+{0 Yahoo,1 1,2 112,3 83.3775,6 0.619048,8 no-clickbait}
+{0 'Fox News',1 3,2 80,3 65.725,6 0.428571,8 no-clickbait}
+{0 'Business Insider',1 1,2 103,3 31.97,6 0.5625}
+{0 'BBC News (UK)',1 1,2 85,3 97.7025,6 0.466667,8 no-clickbait}
+{0 Mashable,1 3,2 70,3 85.888864,6 0.454545,8 no-clickbait}
+{1 1,2 95,3 83.32,6 0.333333,8 no-clickbait}
+{0 'Huffington Post',1 4,2 60,3 52.865,6 0.1}
+{0 'The Guardian ',1 2,2 77,3 56.978462,6 0.384615,8 no-clickbait}
+{0 'Huffington Post',1 5,2 79,3 56.978462,6 0.384615,8 no-clickbait}
+{0 'Bleacher Report',1 1,2 89,3 90.1325,6 0.625,8 no-clickbait}
+{0 'Fox News',1 2,2 53,3 30.53,6 0.285714}
+{0 'The Telegraph',2 85,3 95.42,6 0.6875}
+{0 BuzzFeed,2 50,3 54.701429,4 1}
+{0 BuzzFeed,2 59,3 66.1}
+{0 'NBC News',1 1,2 63,3 28.5,6 0.333333,8 no-clickbait}
+{1 2,2 110,3 75.5,6 0.333333,8 no-clickbait}
+{0 ESPN,1 2,2 93,3 63.575962,4 1,6 0.384615,8 no-clickbait}
+{0 'Fox News',1 2,2 94,3 67.53,6 0.4,8 no-clickbait}
+{0 'Wall Street Journal',2 113,3 -11.43,6 0.4,8 no-clickbait}
+{0 Forbes,2 108,3 31.97,6 0.5,8 no-clickbait}
+{0 'Daily Mail Online',2 66,3 64.924545,6 0.636364,8 no-clickbait}
+{0 'Fox News',1 1,2 78,3 9.7,6 0.333333,8 no-clickbait}
+{0 BuzzFeed,1 2,2 67,3 57.233636,4 1,6 0.454545}
+{0 'NBC News',1 2,2 70,3 64.924545,6 0.636364,8 no-clickbait}
+{0 'The New York Times',1 2,2 109,3 47.565,6 0.444444,8 no-clickbait}
+{0 'Wall Street Journal',1 1,2 47,3 31.545,6 0.166667,8 no-clickbait}
+{0 Mashable,2 106,3 76.234211,5 4,6 0.842105,7 5}
+{0 Mashable,1 1,2 44,3 45.645,6 0.333333}
+{0 'The New York Times',1 1,2 42,3 15.64,6 0.2}
+{0 Mashable,1 3,2 70,3 56.978462,6 0.461538,8 no-clickbait}
+{0 'NBC News',2 84,3 78.81,6 0.533333,8 no-clickbait}
+{0 'The Guardian ',1 4,2 72,3 64.924545,6 0.181818,8 no-clickbait}
+{0 'Bleacher Report',1 2,2 94,3 80.097647,6 0.411765,8 no-clickbait}
+{0 'Washington Post',1 2,2 126,3 31.707895,6 0.473684,8 no-clickbait}
+{0 Mashable,1 4,2 64,3 78.197955,6 0.272727,8 no-clickbait}
+{0 'The Guardian ',1 5,2 68,3 67.755,6 0.416667,8 no-clickbait}
+{0 'Huffington Post',2 69,3 80.306364,5 2,6 0.636364,7 1,8 no-clickbait}
+{0 Forbes,1 2,2 87,3 68.9825,6 0.5625,8 no-clickbait}
+{0 'The Guardian ',1 2,2 62,3 86.705,6 0.7}
+{0 'ABC News',1 2,2 118,3 28.05,6 0.4,8 no-clickbait}
+{0 'Wall Street Journal',2 103,3 33.69,6 0.133333,8 no-clickbait}
+{0 BuzzFeed,1 1,2 53,3 111.07,6 0.727273,8 no-clickbait}
+{0 'The New York Times',2 108,3 45.3775,6 0.5,8 no-clickbait}
+{0 'Business Insider',2 62,3 72.615455,6 0.727273,8 no-clickbait}
+{0 Yahoo,1 3,2 106,3 75.5,6 0.333333,8 no-clickbait}
+{0 'Wall Street Journal',1 2,2 105,3 73.795735,6 0.529412,8 no-clickbait}
+{0 'Business Insider',1 3,2 93,3 44.97,6 0.4,8 no-clickbait}
+{0 'Business Insider',2 60,3 47.3,5 1,6 0.555556,7 1}
+{0 'ABC News',1 2,2 83,3 67.53,6 0.466667,8 no-clickbait}
+{0 'Bleacher Report',1 3,2 93,3 70.144706,6 0.176471,8 no-clickbait}
+{0 Yahoo,1 2,2 101,3 35.510714,6 0.357143,8 no-clickbait}
+{0 'Washington Post',1 3,2 98,3 74.521667,6 0.25,8 no-clickbait}
+{2 89,3 86.4225,4 1,6 0.533333,8 no-clickbait}
+{0 ESPN,1 4,2 116,3 86.93,6 0.380952}
+{0 'Washington Post',1 4,2 95,3 65.168235,6 0.294118,8 no-clickbait}
+{0 'NBC News',1 2,2 52,3 -17.812857,6 0.428571,8 no-clickbait}
+{0 'Business Insider',2 101,3 78.109485,6 0.294118}
+{0 'Huffington Post',2 53,3 78.245,5 2,6 0.8,7 1}
+{0 'Business Insider',2 94,3 44.97,6 0.6,8 no-clickbait}
+{0 Yahoo,2 45,3 82.39,4 1,5 2,6 0.75,7 1,8 no-clickbait}
+{0 'Fox News',1 2,2 89,3 37.455385,6 0.230769,8 no-clickbait}
+{0 'The Guardian ',1 1,2 53,3 69.785,5 2,6 0.6,7 1}
+{0 Mashable,1 2,2 70,3 81.855,6 0.666667,8 no-clickbait}
+{0 'Bleacher Report',1 3,2 91,3 113.365,6 0.666667,8 no-clickbait}
+{0 ESPN,1 5,2 94,3 101.935,6 0.55,8 no-clickbait}
+{0 'The Guardian ',1 4,2 73,3 -14.815,6 0.4,8 no-clickbait}
+{0 'The New York Times',2 87,3 50.61,4 1,6 0.4,8 no-clickbait}
+{0 'The Telegraph',1 2,2 62,3 72.615455,6 0.454545,8 no-clickbait}
+{0 'The Guardian ',2 12,3 119.19,4 1,6 0.333333}
+{0 'Fox News',1 1,2 41,3 78.872857,6 0.285714,8 no-clickbait}
+{1 1,2 107,3 68.819265,6 0.235294,8 no-clickbait}
+{0 'Huffington Post',2 56,3 66.1,6 0.666667}
+{0 BuzzFeed,2 50,3 71.815,6 0.5}
+{0 'Bleacher Report',1 5,2 52,3 87.997273,6 0.272727,8 no-clickbait}
+{0 'NBC News',2 117,3 63.865,6 0.15,8 no-clickbait}
+{0 'Huffington Post',1 3,2 113,3 80.498696,6 0.695652,8 no-clickbait}
+{0 'Wall Street Journal',1 2,2 116,3 68.066184,6 0.421053,8 no-clickbait}
+{0 'Huffington Post',1 3,2 74,3 57.233636,6 0.181818}
+{0 ESPN,1 6,2 108,3 94.318333,4 1,6 0.45}
+{0 'Daily Mail Online',2 68,3 49.542727,6 0.636364}
+{0 'Washington Post',2 90,3 67.53,4 1,6 0.666667}
+{1 2,2 93,3 69.5025,6 0.6,8 no-clickbait}
+{0 'NBC News',1 3,2 58,3 19.1,6 0.333333,8 no-clickbait}
+{0 Yahoo,2 80,3 25.455,6 0.25,8 no-clickbait}
+{0 'Bleacher Report',1 6,2 64,3 52.865,6 0.2,8 no-clickbait}
+{0 Mashable,1 3,2 91,3 29.467857,6 0.571429,8 no-clickbait}
+{0 'BBC News (UK)',2 47,3 103.54,6 0.375}
+{0 'Huffington Post',1 3,2 72,3 67.755,6 0.5}
+{0 'Daily Mail Online',2 62,3 56.7,6 0.333333}
+{0 'Fox News',2 60,3 78.245,5 1,6 0.6,7 1,8 no-clickbait}
+{0 'NBC News',2 71,3 83.009231,6 0.692308,8 no-clickbait}
+{0 Forbes,2 65,3 96.024615,4 1,6 0.538462}
+{0 'Business Insider',1 2,2 85,3 46.605,6 0.583333}
+{0 BuzzFeed,1 1,2 109,3 31.97,5 2,6 0.6875,7 1,8 no-clickbait}
+{0 Mashable,1 3,2 81,3 84.45,6 0.6,8 no-clickbait}
+{0 Mashable,2 33,3 102.045,6 0.166667}
+{0 'The Telegraph',2 59,3 69.785,6 0.7,8 no-clickbait}
+{0 'Huffington Post',1 4,2 94,3 41.553571,6 0.571429}
+{0 'Business Insider',2 16,3 35.605}
+{0 'Washington Post',1 2,2 114,3 72.325,6 0.45,8 no-clickbait}
+{0 'The New York Times',1 4,2 105,3 80.2,6 0.555556,8 no-clickbait}
+{0 'BBC News (UK)',1 5,2 128,3 24.065,6 0.277778,8 no-clickbait}
+{0 'Washington Post',1 8,2 108,3 72.325,6 0.5,8 no-clickbait}
+{0 'Huffington Post',1 4,2 61,3 80.306364,6 0.454545}
+{0 'The Telegraph',1 2,2 63,3 69.785,6 0.3,8 no-clickbait}
+{0 'BBC News (UK)',1 4,2 104,3 71.065,6 0.444444,8 no-clickbait}
+{1 4,2 66,3 72.615455,6 0.363636}
+{0 'Business Insider',1 4,2 64,3 52.865,6 0.3,8 no-clickbait}
+{0 'The Guardian ',1 2,2 73,3 74.805,6 0.75,8 no-clickbait}
+{0 'Wall Street Journal',1 3,2 118,3 52,6 0.333333,8 no-clickbait}
+{0 'Business Insider',1 1,2 74,3 90.09,6 0.8}
+{0 'Bleacher Report',1 6,2 54,3 56.7,6 0.222222,8 no-clickbait}
+{0 Mashable,1 2,2 59,3 95.165,6 0.2}
+{0 'ABC News',1 2,2 110,3 42.545,6 0.4375,8 no-clickbait}
+{0 'Business Insider',1 2,2 66,3 35.945,4 1,6 0.3,8 no-clickbait}
+{0 'The Telegraph',1 2,2 84,3 84.45,6 0.466667,8 no-clickbait}
+{0 'Business Insider',1 2,2 58,3 56.7,6 0.333333,8 no-clickbait}
+{0 'ABC News',2 116,3 59.635,4 1,6 0.5,8 no-clickbait}
+{0 ESPN,1 3,2 116,3 104.47,4 1,6 0.5}
+{0 'Daily Mail Online',1 1,2 94,3 59.682143,6 0.357143,8 no-clickbait}
+{0 'Huffington Post',1 5,2 66,3 72.615455,6 0.272727,8 no-clickbait}
+{0 'Fox News',1 1,2 69,3 64.924545,6 0.727273,8 no-clickbait}
+{1 1,2 93,3 53.12,6 0.5,8 no-clickbait}
+{0 'The Guardian ',1 5,2 68,3 44.405,6 0.3,8 no-clickbait}
+{0 'ABC News',1 4,2 90,3 43.963077,4 1,6 0.384615,8 no-clickbait}
+{0 'NBC News',1 4,2 80,3 56.978462,6 0.230769,8 no-clickbait}
+{0 Mashable,2 69,3 95.939286,6 0.857143,8 no-clickbait}
+{0 Yahoo,1 2,2 32,3 83.32,6 0.4}
+{0 Yahoo,1 3,2 124,3 46.945,6 0.35,8 no-clickbait}
+{0 'Huffington Post',2 40,3 66.787143,5 1,6 0.571429,7 1}
+{0 ESPN,1 2,2 90,3 63.486154,4 1,6 0.461538}
+{0 'Huffington Post',2 44,3 92.965,6 0.375}
+{0 BuzzFeed,1 1,2 84,3 78.81,6 0.666667,8 no-clickbait}
+{0 'The Telegraph',1 2,2 71,3 67.755,4 1,6 0.25}
+{0 'The Guardian ',1 1,2 66,3 67.755,6 0.583333,8 no-clickbait}
+{0 'Business Insider',1 1,2 57,3 86.705,4 1,6 0.6}
+{0 'Wall Street Journal',2 98,3 65.168235,6 0.352941,8 no-clickbait}
+{0 Yahoo,1 2,2 126,3 46.945,4 1,5 2,6 0.55,7 1}
+{0 'Wall Street Journal',1 2,2 130,3 57.605,6 0.590909,8 no-clickbait}
+{0 'Business Insider',1 2,2 84,3 43.963077,6 0.384615,8 no-clickbait}
+{0 'Wall Street Journal',1 1,2 89,3 41.553571,6 0.357143,8 no-clickbait}
+{0 'The Guardian ',1 3,2 65,3 19.1,6 0.111111,8 no-clickbait}
+{0 'Bleacher Report',1 1,2 16,3 118.175,6 0.25,8 no-clickbait}
+{0 BuzzFeed,2 73,3 76.501538,6 0.538462}
+{0 Yahoo,1 2,2 93,3 70.144706,6 0.529412,8 no-clickbait}
+{0 'The New York Times',1 4,2 87,3 53.12,6 0.3125,8 no-clickbait}
+{0 'The Telegraph',1 4,2 118,3 68.095,6 0.5,8 no-clickbait}
+{0 'Wall Street Journal',1 3,2 112,3 50.238824,6 0.588235,8 no-clickbait}
+{0 BuzzFeed,1 1,2 18,3 97.025,5 2,6 0.25,7 1}
+{0 BuzzFeed,2 51,3 54.701429,6 0.428571}
+{0 ESPN,1 4,2 118,3 86.705,4 1,6 0.5}
+{0 BuzzFeed,2 84,3 65.725,6 0.5,8 no-clickbait}
+{0 Yahoo,2 107,3 63.180074,6 0.235294,8 no-clickbait}
+{1 1,2 116,3 48.913382,6 0.294118}
+{0 'Daily Mail Online',1 1,2 72,3 67.755,6 0.416667,8 no-clickbait}
+{0 Yahoo,2 76,3 53.655,4 1,5 2,6 0.666667,7 1,8 no-clickbait}
+{0 'The Telegraph',1 2,2 57,3 69.785,4 1,6 0.4}
+{0 Forbes,2 53,3 112.085,6 0.6}
+{1 3,2 129,3 82.901429,6 0.47619,8 no-clickbait}
+{0 'ABC News',2 109,3 73.795735,6 0.176471}
+{0 'Fox News',1 3,2 91,3 56.978462,6 0.384615,8 no-clickbait}
+{0 'Huffington Post',1 1,2 68,3 57.233636,6 0.454545}
+{0 Yahoo,1 2,2 41,3 54.701429,4 1,6 0.285714,8 no-clickbait}
+{0 'NBC News',1 4,2 69,3 76.501538,6 0.384615,8 no-clickbait}
+{0 'Bleacher Report',1 1,2 76,3 19.1,6 0.333333,8 no-clickbait}
+{0 'Business Insider',1 1,2 86,3 69.993846,6 0.384615}
+{0 Forbes,1 2,2 71,3 95.939286,6 0.5,8 no-clickbait}
+{0 'Huffington Post',1 2,2 87,3 95.42,6 0.6875}
+{0 'Huffington Post',1 1,2 56,3 18.444286,6 0.428571,8 no-clickbait}
+{0 'Bleacher Report',1 5,2 92,3 50.61,6 0.2,8 no-clickbait}
+{0 'ABC News',1 3,2 93,3 80.097647,6 0.176471,8 no-clickbait}
+{0 Yahoo,1 2,2 83,3 79.5575,4 1,6 0.5625}
+{2 94,3 4.305,6 0.5,8 no-clickbait}
+{0 'Business Insider',2 118,3 34.8025,6 0.375}
+{0 ESPN,1 2,2 113,3 90.329342,6 0.578947,8 no-clickbait}
+{0 'The Guardian ',1 5,2 78,3 63.486154,6 0.461538,8 no-clickbait}
+{0 BuzzFeed,2 59,3 66.1,6 0.444444}
+{0 'The New York Times',1 5,2 82,3 90.050588,6 0.588235,8 no-clickbait}
+{1 2,2 111,3 24.487143,6 0.142857}
+{0 'NBC News',1 2,2 54,3 86.705,6 0.6,8 no-clickbait}
+{0 'ABC News',1 3,2 90,3 53.639286,6 0.285714,8 no-clickbait}
+{0 'Fox News',1 1,2 81,3 11.088182,6 0.181818,8 no-clickbait}
+{0 ESPN,1 3,2 117,3 71.781579,6 0.473684,8 no-clickbait}
+{0 'ABC News',1 2,2 108,3 28.05,6 0.266667,8 no-clickbait}
+{0 Yahoo,1 1,2 65,3 102.532308,6 0.538462,8 no-clickbait}
+{0 BuzzFeed,1 2,2 67,3 57.233636,4 1,6 0.454545}
+{0 BuzzFeed,2 69,3 28.5,6 0.333333}
+{0 'Huffington Post',1 3,2 74,3 64.924545,6 0.636364,8 no-clickbait}
+{0 'Daily Mail Online',1 3,2 106,3 70.144706,6 0.411765}
+{0 BuzzFeed,2 53,3 50.665,6 0.25,8 no-clickbait}
+{0 'Bleacher Report',1 3,2 89,3 68.9825,6 0.375,8 no-clickbait}
+{0 'Business Insider',1 1,2 70,3 47.3,6 0.444444,8 no-clickbait}
+{0 'Business Insider',1 3,2 93,3 50.61,6 0.333333,8 no-clickbait}
+{0 'Washington Post',1 2,2 115,3 47.565,6 0.555556,8 no-clickbait}
+{0 BuzzFeed,2 78,3 53.655,6 0.583333,8 no-clickbait}
+{0 'Daily Mail Online',1 2,2 50,3 42.615714,6 0.428571,8 no-clickbait}
+{0 'Business Insider',1 1,2 64,3 35.945,6 0.3,8 no-clickbait}
+{0 'Huffington Post',2 53,3 81.855,6 0.833333,8 no-clickbait}
+{0 'Bleacher Report',1 1,2 75,3 -6.355,6 0.3,8 no-clickbait}
+{0 'BBC News (UK)',2 74,3 90.958571,6 0.714286,8 no-clickbait}
+{0 'Fox News',2 114,3 28.05,6 0.333333,8 no-clickbait}
+{0 'Wall Street Journal',1 2,2 79,3 24.44,6 0.384615,8 no-clickbait}
+{0 Yahoo,2 63,3 88.905,6 0.666667,7 1}
+{0 Forbes,2 72,3 9.7,6 0.333333}
+{0 'Daily Mail Online',1 1,2 71,3 89.516923,5 2,6 0.615385,7 1,8 no-clickbait}
+{0 ESPN,1 2,2 103,3 83.245,6 0.611111,8 no-clickbait}
+{2 66,3 85.888864,6 0.636364,8 no-clickbait}
+{0 'Bleacher Report',1 3,2 81,3 84.845,6 0.5}
+{0 'Business Insider',2 41,3 103.54,5 2,6 0.625,7 1}
+{0 'ABC News',1 6,2 74,3 41.851818,6 0.363636,8 no-clickbait}
+{0 BuzzFeed,1 3,2 104,3 75.765}
+{1 2,2 127,3 38.960441,6 0.294118}
+{0 BuzzFeed,2 53,3 87.997273,6 0.636364,8 no-clickbait}
+{0 'Business Insider',1 3,2 83,3 95.73,6 0.533333,8 no-clickbait}
+{0 'The New York Times',2 93,3 69.5025,6 0.333333}
+{0 'Wall Street Journal',2 63,3 35.945,6 0.6,8 no-clickbait}
+{0 ESPN,1 2,2 92,3 98.548333,6 0.6,8 no-clickbait}
+{0 'ABC News',1 4,2 91,3 83.748676,6 0.470588,8 no-clickbait}
+{1 2,2 133,3 87.945,5 3,6 0.416667,7 2,8 no-clickbait}
+{0 'ABC News',1 7,2 69,3 89.516923,6 0.230769,8 no-clickbait}
+{0 'Business Insider',2 60,3 35.945,6 0.2}
+{0 'NBC News',1 3,2 90,3 43.963077,6 0.307692,8 no-clickbait}
+{0 'The Guardian ',1 3,2 74,3 67.755,6 0.416667,8 no-clickbait}
+{0 'Bleacher Report',1 5,2 92,3 65.168235,6 0.235294,8 no-clickbait}
+{0 Forbes,1 2,2 91,3 44.97,6 0.466667,8 no-clickbait}
+{0 'Wall Street Journal',1 3,2 110,3 60.634286,6 0.47619,8 no-clickbait}
+{0 Yahoo,1 1,2 46,3 82.425357,6 0.142857,8 no-clickbait}
+{1 1,2 87,3 54.701429,6 0.428571,8 no-clickbait}
+{0 'Business Insider',2 67,3 89.516923,6 0.538462,8 no-clickbait}
+{0 'Washington Post',1 2,2 107,3 45.262353,6 0.588235,8 no-clickbait}
+{0 Yahoo,2 79,3 60.705,6 0.583333,8 no-clickbait}
+{1 2,2 97,3 61.24,6 0.375,8 no-clickbait}
+{0 'Bleacher Report',1 3,2 90,3 80.097647,6 0.529412,8 no-clickbait}
+{0 'Huffington Post',1 3,2 55,3 78.245,6 0.4,8 no-clickbait}
+{0 Yahoo,1 4,2 111,3 66.365,6 0.444444,8 no-clickbait}
+{0 Forbes,1 1,2 83,3 32.505,6 0.333333,8 no-clickbait}
+{0 'ABC News',1 2,2 99,3 80.097647,5 2,6 0.647059,7 1}
+{0 'Business Insider',1 2,2 81,3 34.160909,6 0.454545}
+{0 'Business Insider',1 1,2 89,3 73.17,6 0.6,8 no-clickbait}
+{2 118,3 44.97,6 0.2,8 no-clickbait}
+{1 1,2 118,3 75.732982,4 1,6 0.578947,8 no-clickbait}
+{0 'Huffington Post',1 1,2 98,3 30.947692,6 0.461538,8 no-clickbait}
+{0 'Huffington Post',1 1,2 56,3 71.815,6 0.375}
+{0 ESPN,1 2,2 116,3 90.088667,6 0.64,8 no-clickbait}
+{0 ESPN,1 2,2 83,3 53.655,6 0.583333}
+{0 'Huffington Post',1 2,2 70,3 53.655,6 0.583333,8 no-clickbait}
+{0 'Bleacher Report',1 3,2 94,3 40.285882,6 0.588235,8 no-clickbait}
+{0 'Washington Post',2 67,3 44.405,4 1,6 0.5}
+{0 Mashable,1 6,2 66,3 49.542727,6 0.272727,8 no-clickbait}
+{0 'Wall Street Journal',1 3,2 74,3 83.009231,4 1,6 0.307692,8 no-clickbait}
+{0 'Huffington Post',1 1,2 58,3 72.615455,6 0.636364,8 no-clickbait}
+{0 'Bleacher Report',1 5,2 84,3 47.596429,6 0.357143,8 no-clickbait}
+{0 BuzzFeed,1 2,2 50,3 122.5,8 no-clickbait}
+{0 'Wall Street Journal',1 3,2 76,3 69.993846,4 1,6 0.461538,8 no-clickbait}
+{0 'ABC News',2 116,3 59.635,4 1,6 0.5,8 no-clickbait}
+{0 'Huffington Post',1 2,2 102,3 42.545,6 0.375,8 no-clickbait}
+{0 ESPN,1 3,2 115,3 87.873485,5 2,6 0.5,7 2,8 no-clickbait}
+{0 BuzzFeed,1 2,2 62,3 74.805}
+{0 'Huffington Post',1 3,2 60,3 77.810714,6 0.714286,8 no-clickbait}
+{0 ESPN,1 2,2 107,3 115.13,6 0.571429,8 no-clickbait}
+{0 'Daily Mail Online',2 43,3 103.7,4 1,5 1,6 0.555556,7 1}
+{0 ESPN,1 4,2 110,3 107.100758,6 0.5,8 no-clickbait}
+{0 'Bleacher Report',1 4,2 109,3 78.245,6 0.55,8 no-clickbait}
+{0 ESPN,1 4,2 92,3 91.60098,6 0.529412,8 no-clickbait}
+{0 'Huffington Post',2 78,3 69.993846,6 0.692308}
+{0 'Business Insider',2 73,3 69.785,6 0.6,8 no-clickbait}
+{0 'Huffington Post',2 89,3 88.725147,6 0.647059}
+{0 'Business Insider',2 58,3 61.24,6 0.25}
+{0 ESPN,1 3,2 97,3 65.168235,6 0.411765,8 no-clickbait}
+{0 'Huffington Post',1 2,2 73,3 52.865,6 0.4}
+{0 Forbes,1 1,2 93,3 61.89,4 1,6 0.533333,8 no-clickbait}
+{0 'ABC News',1 4,2 116,3 38.165,6 0.388889,8 no-clickbait}
+{0 ESPN,1 2,2 79,3 50.61,6 0.466667,8 no-clickbait}
+{1 2,2 110,3 76.748571,6 0.52381,8 no-clickbait}
+{0 'BBC News (UK)',1 2,2 93,3 85.015,6 0.6,8 no-clickbait}
+{0 ESPN,1 4,2 46,3 103.54,6 0.125}
+{0 'Wall Street Journal',2 62,3 102.622115,4 1,5 3,6 0.692308,7 2}
+{0 'Huffington Post',1 1,2 66,3 60.705,6 0.75,8 no-clickbait}
+{0 ESPN,1 7,2 112,3 58.423684,6 0.473684,8 no-clickbait}
+{0 'Washington Post',1 2,2 49,3 75.5,5 2,6 0.555556,7 1,8 no-clickbait}
+{0 'Daily Mail Online',1 2,2 89,3 59.682143,6 0.428571,8 no-clickbait}
+{0 'Bleacher Report',1 3,2 62,3 44.405,6 0.3,8 no-clickbait}
+{0 Yahoo,1 1,2 35,3 87.945,6 0.5}
+{0 Mashable,2 73,3 81.855,6 0.25,8 no-clickbait}
+{0 'NBC News',1 6,2 123,3 95.955,6 0.5,8 no-clickbait}
+{0 'ABC News',1 4,2 99,3 71.065,6 0.555556,8 no-clickbait}
+{2 67,3 35.945,6 0.6}
+{0 'The New York Times',1 1,2 91,3 80.465,6 0.611111}
+{0 'Huffington Post',1 2,2 63,3 93.579773,6 0.454545,8 no-clickbait}
+{0 Mashable,2 48,3 108.7,6 0.7}
+{0 'The New York Times',1 1,2 47,3 71.815,4 1,5 2,6 0.75,7 1}
+{0 'Fox News',1 3,2 66,3 49.542727,6 0.272727,8 no-clickbait}
+{0 Forbes,1 1,2 102,3 89.6,6 0.611111}
+{0 'Wall Street Journal',1 3,2 79,3 63.486154,6 0.384615,8 no-clickbait}
+{0 Mashable,1 3,2 68,3 81.855,6 0.333333,8 no-clickbait}
+{0 'The New York Times',2 107,3 50.238824,4 1,6 0.411765,8 no-clickbait}
+{0 'The New York Times',1 5,2 83,3 63.486154,6 0.461538,8 no-clickbait}
+{0 ESPN,1 2,2 92,3 116.821667,6 0.625,8 no-clickbait}
+{0 BuzzFeed,2 45,3 120.545,6 0.8,8 no-clickbait}
+{0 'The Guardian ',1 4,2 71,3 67.755,6 0.583333,8 no-clickbait}
+{0 'The New York Times',1 4,2 82,3 100.7075,6 0.3125,8 no-clickbait}
+{0 'The New York Times',1 1,2 109,3 90.935,6 0.55,8 no-clickbait}
+{0 ESPN,1 1,2 89,3 97.001429,6 0.642857,8 no-clickbait}
+{2 62,3 95.165,6 0.6}
+{0 'Wall Street Journal',1 4,2 90,3 89.6,6 0.529412,8 no-clickbait}
+{0 'The New York Times',1 2,2 57,3 61.325,6 0.6,8 no-clickbait}
+{2 105,3 56.25,6 0.4,8 no-clickbait}
+{0 'Fox News',1 2,2 74,3 26.47,6 0.363636,8 no-clickbait}
+{0 'Business Insider',2 43,3 59.745,4 1,5 2,6 0.666667,7 1,8 no-clickbait}
+{0 BuzzFeed,2 70,3 76.501538,6 0.692308,7 1,8 no-clickbait}
+{0 'The Telegraph',2 73,3 61.325,6 0.4,8 no-clickbait}
+{0 'The Guardian ',1 6,2 86,3 59.682143,6 0.142857,8 no-clickbait}
+{0 'The Guardian ',1 2,2 75,3 105.995,6 0.75}
+{0 'The New York Times',1 4,2 72,3 83.009231,6 0.076923,8 no-clickbait}
+{0 'Business Insider',2 64,3 37.9,6 0.333333}
+{0 'The Telegraph',1 2,2 54,3 84.9,6 0.222222,8 no-clickbait}
+{0 'The New York Times',1 4,2 92,3 56.25,6 0.266667,8 no-clickbait}
+{0 'BBC News (UK)',2 74,3 28.5,6 0.333333,8 no-clickbait}
+{0 'Daily Mail Online',2 83,3 56.978462,6 0.538462,8 no-clickbait}
+{0 'Wall Street Journal',1 1,2 98,3 45.262353,6 0.411765,8 no-clickbait}
+{0 'The Guardian ',1 5,2 51,3 56.7,6 0.333333,8 no-clickbait}
+{0 Mashable,1 4,2 89,3 82.39,5 2,6 0.5,7 1,8 no-clickbait}
+{0 'Business Insider',1 1,2 50,3 122.5,6 0.666667}
+{0 'Daily Mail Online',1 2,2 82,3 18.779091,6 0.272727,8 no-clickbait}
+{0 'Business Insider',1 2,2 75,3 50.470769,6 0.461538,8 no-clickbait}
+{0 'BBC News (UK)',2 96,3 61.89,6 0.4,8 no-clickbait}
+{0 'Huffington Post',2 64,3 61.325,6 0.5}
+{0 Forbes,2 104,3 71.781579,5 3,6 0.736842,7 2,8 no-clickbait}
+{0 'Fox News',1 3,2 55,3 75.5,6 0.222222,8 no-clickbait}
+{0 'The Guardian ',1 4,2 45,3 42.615714,6 0.285714,8 no-clickbait}
+{0 'BBC News (UK)',1 1,2 101,3 36.572857,6 0.285714,8 no-clickbait}
+{0 'The Guardian ',1 1,2 76,3 69.785,6 0.5,8 no-clickbait}
+{0 'Huffington Post',1 1,2 41,3 70.339643,6 0.428571}
+{0 'The New York Times',1 2,2 113,3 71.291786,6 0.52381}
+{0 'The Guardian ',1 1,2 59,3 66.1,6 0.222222,8 no-clickbait}
+{0 'NBC News',1 3,2 52,3 94.3,6 0.555556,8 no-clickbait}
+{0 BuzzFeed,1 2,2 77,3 53.655,6 0.5,8 no-clickbait}
+{0 'The New York Times',1 1,2 47,3 61.24,6 0.375,8 no-clickbait}
+{0 Forbes,1 2,2 102,3 39.33,6 0.466667}
+{0 'Business Insider',2 80,3 50.470769,6 0.538462,8 no-clickbait}
+{0 'The Guardian ',1 2,2 67,3 80.895,4 1,6 0.333333,8 no-clickbait}
+{0 'Washington Post',1 2,2 59,3 80.306364,4 1,6 0.636364,8 no-clickbait}
+{0 'Fox News',1 2,2 108,3 55.215294,6 0.411765,8 no-clickbait}
+{0 'Huffington Post',2 100,3 58.4075,6 0.4375,8 no-clickbait}
+{0 'ABC News',1 1,2 63,3 88.905,6 0.416667,8 no-clickbait}
+{0 'The Guardian ',1 1,2 34,3 73.845,6 0.333333,8 no-clickbait}
+{0 'The New York Times',2 14,3 119.19,6 0.333333}
+{0 Mashable,2 70,3 44.405,6 0.5,8 no-clickbait}
+{0 'Washington Post',1 2,2 89,3 82.39,6 0.5625}
+{0 'BBC News (UK)',2 83,3 78.872857,5 1,6 0.214286,7 1,8 no-clickbait}
+{0 'BBC News (UK)',1 2,2 126,3 61.450455,6 0.454545,8 no-clickbait}
+{0 'BBC News (UK)',2 70,3 95.955,6 0.583333,8 no-clickbait}
+{0 'NBC News',1 3,2 51,3 95.688182,6 0.454545,8 no-clickbait}
+{0 'Daily Mail Online',1 3,2 111,3 71.065,6 0.333333,8 no-clickbait}
+{0 'The Guardian ',1 1,2 54,3 29.515,6 0.5,8 no-clickbait}
+{0 'The Telegraph',1 2,2 80,3 67.755,6 0.5,8 no-clickbait}
+{0 'Wall Street Journal',1 1,2 69,3 80.895,6 0.583333,8 no-clickbait}
+{0 Forbes,1 4,2 69,3 88.905,6 0.583333,8 no-clickbait}
+{0 'The Guardian ',1 4,2 66,3 67.755,6 0.416667,8 no-clickbait}
+{0 Forbes,2 107,3 60.634286,5 2,6 0.761905,7 2}
+{0 'The New York Times',1 2,2 71,3 8.365,6 0.125,8 no-clickbait}
+{0 'BBC News (UK)',1 1,2 73,3 81.855,5 2,6 0.416667,7 1,8 no-clickbait}
+{0 'ABC News',1 2,2 50,3 54.701429,6 0.428571,8 no-clickbait}
+{0 'The Guardian ',1 1,2 77,3 60.705,5 2,6 0.666667,7 1,8 no-clickbait}
+{0 'Fox News',1 2,2 69,3 9.7,6 0.111111,8 no-clickbait}
+{0 'Wall Street Journal',2 102,3 63.695,6 0.4375,8 no-clickbait}
+{0 'BBC News (UK)',1 1,2 104,3 73.795735,6 0.411765,8 no-clickbait}
+{0 'The Guardian ',2 51,3 40.09,6 0.25}
+{0 'The Telegraph',1 1,2 56,3 40.09,6 0.5,8 no-clickbait}
+{0 Forbes,2 55,3 87.997273,4 1,5 3,6 0.818182,7 2}
+{0 'The Guardian ',1 6,2 83,3 73.17,5 1,6 0.466667,7 1,8 no-clickbait}
+{0 'The Guardian ',1 1,2 73,3 73.845,6 0.5,8 no-clickbait}
+{0 'Wall Street Journal',1 2,2 67,3 8.365,6 0.125,8 no-clickbait}
+{0 'The Guardian ',1 3,2 66,3 44.405,6 0.4,8 no-clickbait}
+{0 'The Guardian ',1 1,2 68,3 35.945,6 0.4,8 no-clickbait}
+{0 Forbes,2 72,3 53.655,6 0.416667}
+{0 'The New York Times',1 6,2 60,3 66.1,8 no-clickbait}
+{0 'The Guardian ',1 1,2 69,3 88.905,4 1,6 0.583333,8 no-clickbait}
+{0 'The Telegraph',2 71,3 108.025,6 0.714286,8 no-clickbait}
+{0 'Business Insider',1 2,2 47,3 50.665,4 1,6 0.125,8 no-clickbait}
+{0 'The Guardian ',1 3,2 60,3 102.532308,6 0.692308,8 no-clickbait}
+{0 'The Guardian ',1 1,2 46,3 100.24,4 1,5 2,6 0.5,7 1,8 no-clickbait}
+{0 Forbes,1 2,2 60,3 56.7,6 0.333333,8 no-clickbait}
+{0 Yahoo,2 81,3 77.810714,6 0.571429}
+{0 'The Guardian ',2 79,3 90.09,6 0.466667}
+{0 'Daily Mail Online',1 2,2 79,3 37.9,6 0.111111,8 no-clickbait}
+{0 'The New York Times',1 3,2 69,3 57.233636,6 0.363636,8 no-clickbait}
+{0 Forbes,1 3,2 58,3 -17.812857,6 0.285714,8 no-clickbait}
+{0 Yahoo,1 2,2 78,3 18.779091,4 1,6 0.272727}
+{0 'BBC News (UK)',1 7,2 140,3 46.945,6 0.35,8 no-clickbait}
+{0 'The Guardian ',1 2,2 77,3 49.542727,6 0.363636,8 no-clickbait}
+{0 Yahoo,1 2,2 120,3 26.6825,6 0.3125,8 no-clickbait}
+{0 'Washington Post',1 2,2 76,3 53.655,6 0.583333,8 no-clickbait}
+{0 'Fox News',1 3,2 77,3 67.755,6 0.416667,8 no-clickbait}
+{0 Forbes,2 72,3 7.18,6 0.7}
+{0 'Fox News',2 99,3 71.815,5 2,6 0.5,7 1,8 no-clickbait}
+{0 'Business Insider',1 1,2 76,3 83.009231,6 0.538462,8 no-clickbait}
+{0 'Washington Post',2 67,3 35.945,6 0.4,8 no-clickbait}
+{0 'NBC News',1 1,2 63,3 28.5,6 0.222222,8 no-clickbait}
+{0 'Wall Street Journal',1 1,2 50,3 61.24,6 0.25,8 no-clickbait}
+{0 'The Guardian ',1 2,2 77,3 83.009231,6 0.307692,8 no-clickbait}
+{0 'BBC News (UK)',1 1,2 81,3 35.945,6 0.5,8 no-clickbait}
+{0 Yahoo,1 1,2 60,3 80.0675,6 0.333333,8 no-clickbait}
+{0 'The Guardian ',1 4,2 62,3 19.1,6 0.222222,8 no-clickbait}
+{0 'The Guardian ',1 2,2 67,3 10.565,6 0.3,8 no-clickbait}
+{0 BuzzFeed,2 80,3 35.945,6 0.4,8 no-clickbait}
+{0 'Huffington Post',2 55,3 78.245,6 0.5}
+{0 'The Guardian ',2 35,3 45.645,6 0.333333,8 no-clickbait}
+{0 'Washington Post',1 2,2 55,3 94.3,6 0.777778}
+{0 'Daily Mail Online',1 1,2 48,3 54.701429,6 0.285714}
+{0 'Wall Street Journal',1 3,2 59,3 44.405,6 0.4,8 no-clickbait}
+{0 'NBC News',1 1,2 53,3 54.701429,6 0.428571,8 no-clickbait}
+{0 'Fox News',1 3,2 81,3 67.755,6 0.333333,8 no-clickbait}
+{0 'The New York Times',2 93,3 69.5025,6 0.333333}
+{0 'Washington Post',1 3,2 75,3 71.767857,5 2,6 0.571429,7 1}
+{0 'Business Insider',2 45,3 66.787143,6 0.428571}
+{0 'Business Insider',2 67,3 44.405,6 0.3}
+{0 Mashable,1 2,2 85,3 50.470769,6 0.461538,8 no-clickbait}
+{0 'BBC News (UK)',2 104,3 71.065,6 0.388889,8 no-clickbait}
+{0 Yahoo,2 92,3 57.068269,6 0.384615,8 no-clickbait}
+{0 Yahoo,2 87,3 78.872857,6 0.714286,8 no-clickbait}
+{0 Yahoo,2 118,3 59.160921,5 1,6 0.578947,7 1}
+{0 'Washington Post',1 2,2 54,3 66.1,6 0.444444}
+{0 'The New York Times',1 4,2 56,3 50.665,6 0.125,8 no-clickbait}
+{0 'Business Insider',2 79,3 71.767857,6 0.5}
+{0 BuzzFeed,1 2,2 84,3 53.639286,6 0.571429}
+{0 'The New York Times',1 2,2 131,3 85.38,6 0.625,8 no-clickbait}
+{0 'Huffington Post',1 1,2 38,3 73.845,6 0.5,8 no-clickbait}
+{0 'The Telegraph',1 2,2 49,3 92.965,6 0.25}
+{0 'The Guardian ',2 73,3 49.542727,6 0.363636,8 no-clickbait}
+{0 'Huffington Post',1 3,2 66,3 95.955,6 0.5}
+{0 Yahoo,1 2,2 65,3 80.306364,5 1,6 0.545455,7 1}
+{0 'Washington Post',1 4,2 60,3 61.325,6 0.3,8 no-clickbait}
+{0 'Business Insider',1 3,2 67,3 35.945,6 0.3,8 no-clickbait}
+{0 'BBC News (UK)',1 2,2 82,3 32.505,6 0.25,8 no-clickbait}
+{0 Forbes,2 47,3 84.9,6 0.666667,8 no-clickbait}
+{0 'The Guardian ',1 1,2 40,3 90.958571,4 1,6 0.571429}
+{1 2,2 56,3 61.24,4 1,6 0.125,8 no-clickbait}
+{0 'Wall Street Journal',2 72,3 57.233636,6 0.272727}
+{0 'The Telegraph',1 1,2 47,3 71.815,6 0.625}
+{0 'Washington Post',2 66,3 78.245,4 1,6 0.7}
+{0 'NBC News',1 2,2 78,3 46.605,6 0.416667,8 no-clickbait}
+{0 'The Guardian ',1 5,2 62,3 57.94,6 0.2,8 no-clickbait}
+{0 'NBC News',1 2,2 61,3 44.405,6 0.4}
+{0 'The New York Times',1 1,2 111,3 42.545,4 1,6 0.5625,8 no-clickbait}
+{0 'Washington Post',1 3,2 81,3 90.09,6 0.333333,8 no-clickbait}
+{0 'Business Insider',1 1,2 40,3 78.872857,6 0.285714}
+{0 'Business Insider',1 2,2 95,3 67.53,6 0.466667,8 no-clickbait}
+{0 Mashable,1 4,2 92,3 77.1025,6 0.625,8 no-clickbait}
+{0 'BBC News (UK)',1 4,2 120,3 51.175,4 1,6 0.35,8 no-clickbait}
+{0 'Huffington Post',1 1,2 62,3 78.245,6 0.9,8 no-clickbait}
+{0 Forbes,2 67,3 72.615455,6 0.272727,8 no-clickbait}
+{0 'Huffington Post',1 1,2 57,3 18.444286,6 0.285714,8 no-clickbait}
+{0 'The Guardian ',1 2,2 34,3 49.48,6 0.2,8 no-clickbait}
+{1 4,2 109,3 53.971053,6 0.421053,8 no-clickbait}
+{0 'The Guardian ',1 4,2 69,3 67.755,6 0.416667,8 no-clickbait}
+{0 'Huffington Post',1 3,2 62,3 123.93,6 0.466667,8 no-clickbait}
+{0 'Daily Mail Online',1 2,2 74,3 84.45,6 0.533333,8 no-clickbait}
+{0 'The Guardian ',1 2,2 85,3 73.17,6 0.6,8 no-clickbait}
+{0 Yahoo,1 1,2 89,3 50.470769,6 0.461538}
+{0 'The Telegraph',1 2,2 99,3 41.553571,6 0.428571,8 no-clickbait}
+{0 Forbes,1 1,2 71,3 67.755,6 0.25,8 no-clickbait}
+{0 Yahoo,1 1,2 63,3 61.325,8 no-clickbait}
+{0 'BBC News (UK)',2 105,3 75.765,6 0.444444,8 no-clickbait}
+{0 'Fox News',1 4,2 70,3 60.705,6 0.416667,8 no-clickbait}
+{0 'Business Insider',1 2,2 67,3 64.924545,6 0.272727}
+{0 'The Guardian ',1 2,2 74,3 69.993846,6 0.615385,8 no-clickbait}
+{0 'NBC News',1 3,2 61,3 88.905,6 0.666667,8 no-clickbait}
+{0 'BBC News (UK)',1 1,2 82,3 63.486154,6 0.3,8 no-clickbait}
+{0 'Fox News',1 2,2 49,3 54.701429,6 0.142857,8 no-clickbait}
+{0 Forbes,1 2,2 81,3 25.455,6 0.416667,8 no-clickbait}
+{0 'BBC News (UK)',1 3,2 47,3 -10.755,6 0.166667,8 no-clickbait}
+{0 'The Guardian ',1 1,2 71,3 83.853571,4 1,5 2,6 0.571429,7 1}
+{0 'Business Insider',2 18,3 90.99,6 0.333333}
+{0 'Daily Mail Online',1 1,2 71,3 57.233636,4 1,6 0.636364,8 no-clickbait}
+{0 'The New York Times',1 2,2 105,3 52.5825,6 0.266667,8 no-clickbait}
+{0 'Huffington Post',1 4,2 77,3 53.655,6 0.5,8 no-clickbait}
+{0 'The Guardian ',1 2,2 71,3 89.896429,6 0.571429,8 no-clickbait}
+{0 'The Guardian ',2 65,3 83.009231,6 0.461538}
+{0 'Huffington Post',2 34,3 66.4,6 0.4}
+{0 ESPN,2 117,3 30.332941,6 0.411765,8 no-clickbait}
+{0 'Fox News',1 1,2 77,3 49.542727,6 0.181818,8 no-clickbait}
+{0 'Business Insider',1 3,2 59,3 95.955,5 3,6 0.666667,7 2}
+{0 'The Guardian ',1 3,2 61,3 86.705,6 0.2,8 no-clickbait}
+{0 'NBC News',1 5,2 61,3 37.9,6 0.222222,8 no-clickbait}
+{0 'BBC News (UK)',1 5,2 111,3 52.577143,6 0.47619,8 no-clickbait}
+{0 'BBC News (UK)',2 118,3 84.151818,6 0.5,8 no-clickbait}
+{0 Mashable,2 75,3 0.3,6 0.444444,8 no-clickbait}
+{0 'The Guardian ',1 2,2 68,3 19.1,6 0.222222,8 no-clickbait}
+{0 'Business Insider',1 1,2 52,3 75.5,6 0.555556}
+{0 Yahoo,1 1,2 109,3 41.553571,6 0.428571,8 no-clickbait}
+{0 'Business Insider',1 3,2 57,3 86.705,6 0.4,8 no-clickbait}
+{0 'Huffington Post',2 33,3 127.215714,6 0.714286}
+{0 BuzzFeed,1 1,2 105,3 42.545,5 2,6 0.5625,7 2,8 no-clickbait}
+{0 'Fox News',1 1,2 83,3 69.993846,6 0.538462,8 no-clickbait}
+{0 Mashable,1 2,2 66,3 41.851818,6 0.545455,8 no-clickbait}
+{0 'The New York Times',1 3,2 86,3 35.510714,6 0.642857}
+{0 'The Guardian ',1 1,2 58,3 69.785,5 2,6 0.4,7 1}
+{0 ESPN,1 1,2 109,3 75.5,6 0.333333,8 no-clickbait}
+{0 'BBC News (UK)',2 107,3 76.671569,6 0.411765,8 no-clickbait}
+{0 Mashable,1 2,2 100,3 50.238824,6 0.588235,8 no-clickbait}
+{0 'The Guardian ',1 1,2 34,3 103.044286,6 0.428571}
+{0 'Daily Mail Online',2 85,3 94.565,6 0.777778}
+{0 'Daily Mail Online',2 97,3 75.765,6 0.722222,8 no-clickbait}
+{0 Yahoo,1 3,2 71,3 77.810714,5 2,6 0.714286,7 2,8 no-clickbait}
+{0 'The Guardian ',1 2,2 86,3 80.097647,6 0.705882,8 no-clickbait}
+{0 Forbes,2 84,3 84.845,5 1,6 0.6875,7 1}
+{0 'The Guardian ',1 4,2 57,3 105.995,6 0.222222}
+{0 'The Guardian ',1 1,2 57,3 50.665,6 0.375,8 no-clickbait}
+{0 'Huffington Post',1 2,2 71,3 27.485,6 0.5,8 no-clickbait}
+{0 'The Guardian ',1 2,2 60,3 -17.812857,6 0.285714,8 no-clickbait}
+{0 'BBC News (UK)',1 1,2 100,3 63.695,6 0.4375,7 1}
+{0 'Huffington Post',1 2,2 71,3 83.853571,6 0.571429,8 no-clickbait}
+{0 Yahoo,1 5,2 118,3 38.165,6 0.222222,8 no-clickbait}
+{0 BuzzFeed,1 2,2 58,3 47.3,6 0.333333,8 no-clickbait}
+{0 'Bleacher Report',1 1,2 94,3 61.89,4 1,6 0.333333,8 no-clickbait}
+{0 'The New York Times',1 3,2 97,3 29.467857,6 0.214286,8 no-clickbait}
+{0 'BBC News (UK)',2 111,3 39.33,4 1,6 0.4,8 no-clickbait}
+{0 'Business Insider',1 2,2 80,3 108.665,4 1,5 1,6 0.722222,7 1}
+{0 'Business Insider',1 6,2 112,3 64.662857,6 0.571429}
+{0 'BBC News (UK)',1 3,2 97,3 50.61,6 0.266667,8 no-clickbait}
+{0 'Washington Post',2 75,3 64.924545,6 0.545455}
+{0 'BBC News (UK)',1 4,2 66,3 80.306364,6 0.363636,8 no-clickbait}
+{0 Mashable,1 1,2 70,3 44.405,6 0.4}
+{0 'ABC News',1 1,2 93,3 59.682143,6 0.5,8 no-clickbait}
+{0 'ABC News',1 2,2 79,3 46.605,6 0.25,8 no-clickbait}
+{0 'Business Insider',1 1,2 81,3 77.810714,4 1,6 0.642857}
+{0 'Wall Street Journal',1 2,2 68,3 64.924545,6 0.545455,8 no-clickbait}
+{0 'BBC News (UK)',1 2,2 86,3 53.639286,6 0.357143,8 no-clickbait}
+{0 'Business Insider',1 5,2 88,3 84.45,6 0.466667,8 no-clickbait}
+{0 ESPN,2 65,3 115.6375,5 2,6 0.769231,7 1}
+{0 'Washington Post',1 3,2 114,3 52.265,4 1,6 0.444444,8 no-clickbait}
+{0 'Business Insider',1 1,2 66,3 27.485,6 0.4,8 no-clickbait}
+{0 'BBC News (UK)',1 3,2 84,3 41.851818,6 0.181818,8 no-clickbait}
+{0 'BBC News (UK)',1 3,2 118,3 53.971053,6 0.421053,8 no-clickbait}
+{0 BuzzFeed,1 2,2 98,3 71.065,8 no-clickbait}
+{0 'BBC News (UK)',1 6,2 105,3 80.465,6 0.166667,8 no-clickbait}
+{2 81,3 62.816136,6 0.454545,8 no-clickbait}
+{0 'Huffington Post',1 5,2 79,3 71.767857,6 0.571429,8 no-clickbait}
+{0 'The New York Times',2 56,3 109.129808,5 2,6 0.769231,7 2,8 no-clickbait}
+{0 BuzzFeed,1 2,2 78,3 63.486154,6 0.615385,8 no-clickbait}
+{0 'The Telegraph',2 45,3 78.872857,6 0.285714}
+{0 'Bleacher Report',1 1,2 92,3 59.682143,6 0.5,8 no-clickbait}
+{0 'Washington Post',2 62,3 67.755,6 0.666667}
+{0 ESPN,1 5,2 91,3 73.17,6 0.533333,8 no-clickbait}
+{0 'Fox News',2 40,3 90.958571,6 0.571429}
+{0 'Bleacher Report',1 1,2 74,3 89.896429,6 0.357143,8 no-clickbait}
+{0 'Washington Post',1 2,2 83,3 79.5575,6 0.625,8 no-clickbait}
+{0 'The Guardian ',1 4,2 63,3 66.1,6 0.222222,8 no-clickbait}
+{0 'Business Insider',2 72,3 89.516923,5 1,6 0.692308,7 2}
+{0 'The Telegraph',2 71,3 57.233636,6 0.636364}
+{0 Yahoo,1 1,2 113,3 64.445,6 0.5,8 no-clickbait}
+{0 BuzzFeed,2 85,3 65.725,6 0.5,8 no-clickbait}
+{0 'Fox News',1 1,2 34,3 102.045,4 1,6 0.5}
+{0 'Bleacher Report',1 2,2 58,3 117.105,6 0.416667,8 no-clickbait}
+{0 'The New York Times',1 2,2 75,3 76.501538,6 0.461538}
+{0 Forbes,1 3,2 86,3 73.17,6 0.466667,8 no-clickbait}
+{2 93,3 103.654559,6 0.647059}
+{0 'Business Insider',1 1,2 81,3 53.639286,6 0.5,8 no-clickbait}
+{0 'ABC News',1 4,2 93,3 58.4075,6 0.5,8 no-clickbait}
+{0 'Bleacher Report',1 7,2 114,3 42.545,6 0.3125,8 no-clickbait}
+{0 'The Guardian ',2 76,3 56.978462,6 0.538462,8 no-clickbait}
+{0 'The New York Times',1 1,2 124,3 61.450455,6 0.590909}
+{0 'Daily Mail Online',1 2,2 86,3 59.682143,6 0.428571,8 no-clickbait}
+{0 'Business Insider',1 3,2 76,3 76.501538,4 1,6 0.230769}
+{0 'The Telegraph',1 1,2 56,3 50.665,6 0.375,8 no-clickbait}
+{0 'Huffington Post',1 1,2 68,3 41.851818,6 0.363636}
+{0 'Daily Mail Online',2 68,3 74.805,5 2,6 0.583333,7 1,8 no-clickbait}
+{0 ESPN,1 1,2 59,3 86.705,4 1,6 0.5,8 no-clickbait}
+{0 'Huffington Post',1 3,2 56,3 75.5,6 0.444444,8 no-clickbait}
+{0 'The Guardian ',1 2,2 72,3 44.405,6 0.3}
+{0 'Huffington Post',2 50,3 92.965,6 0.5}
+{0 'ABC News',1 2,2 92,3 25.455,6 0.166667,8 no-clickbait}
+{0 'Huffington Post',1 1,2 58,3 69.785,6 0.6,8 no-clickbait}
+{0 'Business Insider',1 2,2 80,3 41.851818,6 0.454545}
+{0 'Fox News',2 75,3 50.470769,6 0.461538,8 no-clickbait}
+{0 'Huffington Post',2 85,3 39.555,6 0.333333}
+{0 'Bleacher Report',1 2,2 90,3 67.53,6 0.466667,8 no-clickbait}
+{0 Forbes,1 4,2 74,3 49.542727,6 0.181818,8 no-clickbait}
+{0 'NBC News',1 1,2 50,3 71.815,6 0.25,8 no-clickbait}
+{0 BuzzFeed,1 3,2 81,3 39.555,6 0.25,8 no-clickbait}
+{0 'The Guardian ',1 2,2 72,3 26.47,6 0.272727,8 no-clickbait}
+{0 'The Guardian ',1 2,2 67,3 67.755,6 0.333333,8 no-clickbait}
+{1 1,2 110,3 47.8325,6 0.3125,8 no-clickbait}
+{0 Forbes,1 3,2 92,3 56.25,6 0.533333,8 no-clickbait}
+{0 'The Telegraph',1 2,2 57,3 56.7,6 0.444444,8 no-clickbait}
+{0 'Business Insider',1 2,2 78,3 90.09,6 0.733333,8 no-clickbait}
+{0 'BBC News (UK)',1 3,2 73,3 63.486154,6 0.416667,8 no-clickbait}
+{0 'Bleacher Report',1 3,2 109,3 61.665,6 0.333333,8 no-clickbait}
+{0 'Huffington Post',1 2,2 73,3 69.993846,6 0.461538,8 no-clickbait}
+{0 'Business Insider',2 46,3 82.39,6 0.625}
+{0 BuzzFeed,1 3,2 72,3 74.805,4 1,5 2,6 0.416667,7 1,8 no-clickbait}
+{0 ESPN,2 94,3 74.27,6 0.5625,8 no-clickbait}
+{0 'The Telegraph',2 78,3 72.83,6 0.428571,8 no-clickbait}
+{0 'The Guardian ',1 2,2 35,3 73.845,6 0.333333,8 no-clickbait}
+{0 'The New York Times',1 3,2 33,3 49.48,6 0.2,8 no-clickbait}
+{0 'Bleacher Report',1 2,2 63,3 81.855,6 0.416667,8 no-clickbait}
+{0 'The Guardian ',1 6,2 70,3 44.405,6 0.1,8 no-clickbait}
+{0 'The Guardian ',1 6,2 67,3 41.851818,6 0.181818,8 no-clickbait}
+{0 'Fox News',1 1,2 90,3 37.455385,6 0.384615,8 no-clickbait}
+{0 'The Telegraph',2 78,3 71.767857,6 0.785714,8 no-clickbait}
+{0 'Daily Mail Online',2 62,3 103.005,6 0.666667,8 no-clickbait}
+{0 BuzzFeed,1 3,2 117,3 58.866324,6 0.529412,8 no-clickbait}
+{0 'Huffington Post',1 3,2 30,3 115.13,6 0.428571,8 no-clickbait}
+{0 'ABC News',1 3,2 69,3 102.532308,5 1,6 0.692308,7 1,8 no-clickbait}
+{0 'Bleacher Report',1 5,2 83,3 39.555,6 0.333333,8 no-clickbait}
+{0 'The Guardian ',1 4,2 68,3 19.1,6 0.222222,8 no-clickbait}
+{0 'The Telegraph',1 1,2 64,3 69.785,6 0.4,8 no-clickbait}
+{0 'The New York Times',1 1,2 140,3 51.710326,6 0.478261,8 no-clickbait}
+{0 'The Guardian ',2 37,3 90.958571,6 0.428571}
+{0 'Huffington Post',1 3,2 75,3 32.505,6 0.416667,8 no-clickbait}
+{0 'Bleacher Report',1 1,2 80,3 77.810714,6 0.5,8 no-clickbait}
+{0 'Daily Mail Online',2 105,3 58.4075,6 0.375,8 no-clickbait}
+{0 'Business Insider',1 2,2 71,3 69.785,6 0.3,8 no-clickbait}
+{0 'Washington Post',1 1,2 50,3 87.997273,6 0.636364,8 no-clickbait}
+{0 'Daily Mail Online',2 62,3 28.5,6 0.222222,8 no-clickbait}
+{0 'The New York Times',1 4,2 111,3 66.365,6 0.444444,8 no-clickbait}
+{0 Forbes,1 2,2 82,3 43.963077,4 1,6 0.538462,8 no-clickbait}
+{0 'The Guardian ',1 3,2 69,3 41.02,6 0.1,8 no-clickbait}
+{0 'Washington Post',1 1,2 42,3 78.872857,6 0.571429,8 no-clickbait}
+{0 ESPN,1 3,2 94,3 75.121176,6 0.470588,8 no-clickbait}
+{0 'Wall Street Journal',1 2,2 104,3 50.238824,6 0.588235,8 no-clickbait}
+{0 'Bleacher Report',1 1,2 90,3 59.682143,6 0.5,8 no-clickbait}
+{0 'The New York Times',1 7,2 66,3 61.325,6 0.1,8 no-clickbait}
+{0 'NBC News',1 4,2 84,3 39.555,6 0.25,8 no-clickbait}
+{0 'Washington Post',1 2,2 133,3 66.15,6 0.5,8 no-clickbait}
+{0 'Fox News',1 3,2 105,3 71.781579,6 0.473684,8 no-clickbait}
+{0 Mashable,1 6,2 94,3 85.165,6 0.388889,8 no-clickbait}
+{0 Yahoo,1 2,2 118,3 29.515,6 0.125,8 no-clickbait}
+{0 'Washington Post',1 5,2 118,3 45.262353,5 2,6 0.294118,7 1}
+{0 'Washington Post',2 85,3 81.855,6 0.5}
+{0 'Fox News',2 53,3 46.168214,6 0.285714,8 no-clickbait}
+{1 1,2 90,3 70.083654,5 1,6 0.461538,7 1,8 no-clickbait}
+{0 'Daily Mail Online',1 1,2 66,3 74.805,6 0.583333,8 no-clickbait}
+{0 'Huffington Post',2 50,3 71.815,6 0.375}
+{0 'Bleacher Report',1 3,2 91,3 67.53,6 0.266667,8 no-clickbait}
+{0 'Daily Mail Online',1 3,2 80,3 63.486154,6 0.384615,8 no-clickbait}
+{0 'Business Insider',1 1,2 69,3 52.865,6 0.3,8 no-clickbait}
+{0 'The Telegraph',1 1,2 59,3 56.7,6 0.555556,8 no-clickbait}
+{0 'Fox News',2 70,3 -12.785,8 no-clickbait}
+{0 Forbes,1 6,2 97,3 63.180074,6 0.176471,8 no-clickbait}
+{0 Yahoo,1 1,2 94,3 69.5025,5 1,6 0.533333,7 1,8 no-clickbait}
+{0 'Washington Post',1 1,2 65,3 57.233636,6 0.363636}
+{0 'Huffington Post',1 1,2 63,3 72.615455,5 1,6 0.636364,7 1}
+{0 'Bleacher Report',1 5,2 74,3 83.853571,6 0.285714,8 no-clickbait}
+{0 'Washington Post',2 87,3 72.83,6 0.357143}
+{0 ESPN,1 4,2 93,3 76.234211,6 0.526316,8 no-clickbait}
+{0 'The New York Times',1 5,2 112,3 67.328947,6 0.473684,8 no-clickbait}
+{0 'The Guardian ',2 75,3 57.233636,6 0.727273,8 no-clickbait}
+{0 'Washington Post',2 111,3 56.965,6 0.666667,8 no-clickbait}
+{0 'Business Insider',2 68,3 64.924545,4 1,5 3,6 0.454545,7 2}
+{0 'ABC News',1 2,2 84,3 83.009231,6 0.461538,8 no-clickbait}
+{0 'BBC News (UK)',1 4,2 130,3 99.368269,6 0.423077,8 no-clickbait}
+{0 'The New York Times',2 39,3 45.645,6 0.5,8 no-clickbait}
+{0 'Business Insider',1 4,2 92,3 56.25,6 0.333333}
+{1 3,2 111,3 56.965,6 0.388889,8 no-clickbait}
+{0 'Huffington Post',1 1,2 56,3 108.7,5 1,6 0.4,7 1,8 no-clickbait}
+{0 Mashable,2 99,3 54.701429,6 0.5,8 no-clickbait}
+{0 'Daily Mail Online',2 67,3 44.405,6 0.5,8 no-clickbait}
+{0 'Wall Street Journal',2 87,3 43.963077,6 0.307692,8 no-clickbait}
+{0 'Huffington Post',1 4,2 85,3 61.89,6 0.533333,8 no-clickbait}
+{0 'ABC News',1 4,2 84,3 77.1025,6 0.3125,8 no-clickbait}
+{0 'The Guardian ',1 3,2 49,3 66.787143,6 0.285714,8 no-clickbait}
+{0 'BBC News (UK)',1 3,2 109,3 63.695,6 0.375,8 no-clickbait}
+{0 'Huffington Post',1 2,2 98,3 75.121176,6 0.588235,8 no-clickbait}
+{0 'The Telegraph',1 2,2 84,3 52.695,5 1,6 0.5,7 1,8 no-clickbait}
+{0 'The Guardian ',1 4,2 57,3 56.7,6 0.333333,8 no-clickbait}
+{0 'The New York Times',2 100,3 65.168235,4 1,6 0.470588,8 no-clickbait}
+{0 'ABC News',1 1,2 81,3 46.605,4 1,6 0.5}
+{0 'Wall Street Journal',2 118,3 63.865,6 0.5,8 no-clickbait}
+{0 'Bleacher Report',2 94,3 53.12,6 0.4375,8 no-clickbait}
+{0 ESPN,1 4,2 94,3 69.5025,6 0.4,8 no-clickbait}
+{0 'Fox News',1 1,2 68,3 35.945,6 0.4,8 no-clickbait}
+{0 Forbes,1 1,2 57,3 86.705,6 0.5}
+{1 3,2 93,3 68.9825,6 0.5,8 no-clickbait}
+{0 'NBC News',1 3,2 51,3 75.5,6 0.444444,8 no-clickbait}
+{0 'The New York Times',1 6,2 72,3 44.405,6 0.1,8 no-clickbait}
+{0 'ABC News',1 1,2 93,3 59.682143,6 0.5,8 no-clickbait}
+{0 'Washington Post',2 30,3 59.745,4 1,6 0.666667}
+{0 'The Guardian ',1 5,2 62,3 66.1,6 0.222222,8 no-clickbait}
+{0 'Huffington Post',1 1,2 57,3 89.4675,6 0.444444,8 no-clickbait}
+{0 'Huffington Post',2 47,3 3.345,4 1,6 0.333333}
+{0 BuzzFeed,1 2,2 64,3 28.5,6 0.111111}
+{0 'Wall Street Journal',1 2,2 85,3 94.565,6 0.777778,8 no-clickbait}
+{0 'Daily Mail Online',1 3,2 74,3 71.767857,6 0.214286,8 no-clickbait}
+{0 Forbes,1 2,2 74,3 64.924545,6 0.454545,8 no-clickbait}
+{0 'Huffington Post',1 2,2 60,3 75.5,6 0.333333,8 no-clickbait}
+{0 'Daily Mail Online',1 2,2 78,3 83.853571,6 0.5,8 no-clickbait}
+{0 'Bleacher Report',1 2,2 92,3 74.27,6 0.5,8 no-clickbait}
+{0 'Huffington Post',2 52,3 40.09,5 2,6 0.5,7 1}
+{0 'ABC News',1 3,2 58,3 78.245,6 0.1,8 no-clickbait}
+{0 BuzzFeed,1 2,2 58,3 57.233636,6 0.454545}
+{0 Yahoo,2 86,3 32.0525,4 1,6 0.454545,8 no-clickbait}
+{0 'Huffington Post',1 1,2 62,3 69.785,6 0.5,8 no-clickbait}
+{0 'BBC News (UK)',1 2,2 130,3 100.422949,6 0.423077,8 no-clickbait}
+{0 'Huffington Post',1 5,2 81,3 53.639286,6 0.428571,8 no-clickbait}
+{0 ESPN,1 5,2 108,3 35.774167,8 no-clickbait}
+{0 'Business Insider',1 2,2 68,3 83.009231,4 1,6 0.692308,8 no-clickbait}
+{0 'Huffington Post',1 3,2 57,3 37.9,4 1,6 0.333333,8 no-clickbait}
+{0 'The New York Times',1 8,2 69,3 35.945,6 0.2,8 no-clickbait}
+{0 'Huffington Post',1 1,2 80,3 27.485,6 0.2,8 no-clickbait}
+{0 'The New York Times',1 1,2 40,3 32.56,4 1}
+{0 'The Telegraph',1 3,2 59,3 50.665,6 0.125,8 no-clickbait}
+{0 Forbes,2 51,3 66.1,6 0.444444,8 no-clickbait}
+{0 'Bleacher Report',1 5,2 91,3 65.725,6 0.357143}
+{0 'The Guardian ',1 6,2 72,3 55.125227,6 0.090909,8 no-clickbait}
+{0 'Business Insider',1 6,2 92,3 56.25,6 0.333333,8 no-clickbait}
+{0 Mashable,2 103,3 88.725147,5 3,6 0.470588,7 2,8 no-clickbait}
+{0 'Daily Mail Online',2 80,3 35.945,6 0.4}
+{0 Forbes,2 66,3 37.9,6 0.444444,8 no-clickbait}
+{0 Yahoo,2 58,3 29.515,6 0.25,8 no-clickbait}
+{0 Mashable,2 11,3 119.19,6 0.666667}
+{0 'Huffington Post',2 54,3 95.688182,5 2,6 0.818182,7 1}
+{0 'Huffington Post',2 51,3 61.24,6 0.25}
+{0 ESPN,1 1,2 94,3 87.6775,6 0.625,8 no-clickbait}
+{0 Forbes,1 3,2 35,3 124.69,6 0.5,8 no-clickbait}
+{0 'Huffington Post',1 1,2 49,3 97.025,6 0.375}
+{0 'BBC News (UK)',2 88,3 83.853571,6 0.142857,8 no-clickbait}
+{0 'Wall Street Journal',1 1,2 118,3 78.245,6 0.4,8 no-clickbait}
+{1 3,2 79,3 57.233636,6 0.363636,8 no-clickbait}
+{0 'ABC News',1 2,2 112,3 47.8325,6 0.4375,8 no-clickbait}
+{0 Mashable,2 93,3 75.121176,6 0.529412}
+{0 'The Telegraph',1 2,2 58,3 61.325,4 1,6 0.4}
+{0 'Daily Mail Online',2 108,3 76.555,6 0.6,8 no-clickbait}
+{0 'Huffington Post',2 81,3 67.755,6 0.333333,8 no-clickbait}
+{0 'The New York Times',2 36,3 73.845,6 0.333333,8 no-clickbait}
+{0 'ABC News',1 1,2 92,3 53.12,6 0.5625,8 no-clickbait}
+{0 'The Telegraph',2 65,3 69.785,6 0.4}
+{0 'Wall Street Journal',2 68,3 69.785,6 0.4}
+{0 'The New York Times',1 3,2 108,3 85.876711,6 0.578947,8 no-clickbait}
+{0 Mashable,1 2,2 47,3 45.645,6 0.333333,8 no-clickbait}
+{0 Forbes,2 96,3 75.121176,5 2,6 0.823529,7 2}
+{0 'Huffington Post',1 1,2 89,3 82.39,4 1,6 0.5}
+{0 'Daily Mail Online',1 3,2 106,3 65.168235,6 0.352941,8 no-clickbait}
+{0 'Washington Post',1 1,2 93,3 35.510714,6 0.357143,8 no-clickbait}
+{0 Yahoo,2 90,3 75.121176,6 0.529412,8 no-clickbait}
+{0 'Huffington Post',1 6,2 77,3 90.09,6 0.4}
+{0 'The Guardian ',1 5,2 71,3 67.755,6 0.333333,8 no-clickbait}
+{0 Mashable,2 61,3 74.86,6 0.6}
+{0 Forbes,2 79,3 92.0625,5 2,6 0.666667,7 1}
+{0 'The Telegraph',1 2,2 51,3 -10.755,6 0.333333,8 no-clickbait}
+{0 ESPN,2 55,3 84.9,4 1,6 0.666667}
+{1 2,2 104,3 53.12,6 0.375,8 no-clickbait}
+{0 'ABC News',1 1,2 92,3 17.932308,6 0.461538,8 no-clickbait}
+{0 'The Telegraph',1 3,2 51,3 30.53,8 no-clickbait}
+{0 'NBC News',1 4,2 59,3 56.7,6 0.333333,8 no-clickbait}
+{0 'Daily Mail Online',1 3,2 92,3 39.555,6 0.25,8 no-clickbait}
+{0 'Huffington Post',1 5,2 64,3 69.785,6 0.3,8 no-clickbait}
+{1 1,2 139,3 52,6 0.277778,8 no-clickbait}
+{0 'Bleacher Report',2 88,3 46.605,6 0.333333}
+{0 'The Guardian ',1 2,2 68,3 8.365,6 0.125,8 no-clickbait}
+{1 2,2 94,3 17.932308,6 0.307692,8 no-clickbait}
+{0 BuzzFeed,1 1,2 80,3 43.963077,6 0.538462,8 no-clickbait}
+{0 'BBC News (UK)',1 2,2 33,3 66.4,6 0.2,8 no-clickbait}
+{0 'NBC News',1 2,2 49,3 82.39,6 0.375,8 no-clickbait}
+{0 'Washington Post',2 53,3 78.245,6 0.5,8 no-clickbait}
+{0 Yahoo,1 2,2 69,3 64.924545,6 0.363636,8 no-clickbait}
+{0 'ABC News',2 93,3 44.97,6 0.466667,8 no-clickbait}
+{0 'Wall Street Journal',1 2,2 46,3 61.24,6 0.625,8 no-clickbait}
+{0 Yahoo,2 106,3 95.165,6 0.65,8 no-clickbait}
+{0 'Business Insider',1 1,2 73,3 49.542727,6 0.454545,8 no-clickbait}
+{0 'Business Insider',1 1,2 90,3 67.53,6 0.6,8 no-clickbait}
+{0 BuzzFeed,1 1,2 59,3 34.0825,6 0.285714}
+{1 1,2 118,3 75.5,5 2,6 0.555556,7 2,8 no-clickbait}
+{0 'ABC News',1 2,2 114,3 53.971053,6 0.263158,8 no-clickbait}
+{0 Mashable,2 86,3 50.560577,6 0.461538,8 no-clickbait}
+{0 ESPN,1 5,2 94,3 63.695,6 0.375,8 no-clickbait}
+{0 Yahoo,2 47,3 45.645,4 1,6 0.166667}
+{1 4,2 94,3 53.12,6 0.375,8 no-clickbait}
+{0 'Wall Street Journal',1 2,2 43,3 45.645,8 no-clickbait}
+{0 'NBC News',2 77,3 74.805,6 0.583333}
+{0 'Daily Mail Online',2 103,3 70.144706,6 0.588235,8 no-clickbait}
+{0 BuzzFeed,2 68,3 19.1,8 no-clickbait}
+{0 'Bleacher Report',1 4,2 79,3 49.542727,6 0.272727,8 no-clickbait}
+{0 BuzzFeed,1 2,2 71,3 72.615455,8 no-clickbait}
+{0 BuzzFeed,2 56,3 69.785,6 0.6,8 no-clickbait}
+{0 'The Guardian ',1 1,2 73,3 10.565,5 1,6 0.4,7 1,8 no-clickbait}
+{0 Forbes,2 74,3 89.606731,4 1,5 1,6 0.692308,7 1}
+{0 'ABC News',1 5,2 88,3 39.555,6 0.333333,8 no-clickbait}
+{0 'Huffington Post',2 95,3 63.8625,6 0.533333}
+{0 'The Guardian ',1 3,2 68,3 28.5,6 0.222222,8 no-clickbait}
+{0 'Business Insider',1 2,2 97,3 70.144706,6 0.705882,8 no-clickbait}
+{0 Yahoo,1 1,2 89,3 32.505,6 0.25,8 no-clickbait}
+{0 'Huffington Post',1 4,2 61,3 87.997273,6 0.545455,8 no-clickbait}
+{0 'Wall Street Journal',1 1,2 68,3 67.755,4 1,6 0.333333,8 no-clickbait}
+{0 'BBC News (UK)',1 2,2 33,3 102.045,6 0.5,8 no-clickbait}
+{0 BuzzFeed,2 68,3 81.855,5 1,6 0.75,7 1,8 no-clickbait}
+{0 'BBC News (UK)',2 33,3 73.845,6 0.666667,8 no-clickbait}
+{0 'NBC News',1 1,2 91,3 56.25,6 0.533333}
+{0 'The Guardian ',1 4,2 70,3 60.705,6 0.5,8 no-clickbait}
+{0 'Bleacher Report',1 3,2 91,3 43.963077,6 0.384615,8 no-clickbait}
+{0 'BBC News (UK)',1 2,2 33,3 15.64,6 0.4,8 no-clickbait}
+{0 ESPN,2 93,3 79.5575,6 0.4375,8 no-clickbait}
+{0 'Business Insider',2 84,3 43.963077,6 0.538462,8 no-clickbait}
+{0 'The Guardian ',1 3,2 81,3 84.45,6 0.6,8 no-clickbait}
+{0 BuzzFeed,2 40,3 92.965,6 0.5}
+{0 'Wall Street Journal',1 5,2 124,3 95.955,6 0.291667,8 no-clickbait}
+{0 BuzzFeed,2 57,3 18.444286,8 no-clickbait}
+{0 'Business Insider',1 3,2 85,3 73.17,4 1,6 0.533333}
+{0 Mashable,1 2,2 89,3 73.17,6 0.333333,8 no-clickbait}
+{0 'Bleacher Report',1 2,2 107,3 33.69,6 0.4,8 no-clickbait}
+{0 Forbes,2 30,3 75.875,6 0.25,8 no-clickbait}
+{0 'Washington Post',1 2,2 62,3 103.379091,4 1,6 0.545455,8 no-clickbait}
+{0 'The New York Times',1 2,2 103,3 63.695,5 1,6 0.25,7 1}
+{0 'NBC News',2 84,3 30.947692,6 0.615385,8 no-clickbait}
+{0 Mashable,2 110,3 58.4075,4 1,6 0.5}
+{0 'Fox News',1 3,2 84,3 50.470769,6 0.384615,8 no-clickbait}
+{0 BuzzFeed,2 83,3 76.501538,6 0.538462}
+{0 'ABC News',2 63,3 87.997273,6 0.545455}
+{0 'NBC News',2 139,3 87.18375,6 0.592593,8 no-clickbait}
+{0 'Bleacher Report',1 1,2 93,3 32.505,6 0.333333,8 no-clickbait}
+{0 'Huffington Post',1 2,2 77,3 46.605,6 0.583333}
+{0 'The Guardian ',1 2,2 73,3 69.993846,6 0.692308,8 no-clickbait}
+{0 'ABC News',1 3,2 88,3 50.470769,6 0.307692,8 no-clickbait}
+{0 'ABC News',1 2,2 83,3 76.501538,6 0.384615,8 no-clickbait}
+{0 'Huffington Post',2 55,3 75.5,6 0.444444,8 no-clickbait}
+{0 'Bleacher Report',1 1,2 94,3 70.144706,6 0.470588,8 no-clickbait}
+{0 'Wall Street Journal',1 1,2 88,3 37.455385,6 0.384615,8 no-clickbait}
+{2 103,3 86.62451,6 0.411765,8 no-clickbait}
+{0 'NBC News',1 2,2 89,3 73.17,6 0.4,8 no-clickbait}
+{0 'Bleacher Report',1 2,2 92,3 61.89,6 0.466667,8 no-clickbait}
+{0 'NBC News',2 106,3 107.548929,5 2,6 0.619048,7 2,8 no-clickbait}
+{0 'BBC News (UK)',1 4,2 117,3 43.936912,6 0.411765,8 no-clickbait}
+{0 Yahoo,2 69,3 81.855,5 1,6 0.75,7 1}
+{0 'Washington Post',1 2,2 96,3 71.065,6 0.555556,8 no-clickbait}
+{0 'BBC News (UK)',1 1,2 37,3 -8.725,6 0.25}
+{0 'BBC News (UK)',2 35,3 102.045,6 0.5}
+{0 'BBC News (UK)',2 25,3 100.24,4 1,6 0.4}
+{0 'BBC News (UK)',2 63,3 81.855,4 1,6 0.416667}
+{0 'The New York Times',2 111,3 68.066184,6 0.421053,8 no-clickbait}
+{0 BuzzFeed,1 2,2 58,3 57.233636,6 0.454545}
+{0 ESPN,1 1,2 94,3 75.1425,6 0.266667,8 no-clickbait}
+{0 'Business Insider',1 1,2 81,3 77.810714,4 1,6 0.642857}
+{0 'Bleacher Report',1 1,2 92,3 61.89,6 0.533333,8 no-clickbait}
+{0 BuzzFeed,1 2,2 42,3 42.615714,6 0.142857,8 no-clickbait}
+{0 'Business Insider',1 2,2 44,3 54.701429,6 0.428571,8 no-clickbait}
+{0 Yahoo,2 76,3 81.855,6 0.583333,8 no-clickbait}
+{0 'The New York Times',1 1,2 80,3 83.853571,4 1,5 2,6 0.642857,7 2}
+{2 95,3 71.815,5 2,6 0.4375,7 1,8 no-clickbait}
+{0 BuzzFeed,1 1,2 78,3 73.17,6 0.666667,8 no-clickbait}
+{0 BuzzFeed,2 64,3 80.306364,6 0.454545}
+{0 'The New York Times',1 3,2 60,3 87.997273,6 0.454545,8 no-clickbait}
+{0 'Bleacher Report',1 4,2 93,3 53.12,6 0.4375,8 no-clickbait}
+{0 'Wall Street Journal',1 4,2 110,3 75.320357,6 0.428571,8 no-clickbait}
+{1 1,2 60,3 93.579773,4 1,5 2,6 0.727273,7 1}
+{0 'Washington Post',1 1,2 62,3 74.805,6 0.416667,8 no-clickbait}
+{0 'Business Insider',1 1,2 90,3 66.365,6 0.5,8 no-clickbait}
+{0 BuzzFeed,1 2,2 105,3 68.066184,6 0.473684}
+{0 BuzzFeed,2 87,3 80.686842,6 0.789474,8 no-clickbait}
+{0 'ABC News',1 4,2 84,3 77.1025,6 0.3125,8 no-clickbait}
+{0 'Business Insider',1 2,2 75,3 83.853571,4 1,6 0.571429}
+{0 'ABC News',2 63,3 87.997273,6 0.545455,8 no-clickbait}
+{0 'NBC News',1 5,2 56,3 50.665,6 0.125,8 no-clickbait}
+{0 Mashable,2 72,3 57.233636,6 0.363636}
+{0 'Business Insider',1 2,2 90,3 35.510714,4 1,6 0.214286}
+{1 3,2 87,3 95.42,6 0.625}
+{0 'Business Insider',1 1,2 67,3 52.865,6 0.5}
+{0 'Business Insider',2 46,3 82.39,6 0.625}
+{0 'NBC News',1 2,2 67,3 41.851818,6 0.454545}
+{0 'Bleacher Report',1 2,2 89,3 59.682143,4 1,6 0.357143,8 no-clickbait}
+{0 'ABC News',1 1,2 92,3 24.44,6 0.307692,8 no-clickbait}
+{0 Mashable,1 1,2 91,3 4.305,6 0.25,8 no-clickbait}
+{0 'ABC News',1 1,2 105,3 50.238824,6 0.294118,8 no-clickbait}
+{0 BuzzFeed,2 60,3 78.245,5 2,6 0.7,7 1,8 no-clickbait}
+{0 'ABC News',1 1,2 52,3 78.245,6 0.4,8 no-clickbait}
+{0 'Fox News',1 1,2 62,3 72.615455,6 0.636364,8 no-clickbait}
+{0 'ABC News',1 2,2 94,3 30.947692,6 0.153846,8 no-clickbait}
+{0 Yahoo,1 2,2 140,3 68.77,6 0.5,8 no-clickbait}
+{0 'ABC News',1 2,2 88,3 41.553571,6 0.5,8 no-clickbait}
+{0 'BBC News (UK)',1 2,2 33,3 32.56,6 0.2,8 no-clickbait}
+{0 'Washington Post',1 3,2 82,3 56.978462,6 0.384615}
+{0 'Business Insider',2 43,3 113.1,5 2,6 0.666667,7 1}
+{0 'NBC News',1 2,2 54,3 40.09,4 1,6 0.25}
+{0 Mashable,1 1,2 74,3 95.939286,6 0.714286}
+{0 'The New York Times',2 57,3 87.997273,6 0.636364,8 no-clickbait}
+{0 'The Telegraph',1 3,2 69,3 49.542727,6 0.363636,8 no-clickbait}
+{1 2,2 114,3 51.175,6 0.35,8 no-clickbait}
+{0 'Fox News',1 2,2 61,3 44.405,6 0.3,8 no-clickbait}
+{0 'Daily Mail Online',2 70,3 81.855,6 0.5}
+{0 'The Guardian ',1 4,2 83,3 77.810714,6 0.428571,8 no-clickbait}
+{0 BuzzFeed,2 62,3 47.3,6 0.555556}
+{0 'NBC News',2 75,3 95.939286,6 0.714286,8 no-clickbait}
+{0 'The Telegraph',1 1,2 34,3 103.044286,6 0.428571,8 no-clickbait}
+{0 'Business Insider',2 92,3 67.53,5 2,6 0.6,7 1}
+{0 'NBC News',1 2,2 53,3 75.5,6 0.333333,8 no-clickbait}
+{0 'Wall Street Journal',2 80,3 84.845,6 0.5625,8 no-clickbait}
+{0 Mashable,2 59,3 95.688182,5 2,6 0.454545,7 1}
+{0 'The Telegraph',1 3,2 51,3 108.2675,6 0.333333}
+{0 'ABC News',1 3,2 43,3 42.615714,6 0.142857,8 no-clickbait}
+{0 'ABC News',1 1,2 81,3 46.605,4 1,6 0.5}
+{0 'Business Insider',1 2,2 59,3 69.785,6 0.7}
+{0 'Fox News',1 2,2 73,3 26.47,6 0.363636,8 no-clickbait}
+{0 'Daily Mail Online',2 107,3 76.555,6 0.55,8 no-clickbait}
+{0 'The Telegraph',1 2,2 74,3 81.855,6 0.25,8 no-clickbait}
+{0 'Huffington Post',2 54,3 95.688182,5 2,6 0.818182,7 1}
+{0 'Washington Post',2 48,3 66.787143,6 0.285714}
+{0 'ABC News',1 1,2 67,3 95.939286,5 1,6 0.785714,7 1}
+{0 BuzzFeed,1 2,2 94,3 79.5575,6 0.5,8 no-clickbait}
+{0 'The New York Times',2 55,3 69.785,6 0.2,8 no-clickbait}
+{0 'Huffington Post',2 59,3 96.024615,6 0.538462,8 no-clickbait}
+{0 'BBC News (UK)',1 2,2 102,3 44.97,6 0.4,8 no-clickbait}
+{0 'Washington Post',2 48,3 66.787143,6 0.285714}
+{0 'Wall Street Journal',1 1,2 73,3 49.542727,6 0.545455,7 1,8 no-clickbait}
+{0 'Daily Mail Online',1 4,2 64,3 28.5,6 0.111111,8 no-clickbait}
+{0 Forbes,2 84,3 65.725,6 0.571429}
+{0 'The Telegraph',2 84,3 39.555,6 0.666667,8 no-clickbait}
+{0 'Huffington Post',2 51,3 54.701429,6 0.285714,8 no-clickbait}
+{0 'The Guardian ',2 43,3 113.1,6 1}
+{0 'NBC News',1 1,2 74,3 34.160909,6 0.272727,8 no-clickbait}
+{0 'ABC News',1 5,2 88,3 39.555,6 0.333333,8 no-clickbait}
+{0 'The Telegraph',1 3,2 57,3 75.5}
+{0 'Business Insider',2 73,3 83.853571,6 0.642857}
+{0 'The Guardian ',1 2,2 77,3 41.851818,6 0.363636,8 no-clickbait}
+{0 'Business Insider',1 2,2 68,3 41.851818,6 0.363636,8 no-clickbait}
+{0 'Fox News',2 77,3 56.978462,6 0.461538,8 no-clickbait}
+{0 'The Telegraph',1 7,2 85,3 50.470769,6 0.153846,8 no-clickbait}
+{0 'The Guardian ',2 73,3 49.542727,6 0.363636,8 no-clickbait}
+{0 'The Telegraph',1 2,2 61,3 47.3,6 0.444444,8 no-clickbait}
+{0 'Business Insider',2 63,3 44.405,6 0.5,8 no-clickbait}
+{0 'ABC News',1 2,2 77,3 81.855,6 0.333333,8 no-clickbait}
+{0 'The Guardian ',1 8,2 68,3 67.755,6 0.25,8 no-clickbait}
+{0 Mashable,1 2,2 117,3 42.865,6 0.5,8 no-clickbait}
+{0 'Washington Post',1 1,2 57,3 40.09,6 0.5,8 no-clickbait}
+{0 'BBC News (UK)',2 127,3 73.142174,6 0.73913,8 no-clickbait}
+{0 'Daily Mail Online',1 2,2 77,3 41.851818,6 0.181818,8 no-clickbait}
+{0 'Huffington Post',1 1,2 46,3 82.425357,6 0.571429}
+{0 BuzzFeed,1 1,2 73,3 67.755,6 0.416667}
+{0 'Business Insider',1 1,2 72,3 95.73,6 0.866667}
+{0 Mashable,1 2,2 60,3 80.306364,6 0.454545,8 no-clickbait}
+{0 'Daily Mail Online',1 4,2 104,3 56.25,6 0.266667,8 no-clickbait}
+{0 'The Guardian ',1 1,2 70,3 27.485,6 0.3,8 no-clickbait}
+{0 'The Telegraph',1 3,2 78,3 53.655,6 0.5,8 no-clickbait}
+{0 'Huffington Post',2 52,3 40.09,5 2,6 0.5,7 1}
+{0 'Huffington Post',1 5,2 61,3 80.306364,6 0.181818,8 no-clickbait}
+{0 'Business Insider',1 2,2 94,3 30.947692,6 0.461538}
+{0 'The New York Times',1 1,2 89,3 59.682143,6 0.5,8 no-clickbait}
+{0 'NBC News',1 1,2 60,3 65.3,6 0.25,8 no-clickbait}
+{0 'Business Insider',1 2,2 58,3 61.325,6 0.5}
+{0 BuzzFeed,2 43,3 94.3,6 0.777778,8 no-clickbait}
+{0 Forbes,2 44,3 86.45,4 1,6 0.5}
+{0 'Washington Post',2 83,3 78.790513,6 0.538462}
+{0 'BBC News (UK)',1 3,2 118,3 40.285882,6 0.470588,8 no-clickbait}
+{0 'The Guardian ',1 3,2 70,3 49.542727,6 0.3,8 no-clickbait}
+{0 'BBC News (UK)',2 58,3 75.5,5 1,6 0.444444,7 1}
+{0 'The Guardian ',1 1,2 70,3 10.565,6 0.5,8 no-clickbait}
+{0 Forbes,2 103,3 72.72,5 1,6 0.619048,7 1,8 no-clickbait}
+{0 'Business Insider',1 4,2 75,3 77.810714,4 1,6 0.428571}
+{0 BuzzFeed,2 26,3 102.045}
+{0 'The Telegraph',1 1,2 94,3 -2.745,6 0.333333,8 no-clickbait}
+{0 'Washington Post',1 1,2 67,3 72.615455,4 1,6 0.454545,8 no-clickbait}
+{0 'Business Insider',1 1,2 61,3 64.924545,6 0.909091}
+{0 'Business Insider',1 1,2 91,3 75.765,6 0.555556,8 no-clickbait}
+{0 'Business Insider',1 1,2 92,3 73.17,6 0.466667,8 no-clickbait}
+{0 'The Guardian ',2 33,3 90.958571,6 0.714286}
+{0 'Washington Post',1 1,2 74,3 41.851818,6 0.363636,8 no-clickbait}
+{0 Yahoo,1 1,2 78,3 92.0625,5 2,6 0.6,7 1,8 no-clickbait}
+{0 'Business Insider',2 62,3 80.306364,6 0.636364}
+{0 'The Independent',1 1,2 62,3 80.306364,6 0.454545,8 no-clickbait}
+{0 'The Independent',1 1,2 60,3 95.165,6 0.3}
+{0 'The Independent',1 2,2 68,3 80.306364,6 0.454545,8 no-clickbait}
+{0 'The Telegraph',2 75,3 50.470769,6 0.692308,8 no-clickbait}
+{0 'The Independent',2 38,3 103.54,4 1,6 0.625}
+{0 'The Independent',1 3,2 55,3 78.245,5 2,6 0.4,7 1,8 no-clickbait}
+{0 'Business Insider',1 1,2 70,3 63.486154,6 0.538462}
+{0 'Washington Post',1 2,2 86,3 37.455385,6 0.307692}
+{0 'Daily Mail Online',1 1,2 62,3 81.855,6 0.75,8 no-clickbait}
+{0 'ABC News',1 5,2 71,3 89.516923,6 0.307692,8 no-clickbait}
+{0 'The Independent',1 1,2 54,3 94.3,6 0.555556}
+{0 'The Guardian ',1 2,2 60,3 95.955,4 1,5 2,6 0.666667,7 1,8 no-clickbait}
+{0 'The Independent',2 83,3 84.45,4 1,6 0.533333}
+{0 'The Guardian ',1 6,2 66,3 57.233636,6 0.454545,8 no-clickbait}
+{0 'The Independent',2 70,3 76.501538,6 0.461538,8 no-clickbait}
+{0 'The Guardian ',1 3,2 76,3 53.655,6 0.333333,8 no-clickbait}
+{0 'The Independent',1 2,2 57,3 78.245,6 0.5,8 no-clickbait}
+{0 'The New York Times',1 2,2 94,3 87.6775,6 0.4375,8 no-clickbait}
+{0 'Fox News',1 4,2 77,3 14.2675,6 0.111111,8 no-clickbait}
+{0 'The Independent',2 89,3 79.5575,6 0.625,8 no-clickbait}
+{0 'Business Insider',1 4,2 90,3 47.596429,6 0.428571,8 no-clickbait}
+{0 Yahoo,2 48,3 95.165,6 0.6}
+{0 'Business Insider',1 2,2 67,3 64.924545,6 0.272727,8 no-clickbait}
+{0 'The Independent',1 1,2 94,3 56.25,4 1,6 0.533333}
+{0 'The Independent',2 60,3 69.785,6 0.7,8 no-clickbait}
+{0 'The Guardian ',1 2,2 74,3 57.233636,6 0.363636,8 no-clickbait}
+{0 Yahoo,2 62,3 47.3,6 0.222222}
+{0 'The Independent',2 72,3 101.37,4 1,6 0.733333}
+{0 Forbes,2 66,3 44.405,4 1,6 0.6,8 no-clickbait}
+{0 'The Independent',1 4,2 107,3 56.965,6 0.555556,8 no-clickbait}
+{0 'The Independent',2 80,3 76.501538,6 0.384615}
+{0 'Business Insider',2 59,3 81.855,6 0.666667}
+{0 Mashable,1 1,2 117,3 68.095,6 0.75,8 no-clickbait}
+{0 'Huffington Post',1 3,2 82,3 18.405,4 1,6 0.583333,8 no-clickbait}
+{0 'ABC News',1 2,2 109,3 45.065789,6 0.578947,8 no-clickbait}
+{0 'Business Insider',1 2,2 83,3 84.45,6 0.733333}
+{0 'The Telegraph',2 52,3 75.5,4 1,6 0.777778}
+{0 'Business Insider',2 83,3 65.725,6 0.571429}
+{0 Yahoo,1 1,2 59,3 52.865,6 0.3}
+{0 'The New York Times',1 2,2 52,3 66.1,6 0.222222,8 no-clickbait}
+{0 'The Independent',1 1,2 82,3 71.767857,5 2,6 0.785714,7 2}
+{0 'Huffington Post',1 1,2 47,3 54.701429,6 0.142857,8 no-clickbait}
+{0 'The Independent',1 1,2 43,3 66.787143,6 0.571429,8 no-clickbait}
+{0 'The Independent',2 55,3 86.705,5 2,6 0.4,7 1}
+{0 'Business Insider',2 64,3 96.024615,6 0.692308,8 no-clickbait}
+{0 'Fox News',1 4,2 88,3 108.631029,6 0.588235,8 no-clickbait}
+{0 'The Telegraph',2 48,3 31.545,6 0.5,8 no-clickbait}
+{0 'Fox News',1 1,2 140,3 22.301404,6 0.315789,8 no-clickbait}
+{0 'The Independent',2 93,3 67.53,4 2,5 2,6 0.733333,7 1}
+{0 'The Guardian ',1 1,2 77,3 77.810714,6 0.642857,8 no-clickbait}
+{0 Yahoo,1 2,2 118,3 33.465,6 0.333333,8 no-clickbait}
+{0 'Business Insider',1 1,2 86,3 19.025,6 0.3,8 no-clickbait}
+{0 'Business Insider',1 2,2 81,3 50.470769,6 0.307692}
+{0 'The Telegraph',2 81,3 83.009231,6 0.692308,8 no-clickbait}
+{0 'Huffington Post',1 2,2 57,3 69.785,6 0.5,8 no-clickbait}
+{0 'The New York Times',2 85,3 16.670682,6 0.272727}
+{0 'Huffington Post',2 50,3 71.815,6 0.375}
+{0 'The Guardian ',1 3,2 83,3 84.915714,4 1,6 0.357143,8 no-clickbait}
+{0 Yahoo,2 102,3 24.44,6 0.307692,8 no-clickbait}
+{0 'Business Insider',1 3,2 77,3 53.639286,4 1,6 0.428571}
+{0 'The Independent',2 89,3 84.915714,6 0.428571,8 no-clickbait}
+{0 Mashable,2 78,3 89.896429,4 1,5 3,6 0.5,7 2,8 no-clickbait}
+{0 'The Independent',2 64,3 87.997273,6 0.636364,8 no-clickbait}
+{0 'The Guardian ',1 1,2 71,3 10.565,6 0.3,8 no-clickbait}
+{0 'The Independent',2 51,3 75.5,5 2,6 0.666667,7 1}
+{0 'The New York Times',1 2,2 116,3 71.291786,6 0.619048,8 no-clickbait}
+{0 'Business Insider',1 1,2 60,3 88.905,6 0.5}
+{0 'Business Insider',1 1,2 80,3 39.555,6 0.5}
+{0 Yahoo,1 1,2 66,3 49.542727,6 0.454545}
+{0 'The Independent',1 1,2 57,3 61.325,6 0.4}
+{0 Forbes,1 5,2 58,3 61.325,6 0.2,8 no-clickbait}
+{0 'The Independent',1 3,2 109,3 16.1075,6 0.25,8 no-clickbait}
+{0 'Fox News',2 62,3 47.3,6 0.333333}
+{0 ESPN,1 2,2 94,3 50.61,6 0.533333}
+{0 'The Telegraph',2 44,3 45.645,6 0.166667,8 no-clickbait}
+{0 'The Independent',1 1,2 77,3 83.853571,6 0.714286,8 no-clickbait}
+{0 BuzzFeed,2 69,3 60.705}
+{0 'The Independent',1 3,2 69,3 35.945,6 0.3}
+{0 'The Guardian ',2 82,3 84.45,6 0.6,8 no-clickbait}
+{0 Mashable,1 2,2 90,3 72.83,5 1,6 0.428571,7 1,8 no-clickbait}
+{0 'BBC News (UK)',1 2,2 60,3 40.09,6 0.25,8 no-clickbait}
+{0 'NBC News',1 3,2 80,3 34.160909,6 0.363636,8 no-clickbait}
+{0 'The Telegraph',1 1,2 54,3 56.7,6 0.666667,8 no-clickbait}
+{0 BuzzFeed,1 1,2 87,3 59.267436,6 0.461538,8 no-clickbait}
+{0 'Washington Post',1 2,2 62,3 103.379091,4 1,6 0.545455}
+{1 1,2 109,3 78.772206,6 0.411765,8 no-clickbait}
+{0 'Huffington Post',1 4,2 52,3 42.615714,6 0.142857,8 no-clickbait}
+{0 Mashable,2 76,3 72.367879,6 0.454545,8 no-clickbait}
+{0 'The Independent',2 63,3 61.325,4 1,6 0.6}
+{0 'Wall Street Journal',1 2,2 87,3 29.467857,6 0.5,8 no-clickbait}
+{0 'Bleacher Report',1 2,2 85,3 46.605,6 0.5,8 no-clickbait}
+{0 'Business Insider',2 49,3 95.165,6 0.2}
+{0 'BBC News (UK)',1 2,2 87,3 46.605,6 0.25,8 no-clickbait}
+{0 'The New York Times',2 76,3 95.939286,6 0.571429}
+{0 'The Independent',1 1,2 64,3 88.905,6 0.5}
+{0 'Fox News',1 1,2 91,3 40.625,6 0.666667,8 no-clickbait}
+{0 'The Independent',2 54,3 61.325,6 0.8}
+{0 Mashable,1 1,2 49,3 71.815,6 0.25}
+{0 'The Independent',2 42,3 82.39,5 2,6 0.5,7 1}
+{0 Yahoo,2 74,3 83.009231,6 0.461538,8 no-clickbait}
+{0 'Huffington Post',1 4,2 70,3 34.160909,6 0.272727,8 no-clickbait}
+{0 BuzzFeed,1 2,2 72,3 60.705,6 0.5,8 no-clickbait}
+{0 'The Independent',1 4,2 71,3 72.615455,6 0.363636,8 no-clickbait}
+{0 'The Independent',2 56,3 108.961591,6 0.636364}
+{0 'The Guardian ',1 2,2 71,3 19.1,6 0.333333,8 no-clickbait}
+{0 ESPN,1 7,2 109,3 78.245,5 1,6 0.45,7 1}
+{0 'Huffington Post',2 54,3 75.5,6 0.444444}
+{0 Forbes,2 36,3 -8.725,6 0.5,8 no-clickbait}
+{0 'The Independent',1 1,2 68,3 108.025,4 1,6 0.785714,8 no-clickbait}
+{0 'The New York Times',1 1,2 95,3 30.947692,6 0.384615,8 no-clickbait}
+{0 'The Independent',2 67,3 72.615455,6 0.454545}
+{0 'Washington Post',1 1,2 67,3 95.939286,4 1,6 0.454545}
+{0 'Huffington Post',1 5,2 94,3 39.33,6 0.533333}
+{0 'Bleacher Report',1 3,2 69,3 57.233636,6 0.545455,8 no-clickbait}
+{0 Forbes,2 39,3 45.645,4 1,6 0.5}
+{0 'Daily Mail Online',1 1,2 87,3 69.993846,6 0.615385}
+{0 'ABC News',1 1,2 78,3 57.233636,6 0.545455,8 no-clickbait}
+{0 'Business Insider',1 3,2 95,3 74.27,6 0.5625,8 no-clickbait}
+{0 BuzzFeed,1 2,2 73,3 49.542727,6 0.090909,8 no-clickbait}
+{0 'Fox News',1 3,2 132,3 47.788333,6 0.3,8 no-clickbait}
+{0 'Business Insider',1 3,2 54,3 78.245,6 0.6}
+{0 'The New York Times',1 2,2 87,3 16.670682,6 0.272727,8 no-clickbait}
+{0 'The New York Times',1 1,2 56,3 69.785,6 0.7,8 no-clickbait}
+{0 Mashable,1 4,2 115,3 56.965,6 0.388889,8 no-clickbait}
+{0 'The Telegraph',2 75,3 50.470769,6 0.692308,8 no-clickbait}
+{0 'Business Insider',1 1,2 85,3 85.165,6 0.833333,8 no-clickbait}
+{0 'Wall Street Journal',1 4,2 93,3 67.53,6 0.4,8 no-clickbait}
+{0 'The New York Times',1 3,2 98,3 35.510714,6 0.285714,8 no-clickbait}
+{0 'The Guardian ',1 2,2 51,3 61.24,6 0.125,8 no-clickbait}
+{0 'The Independent',2 89,3 78.81,6 0.666667}
+{0 Yahoo,1 3,2 82,3 86.4225,6 0.466667,8 no-clickbait}
+{0 Yahoo,1 4,2 93,3 24.44,6 0.307692,8 no-clickbait}
+{0 'Bleacher Report',1 2,2 88,3 94.565,6 0.555556,8 no-clickbait}
+{0 'The Independent',1 1,2 61,3 40.09,6 0.375,8 no-clickbait}
+{0 'ABC News',2 93,3 44.97,6 0.466667,8 no-clickbait}
+{0 ESPN,1 1,2 92,3 77.1025,4 1,6 0.625,8 no-clickbait}
+{0 'NBC News',1 2,2 65,3 103.005,6 0.416667,8 no-clickbait}
+{0 'The New York Times',2 38,3 66.787143,6 0.714286}
+{0 'The Independent',1 1,2 87,3 79.5575,6 0.625,8 no-clickbait}
+{0 'ABC News',1 2,2 63,3 37.9,6 0.444444,8 no-clickbait}
+{0 'BBC News (UK)',1 3,2 32,3 32.56,6 0.2,8 no-clickbait}
+{0 'Business Insider',2 71,3 60.705,5 1,6 0.416667,7 1}
+{0 'The Independent',1 1,2 88,3 69.5025,6 0.266667,8 no-clickbait}
+{0 Yahoo,1 1,2 130,3 68.77,6 0.454545,8 no-clickbait}
+{0 'Wall Street Journal',1 3,2 74,3 50.470769,6 0.384615,8 no-clickbait}
+{0 'The Independent',1 1,2 67,3 83.009231,4 1,6 0.615385}
+{0 'The Guardian ',1 2,2 73,3 35.945,6 0.2,8 no-clickbait}
+{0 'The Independent',1 1,2 40,3 94.511071,4 1,5 2,6 0.571429,7 1,8 no-clickbait}
+{0 ESPN,1 3,2 92,3 69.234167,6 0.5,8 no-clickbait}
+{0 'Bleacher Report',1 2,2 71,3 67.755,6 0.583333,8 no-clickbait}
+{0 Yahoo,2 64,3 69.785,6 0.3,8 no-clickbait}
+{0 'The Independent',2 45,3 17.445,6 0.333333}
+{0 'The Telegraph',1 1,2 64,3 80.306364,6 0.545455,8 no-clickbait}
+{0 'The Independent',2 42,3 82.39,5 2,6 0.5,7 1}
+{0 'The Independent',1 5,2 109,3 67.328947,6 0.263158,8 no-clickbait}
+{0 'The Independent',2 49,3 75.5,6 0.666667}
+{0 Yahoo,1 2,2 93,3 70.144706,6 0.529412,8 no-clickbait}
+{0 'The Independent',2 60,3 116.6525,5 1,6 0.818182,7 1}
+{0 'Washington Post',1 4,2 84,3 78.81,4 1,6 0.533333}
+{0 'The Independent',2 53,3 86.705,6 0.6,8 no-clickbait}
+{0 'Fox News',1 1,2 80,3 26.47,6 0.181818,8 no-clickbait}
+{0 ESPN,1 4,2 116,3 62.876316,6 0.368421,8 no-clickbait}
+{0 'The Independent',1 2,2 59,3 103.379091,6 0.545455,8 no-clickbait}
+{0 'The Independent',2 80,3 95.73,4 1,6 0.733333}
+{0 'Daily Mail Online',1 2,2 79,3 53.655,6 0.666667,8 no-clickbait}
+{0 'The Guardian ',1 6,2 64,3 134.142727,6 0.1,8 no-clickbait}
+{0 'The New York Times',1 6,2 63,3 80.306364,6 0.181818,8 no-clickbait}
+{0 ESPN,1 4,2 114,3 82.901429,6 0.571429,8 no-clickbait}
+{0 'Huffington Post',1 2,2 46,3 94.3,5 2,6 0.555556,7 1}
+{0 'Bleacher Report',1 3,2 79,3 71.767857,6 0.357143,8 no-clickbait}
+{0 'The Independent',2 78,3 84.45,6 0.666667}
+{0 'The Independent',2 85,3 49.542727,6 0.363636,8 no-clickbait}
+{0 'The Guardian ',1 1,2 66,3 9.7,6 0.333333,8 no-clickbait}
+{0 'The Telegraph',1 2,2 82,3 63.486154,6 0.461538,8 no-clickbait}
+{0 'Business Insider',1 2,2 91,3 56.25,4 1,6 0.466667,8 no-clickbait}
+{0 'Business Insider',2 72,3 101.982143,6 0.428571}
+{0 'The Telegraph',1 5,2 118,3 43.936912,6 0.411765,8 no-clickbait}
+{0 'Business Insider',2 47,3 54.701429,6 0.428571,8 no-clickbait}
+{0 'Bleacher Report',1 1,2 86,3 67.53,6 0.466667,8 no-clickbait}
+{0 'Business Insider',1 2,2 68,3 88.905,5 2,6 0.5,7 1}
+{0 'The Independent',2 46,3 113.1,4 1,5 2,6 0.777778,7 1}
+{2 62,3 9.911071,6 0.142857,8 no-clickbait}
+{0 'The Independent',1 1,2 94,3 56.25,4 1,6 0.533333}
+{0 ESPN,1 2,2 112,3 56.7,6 0.555556}
+{0 'Bleacher Report',1 4,2 83,3 71.767857,6 0.357143,8 no-clickbait}
+{0 'The New York Times',1 3,2 69,3 65.725,6 0.285714,8 no-clickbait}
+{0 'Huffington Post',2 67,3 95.955,6 0.583333}
+{0 'The Guardian ',1 2,2 64,3 37.9,6 0.555556,8 no-clickbait}
+{0 ESPN,1 3,2 92,3 75.1425,4 1,6 0.666667,8 no-clickbait}
+{0 'Washington Post',1 1,2 68,3 27.485,6 0.3,8 no-clickbait}
+{0 'The Guardian ',1 4,2 64,3 64.924545,6 0.363636,8 no-clickbait}
+{0 'Bleacher Report',2 79,3 53.655,6 0.416667}
+{0 Mashable,1 5,2 65,3 80.306364,6 0.363636}
+{0 'The Independent',1 1,2 78,3 83.853571,6 0.714286,8 no-clickbait}
+{0 Yahoo,2 94,3 11.355,6 0.5,8 no-clickbait}
+{0 'Huffington Post',1 2,2 83,3 103.3425,6 0.666667}
+{0 'BBC News (UK)',1 3,2 28,3 12.425,8 no-clickbait}
+{0 'The Telegraph',1 1,2 54,3 56.7,6 0.666667,8 no-clickbait}
+{0 'The Independent',1 1,2 56,3 87.997273,4 1,5 2,6 0.636364,7 1}
+{0 'NBC News',1 2,2 64,3 44.405,6 0.5,8 no-clickbait}
+{0 'Fox News',1 1,2 122,3 37.9,6 0.166667,8 no-clickbait}
+{0 'Huffington Post',1 1,2 65,3 66.1,6 0.555556,8 no-clickbait}
+{2 93,3 88.725147,5 2,6 0.588235,7 1,8 no-clickbait}
+{0 'The Telegraph',2 73,3 95.73,6 0.866667}
+{0 'The New York Times',1 3,2 107,3 99.395,6 0.55,8 no-clickbait}
+{0 'The Guardian ',1 3,2 65,3 28.5,6 0.333333,8 no-clickbait}
+{0 BuzzFeed,2 49,3 95.165,5 2,6 0.5,7 1}
+{0 Yahoo,1 3,2 92,3 60.367019,6 0.384615,8 no-clickbait}
+{0 'The Guardian ',1 4,2 74,3 89.516923,6 0.307692,8 no-clickbait}
+{0 ESPN,1 3,2 92,3 80.097647,6 0.529412,8 no-clickbait}
+{0 'Washington Post',1 5,2 105,3 58.423684,4 1,6 0.421053,8 no-clickbait}
+{0 Forbes,2 48,3 103.044286,6 0.428571,8 no-clickbait}
+{0 'The Telegraph',1 1,2 54,3 84.9,6 0.444444,8 no-clickbait}
+{0 'Daily Mail Online',1 1,2 78,3 32.505,6 0.333333,8 no-clickbait}
+{0 'Huffington Post',1 2,2 60,3 40.09,6 0.25,8 no-clickbait}
+{0 'Business Insider',1 3,2 79,3 69.993846,6 0.384615,8 no-clickbait}
+{0 ESPN,1 4,2 89,3 82.39,6 0.375,8 no-clickbait}
+{0 Yahoo,1 2,2 83,3 79.5575,4 1,6 0.5625,8 no-clickbait}
+{0 'Huffington Post',1 2,2 52,3 42.615714,6 0.142857}
+{0 'The Telegraph',1 2,2 47,3 71.815,6 0.5,8 no-clickbait}
+{0 Forbes,2 43,3 92.965,6 0.5}
+{0 'The Independent',2 67,3 96.024615,6 0.615385,8 no-clickbait}
+{0 'Huffington Post',2 44,3 92.965,6 0.375}
+{0 'The Independent',1 3,2 75,3 103.54,4 1,6 0.5}
+{0 'ABC News',2 63,3 87.997273,6 0.545455}
+{0 'Huffington Post',1 2,2 60,3 28.5,6 0.555556}
+{0 'Daily Mail Online',1 1,2 61,3 47.3,6 0.333333,8 no-clickbait}
+{0 'Bleacher Report',1 2,2 83,3 59.682143,6 0.357143,8 no-clickbait}
+{0 'BBC News (UK)',2 38,3 103.044286,6 0.571429}
+{0 'The Guardian ',1 2,2 75,3 95.939286,6 0.642857}
+{0 'NBC News',1 4,2 61,3 61.325,6 0.3,8 no-clickbait}
+{0 Yahoo,2 68,3 52.865,6 0.4,8 no-clickbait}
+{0 'Fox News',1 3,2 90,3 44.97,6 0.4,8 no-clickbait}
+{0 ESPN,1 3,2 94,3 75.1425,6 0.533333,8 no-clickbait}
+{0 'Wall Street Journal',1 1,2 89,3 50.470769,6 0.615385}
+{0 'Washington Post',1 2,2 69,3 95.688182,4 1,6 0.545455}
+{0 'The New York Times',1 1,2 48,3 66.787143,4 1,8 no-clickbait}
+{0 'Huffington Post',1 1,2 64,3 109.04,4 1,6 0.692308,8 no-clickbait}
+{0 'Business Insider',2 87,3 74.27,6 0.4375}
+{0 'Business Insider',1 3,2 75,3 69.993846,6 0.538462,8 no-clickbait}
+{0 'Washington Post',1 4,2 72,3 26.47,6 0.181818}
+{0 'The Guardian ',1 3,2 73,3 76.501538,6 0.461538,8 no-clickbait}
+{0 BuzzFeed,2 60,3 78.245}
+{0 Yahoo,1 1,2 108,3 81.424079,6 0.684211,8 no-clickbait}
+{0 'NBC News',1 3,2 39,3 82.39,6 0.25,8 no-clickbait}
+{0 ESPN,1 2,2 94,3 71.815,6 0.375,8 no-clickbait}
+{0 'Washington Post',1 4,2 127,3 67.263214,6 0.380952}
+{0 'Business Insider',1 7,2 140,3 36.359565,6 0.391304}
+{0 'Bleacher Report',1 2,2 93,3 32.505,6 0.25,8 no-clickbait}
+{0 'The New York Times',1 3,2 81,3 46.605,6 0.166667,8 no-clickbait}
+{0 'The New York Times',2 51,3 42.615714,6 0.285714}
+{0 'Business Insider',1 1,2 78,3 69.993846,5 2,6 0.615385,7 1}
+{0 'Huffington Post',2 64,3 89.516923,6 0.846154}
+{0 'Fox News',1 1,2 76,3 63.486154,6 0.461538,8 no-clickbait}
+{0 ESPN,1 4,2 115,3 87.406071,6 0.47619,8 no-clickbait}
+{0 'Bleacher Report',1 3,2 92,3 63.695,6 0.5,8 no-clickbait}
+{0 'The New York Times',2 26,3 83.32,6 0.6}
+{0 'NBC News',1 3,2 94,3 44.97,6 0.533333,8 no-clickbait}
+{2 78,3 74.805,4 1,5 2,6 0.5,7 1}
+{0 'Huffington Post',2 63,3 88.905,5 2,6 0.75,7 1}
+{0 'NBC News',1 1,2 64,3 64.924545,6 0.454545,8 no-clickbait}
+{0 'Business Insider',2 56,3 103.005,6 0.583333,8 no-clickbait}
+{0 'Huffington Post',2 57,3 86.705,6 0.7}
+{0 'NBC News',1 3,2 50,3 42.615714,6 0.142857,8 no-clickbait}
+{0 'Bleacher Report',1 3,2 130,3 73.2,6 0.541667,8 no-clickbait}
+{0 'The New York Times',1 1,2 51,3 103.7,4 1,6 0.444444}
+{0 'Daily Mail Online',2 78,3 90.09,6 0.666667}
+{0 Forbes,1 1,2 98,3 80.686842,6 0.736842,8 no-clickbait}
+{0 Mashable,2 61,3 52.865,6 0.6}
+{0 'Business Insider',1 1,2 58,3 75.5,6 0.555556}
+{0 'The New York Times',1 3,2 113,3 63.613553,6 0.315789,8 no-clickbait}
+{0 'The New York Times',1 2,2 94,3 84.845,6 0.625,8 no-clickbait}
+{0 Mashable,2 88,3 90.958571,6 0.714286,8 no-clickbait}
+{0 ESPN,1 5,2 94,3 79.5575,6 0.4375,8 no-clickbait}
+{0 Forbes,2 44,3 66.787143,6 0.285714}
+{0 'Bleacher Report',1 2,2 73,3 69.993846,6 0.615385,8 no-clickbait}
+{0 Yahoo,2 99,3 61.89,6 0.6,8 no-clickbait}
+{0 Forbes,1 2,2 82,3 56.978462,6 0.461538,8 no-clickbait}
+{0 'Fox News',1 2,2 75,3 74.805,6 0.333333,8 no-clickbait}
+{0 'Huffington Post',2 26,3 102.045,6 0.5}
+{0 Yahoo,1 1,2 78,3 18.405,6 0.416667,8 no-clickbait}
+{0 'The New York Times',1 7,2 99,3 44.97,6 0.066667,8 no-clickbait}
+{0 Yahoo,2 92,3 43.963077,4 1,6 0.461538}
+{0 Mashable,1 2,2 75,3 67.755,5 1,6 0.583333,7 1,8 no-clickbait}
+{0 'The Independent',1 1,2 56,3 87.997273,4 1,5 2,6 0.636364,7 1}
+{0 'Huffington Post',2 66,3 52.865,6 0.6}
+{0 Forbes,2 36,3 54.701429,6 0.571429}
+{0 'The Independent',1 2,2 61,3 102.532308,6 0.307692}
+{0 'Washington Post',1 2,2 49,3 69.785,4 1,6 0.5}
+{0 Forbes,1 1,2 41,3 103.54,6 0.625}
+{0 'The Independent',2 53,3 18.444286,6 0.285714,8 no-clickbait}
+{0 'The Telegraph',1 1,2 81,3 50.470769,6 0.230769,8 no-clickbait}
+{0 'Huffington Post',1 1,2 85,3 63.695,6 0.625,8 no-clickbait}
+{0 'The Telegraph',2 54,3 113.1,4 1,6 0.777778}
+{0 'NBC News',1 1,2 75,3 53.655,6 0.416667,8 no-clickbait}
+{0 Forbes,2 83,3 84.45,6 0.8}
+{0 'BBC News (UK)',1 1,2 34,3 87.945,6 0.166667}
+{0 'NBC News',1 1,2 67,3 37.9,6 0.333333,8 no-clickbait}
+{0 'The New York Times',1 2,2 83,3 98.678088,6 0.647059,8 no-clickbait}
+{0 'The Guardian ',1 3,2 59,3 52.865,6 0.3,8 no-clickbait}
+{0 'The Telegraph',1 3,2 74,3 60.705,6 0.333333,8 no-clickbait}
+{0 'Fox News',1 2,2 76,3 34.160909,6 0.181818,8 no-clickbait}
+{0 'The Telegraph',1 3,2 93,3 39.33,6 0.266667,8 no-clickbait}
+{0 'Fox News',1 2,2 47,3 66.1,6 0.222222,8 no-clickbait}
+{0 'The Independent',2 64,3 12.425,6 0.25}
+{0 'BBC News (UK)',1 2,2 138,3 50.345,6 0.222222,7 1,8 no-clickbait}
+{0 BuzzFeed,2 53,3 75.5,5 1,6 0.555556,7 2}
+{0 Forbes,2 88,3 36.572857,5 2,6 0.785714,7 1}
+{0 'Daily Mail Online',2 39,3 102.045,5 1,6 0.5,7 1}
+{0 'The Independent',2 53,3 108.961591,6 0.636364}
+{0 'BBC News (UK)',1 1,2 46,3 75.5,6 0.666667,8 no-clickbait}
+{0 'Washington Post',1 7,2 102,3 47.8325,6 0.3125,8 no-clickbait}
+{0 'NBC News',2 50,3 40.09,6 0.75,8 no-clickbait}
+{0 'The New York Times',1 2,2 93,3 17.932308,6 0.230769,8 no-clickbait}
+{0 'BBC News (UK)',1 1,2 74,3 34.160909,6 0.545455,8 no-clickbait}
+{0 'Fox News',1 2,2 53,3 69.785,6 0.7,8 no-clickbait}
+{0 Mashable,2 46,3 71.815,6 0.75,8 no-clickbait}
+{0 'BBC News (UK)',1 1,2 80,3 89.606731,6 0.307692}
+{0 'NBC News',1 2,2 59,3 47.3,6 0.444444,8 no-clickbait}
+{0 'Daily Mail Online',1 2,2 101,3 63.695,6 0.25,8 no-clickbait}
+{1 4,2 120,3 47.3,6 0.277778,8 no-clickbait}
+{0 'The Independent',1 4,2 86,3 47.596429,6 0.214286,8 no-clickbait}
+{0 'The Independent',1 1,2 88,3 69.5025,6 0.266667,8 no-clickbait}
+{0 'The Independent',1 2,2 90,3 -11.984545,6 0.454545,8 no-clickbait}
+{0 'Wall Street Journal',2 49,3 103.625,6 0.7,8 no-clickbait}
+{0 'The Independent',1 2,2 72,3 60.705,6 0.583333,8 no-clickbait}
+{0 'The Independent',1 2,2 111,3 60.634286,4 1,6 0.571429}
+{0 'Wall Street Journal',1 2,2 58,3 28.5,6 0.333333,8 no-clickbait}
+{0 'Washington Post',1 1,2 62,3 74.805,6 0.416667,8 no-clickbait}
+{0 Forbes,2 54,3 87.997273,6 0.636364}
+{0 'Daily Mail Online',1 4,2 74,3 71.767857,6 0.357143}
+{0 'NBC News',1 1,2 64,3 41.02,6 0.4}
+{0 'The Independent',1 1,2 62,3 80.306364,6 0.454545,8 no-clickbait}
+{0 'The New York Times',1 2,2 44,3 92.965,6 0.375}
+{0 'Daily Mail Online',1 1,2 89,3 39.555,6 0.416667,8 no-clickbait}
+{0 'The Independent',2 64,3 80.306364,5 2,6 0.545455,7 1}
+{0 'Huffington Post',2 60,3 95.165,5 3,6 0.5,7 2}
+{0 'The Independent',2 77,3 32.56,6 0.2}
+{0 'The Independent',2 66,3 72.615455,6 0.545455}
+{0 'The Independent',1 2,2 67,3 28.5,6 0.222222,8 no-clickbait}
+{0 'The Independent',1 4,2 71,3 50.470769,6 0.538462,8 no-clickbait}
+{0 'ABC News',1 4,2 58,3 56.7,6 0.444444,8 no-clickbait}
+{0 'The Independent',1 2,2 61,3 103.005,6 0.583333}
+{0 'Fox News',1 3,2 71,3 -6.355,6 0.5,8 no-clickbait}
+{0 'Business Insider',1 1,2 54,3 75.5,4 1,6 0.555556}
+{0 'Daily Mail Online',1 3,2 77,3 57.233636,6 0.363636,8 no-clickbait}
+{0 'The Telegraph',1 3,2 76,3 26.47,6 0.272727,8 no-clickbait}
+{0 Forbes,2 109,3 103.379091,5 2,6 0.727273,7 1,8 no-clickbait}
+{0 'The Independent',1 2,2 86,3 46.605,6 0.416667,8 no-clickbait}
+{0 'The New York Times',1 3,2 49,3 75.5,6 0.222222,8 no-clickbait}
+{0 'The Guardian ',1 2,2 75,3 19.025,6 0.3}
+{0 'The Independent',2 79,3 101.982143,6 0.714286,8 no-clickbait}
+{0 'Huffington Post',2 52,3 61.24,6 0.5}
+{0 'The Independent',1 1,2 88,3 65.725,6 0.428571}
+{0 'The Telegraph',2 40,3 92.965,6 0.5,8 no-clickbait}
+{0 'The Guardian ',1 5,2 71,3 67.755,6 0.333333,8 no-clickbait}
+{0 'The Independent',1 1,2 46,3 50.665,6 0.625,8 no-clickbait}
+{0 'The Independent',1 1,2 74,3 69.785,6 0.3}
+{0 'The Independent',1 4,2 82,3 44.405,6 0.4,8 no-clickbait}
+{0 'BBC News (UK)',1 1,2 108,3 81.628333,6 0.45}
+{0 'The New York Times',1 3,2 33,3 49.48,6 0.2,8 no-clickbait}
+{0 'The Independent',1 5,2 113,3 42.865,6 0.388889,8 no-clickbait}
+{0 'Business Insider',1 1,2 91,3 71.781579,6 0.789474,8 no-clickbait}
+{0 'Daily Mail Online',1 2,2 90,3 61.89,6 0.4,8 no-clickbait}
+{0 Forbes,1 1,2 82,3 -4.293636,6 0.454545,8 no-clickbait}
+{0 Mashable,1 4,2 72,3 19.1,6 0.222222}
+{0 'The Independent',1 3,2 70,3 74.805,6 0.333333,8 no-clickbait}
+{0 'The Independent',2 63,3 52.865,6 0.5,8 no-clickbait}
+{0 'The Independent',1 4,2 93,3 41.553571,4 1,6 0.214286}
+{0 'Fox News',1 1,2 91,3 43.963077,6 0.307692,8 no-clickbait}
+{0 'The Independent',2 92,3 84.845,6 0.5625,8 no-clickbait}
+{1 1,2 93,3 103.7,6 0.555556,8 no-clickbait}
+{0 'The Independent',1 1,2 36,3 78.872857,6 0.285714,8 no-clickbait}
+{0 'The Independent',2 61,3 66.1,6 0.555556,8 no-clickbait}
+{0 'The Independent',2 56,3 103.625,5 1,6 0.5,7 1}
+{0 Forbes,1 1,2 55,3 103.005,6 0.583333}
+{0 'The Telegraph',1 1,2 69,3 70.507045,6 0.363636}
+{0 'NBC News',1 1,2 64,3 83.009231,6 0.454545,8 no-clickbait}
+{0 'The Independent',2 89,3 63.486154,6 0.230769,8 no-clickbait}
+{0 Forbes,1 3,2 81,3 79.5575,6 0.5,8 no-clickbait}
+{0 'The Independent',1 1,2 85,3 74.27,6 0.4375,8 no-clickbait}
+{0 'The Independent',1 1,2 82,3 46.605,6 0.416667,8 no-clickbait}
+{0 'BBC News (UK)',2 121,3 56.605714,6 0.428571,8 no-clickbait}
+{0 'Washington Post',2 88,3 85.074118,5 2,6 0.823529,7 2,8 no-clickbait}
+{0 'Huffington Post',1 2,2 60,3 69.785,6 0.3,8 no-clickbait}
+{0 'The Independent',2 69,3 64.924545,6 0.363636,8 no-clickbait}
+{0 'Fox News',1 1,2 69,3 60.705,6 0.333333,8 no-clickbait}
+{0 'The Independent',1 2,2 67,3 28.5,6 0.222222,8 no-clickbait}
+{0 'Business Insider',1 2,2 88,3 78.81,6 0.6}
+{0 'ABC News',2 76,3 27.485,6 0.5,8 no-clickbait}
+{0 'The Independent',2 71,3 72.615455,6 0.454545}
+{2 86,3 90.09,5 3,6 0.666667,7 3}
+{0 'Fox News',1 5,2 66,3 64.924545,6 0.181818,8 no-clickbait}
+{0 'The Independent',2 106,3 67.328947,4 1,6 0.578947}
+{1 1,2 110,3 47.565,6 0.388889,8 no-clickbait}
+{0 'The Telegraph',1 2,2 81,3 56.978462,6 0.461538,8 no-clickbait}
+{0 'NBC News',2 107,3 37.455385,6 0.230769,8 no-clickbait}
+{0 'The Independent',1 2,2 70,3 28.5,6 0.222222,8 no-clickbait}
+{0 'BBC News (UK)',1 1,2 140,3 68.77,6 0.5,8 no-clickbait}
+{0 Forbes,1 3,2 92,3 53.639286,6 0.285714,8 no-clickbait}
+{0 'The Independent',2 55,3 86.705,5 2,6 0.4,7 1}
+{0 'Business Insider',1 1,2 80,3 64.924545,6 0.454545,8 no-clickbait}
+{0 'Wall Street Journal',2 69,3 -23.36,6 0.125,8 no-clickbait}
+{0 'The Independent',1 1,2 111,3 52.265,4 1,6 0.444444}
+{0 'The Telegraph',1 2,2 104,3 39.33,5 1,6 0.6,7 1,8 no-clickbait}
+{1 3,2 90,3 56.25,6 0.466667,8 no-clickbait}
+{0 'The Independent',1 6,2 118,3 56.965,6 0.333333,8 no-clickbait}
+{0 'Washington Post',1 1,2 90,3 53.639286,6 0.5,8 no-clickbait}
+{0 'The Independent',2 81,3 76.591346,6 0.384615,8 no-clickbait}
+{0 'The Independent',1 3,2 81,3 79.5575,4 2,6 0.5625}
+{0 'The Independent',1 2,2 42,3 66.787143,6 0.428571}
+{2 82,3 63.486154,4 1,6 0.538462}
+{0 Mashable,1 2,2 60,3 69.785,4 1,6 0.4}
+{1 2,2 109,3 47.8325,6 0.4375,8 no-clickbait}
+{0 'Washington Post',1 3,2 58,3 61.325,6 0.4,8 no-clickbait}
+{0 ESPN,1 5,2 116,3 45.262353,6 0.294118,8 no-clickbait}
+{0 'The Telegraph',1 2,2 39,3 31.545,6 0.166667,8 no-clickbait}
+{0 'Business Insider',1 1,2 44,3 42.615714,6 0.428571,8 no-clickbait}
+{0 'Huffington Post',1 2,2 58,3 66.1,6 0.222222,8 no-clickbait}
+{1 3,2 107,3 61.665,6 0.388889,8 no-clickbait}
+{0 BuzzFeed,2 64,3 61.325,6 0.6}
+{0 'Bleacher Report',1 4,2 78,3 71.767857,6 0.428571,8 no-clickbait}
+{0 'Daily Mail Online',1 2,2 47,3 61.24,6 0.25,8 no-clickbait}
+{0 'The Guardian ',1 3,2 53,3 6.358571,6 0.142857,8 no-clickbait}
+{0 'Fox News',1 3,2 64,3 44.405,6 0.2,8 no-clickbait}
+{0 'Huffington Post',1 1,2 75,3 18.779091,6 0.363636,8 no-clickbait}
+{0 'The Independent',1 2,2 50,3 56.7,4 1,6 0.333333,8 no-clickbait}
+{0 'The Independent',1 2,2 88,3 25.455,6 0.5,8 no-clickbait}
+{0 Forbes,2 56,3 84.9,6 0.666667}
+{0 'The Independent',1 4,2 92,3 76.671569,5 2,6 0.470588,7 1,8 no-clickbait}
+{0 'Bleacher Report',1 3,2 93,3 65.725,6 0.142857,8 no-clickbait}
+{0 'Wall Street Journal',2 54,3 87.997273,4 1,5 2,6 0.454545,7 2}
+{0 'Huffington Post',2 45,3 59.745,6 0.333333}
+{0 'NBC News',1 1,2 55,3 6.358571,6 0.285714,8 no-clickbait}
+{0 'Washington Post',1 3,2 66,3 41.851818,6 0.363636,8 no-clickbait}
+{0 'The Independent',1 1,2 74,3 69.785,6 0.3}
+{0 Mashable,1 2,2 76,3 74.805,6 0.5,8 no-clickbait}
+{0 'Huffington Post',1 3,2 61,3 93.579773,6 0.181818,8 no-clickbait}
+{0 'The Independent',1 1,2 63,3 69.785,6 0.7,8 no-clickbait}
+{0 Forbes,2 46,3 66.787143,6 0.285714}
+{0 'Wall Street Journal',1 2,2 110,3 37.2575,6 0.4375,8 no-clickbait}
+{0 'The Guardian ',1 2,2 73,3 63.486154,6 0.615385,8 no-clickbait}
+{0 'Huffington Post',2 79,3 2.105,6 0.2,8 no-clickbait}
+{0 'The Independent',1 13,2 118,3 56.25,6 0.066667,8 no-clickbait}
+{0 'The Independent',1 1,2 85,3 59.682143,5 2,6 0.428571,7 1}
+{0 'The Independent',1 1,2 88,3 18.405,6 0.333333,8 no-clickbait}
+{0 'Daily Mail Online',2 38,3 73.845,6 0.5,8 no-clickbait}
+{0 'The Guardian ',1 2,2 81,3 32.505,6 0.416667,8 no-clickbait}
+{0 'Daily Mail Online',1 2,2 47,3 84.9,4 1,6 0.444444,8 no-clickbait}
+{0 Yahoo,1 1,2 98,3 39.33,6 0.6,8 no-clickbait}
+{0 'Business Insider',1 2,2 78,3 78.81,6 0.666667}
+{0 'Business Insider',2 78,3 26.47,6 0.272727,8 no-clickbait}
+{0 'The Independent',1 1,2 47,3 92.965,6 0.375}
+{0 'The Independent',2 54,3 50.665,6 0.625,8 no-clickbait}
+{0 'The Independent',1 7,2 109,3 66.365,6 0.277778,8 no-clickbait}
+{0 'Bleacher Report',1 1,2 89,3 47.596429,6 0.285714,8 no-clickbait}
+{0 'The Independent',2 71,3 72.615455,6 0.454545}
+{0 'The Independent',2 50,3 103.7,6 0.777778}
+{0 ESPN,1 1,2 92,3 73.17,4 1,6 0.6,8 no-clickbait}
+{0 'Huffington Post',1 1,2 58,3 72.615455,6 0.636364,8 no-clickbait}
+{0 'Bleacher Report',1 3,2 93,3 80.465,6 0.444444,8 no-clickbait}
+{0 'The Independent',1 3,2 62,3 80.306364,6 0.454545,8 no-clickbait}
+{0 'The Guardian ',1 2,2 70,3 95.939286,6 0.428571,8 no-clickbait}
+{0 'BBC News (UK)',1 3,2 108,3 45.262353,6 0.235294,8 no-clickbait}
+{0 Yahoo,1 2,2 127,3 49.914091,6 0.5,8 no-clickbait}
+{0 'The Guardian ',1 4,2 74,3 60.705,6 0.5}
+{0 'Daily Mail Online',1 4,2 93,3 24.44,6 0.307692,8 no-clickbait}
+{0 'The Independent',2 103,3 50.61,5 2,6 0.466667,7 1}
+{0 'Business Insider',2 92,3 44.97,6 0.4,8 no-clickbait}
+{0 Forbes,2 47,3 103.7,6 0.444444}
+{0 ESPN,2 93,3 -2.745,6 0.333333,8 no-clickbait}
+{0 'Fox News',2 114,3 84.638246,5 3,6 0.578947,7 2,8 no-clickbait}
+{0 'The Independent',2 64,3 49.542727,6 0.454545,8 no-clickbait}
+{0 'The Independent',1 5,2 111,3 53.971053,6 0.368421,8 no-clickbait}
+{0 'The New York Times',2 54,3 89.4675,5 1,6 0.555556,7 1,8 no-clickbait}
+{0 'The New York Times',1 2,2 72,3 34.160909,6 0.272727,8 no-clickbait}
+{0 ESPN,1 4,2 68,3 44.405,6 0.3,8 no-clickbait}
+{1 3,2 114,3 52.265,6 0.5,8 no-clickbait}
+{0 'The Independent',1 1,2 57,3 87.997273,4 2,5 2,6 0.727273,7 1}
+{0 'The Independent',1 2,2 67,3 28.5,6 0.222222,8 no-clickbait}
+{0 'The Independent',1 2,2 86,3 46.605,6 0.416667,8 no-clickbait}
+{0 'The Telegraph',1 3,2 85,3 26.47,6 0.090909,8 no-clickbait}
+{0 BuzzFeed,2 79,3 60.705,6 0.583333}
+{0 'The Independent',1 4,2 83,3 50.470769,6 0.384615,8 no-clickbait}
+{0 'Daily Mail Online',1 2,2 68,3 67.755,6 0.583333,8 no-clickbait}
+{0 'Bleacher Report',2 77,3 64.924545,6 0.636364,8 no-clickbait}
+{0 'Fox News',2 118,3 71.280351,4 1,5 2,6 0.526316,7 1}
+{0 'The Independent',1 3,2 103,3 61.89,6 0.333333,8 no-clickbait}
+{0 'Business Insider',1 2,2 83,3 80.465,6 0.777778,8 no-clickbait}
+{0 'The Independent',1 3,2 46,3 94.3,6 0.333333,8 no-clickbait}
+{0 'Business Insider',1 3,2 66,3 96.024615,6 0.692308}
+{0 ESPN,1 1,2 93,3 79.5575,4 1,6 0.75,8 no-clickbait}
+{0 'The Independent',1 1,2 86,3 65.725,6 0.5,8 no-clickbait}
+{0 'NBC News',1 2,2 58,3 136.6195,6 0.5,8 no-clickbait}
+{0 'Business Insider',1 3,2 81,3 74.27,6 0.375,8 no-clickbait}
+{0 'Huffington Post',2 70,3 35.945,6 0.4,8 no-clickbait}
+{0 'The Telegraph',1 2,2 51,3 66.1,6 0.555556,8 no-clickbait}
+{2 91,3 66.787143,6 0.5,8 no-clickbait}
+{0 'The Independent',2 75,3 90.09,6 0.666667}
+{0 'The Telegraph',1 2,2 81,3 56.978462,6 0.461538,8 no-clickbait}
+{0 'The New York Times',1 2,2 98,3 88.96,6 0.333333,8 no-clickbait}
+{0 'Bleacher Report',2 94,3 47.596429,4 1,6 0.5,8 no-clickbait}
+{0 'Fox News',1 6,2 113,3 98.89,6 0.347826,8 no-clickbait}
+{0 'The New York Times',1 3,2 61,3 78.245,6 0.8,8 no-clickbait}
+{0 ESPN,1 7,2 117,3 91.434643,6 0.380952,8 no-clickbait}
+{0 'The Independent',1 7,2 118,3 106.745,6 0.333333,8 no-clickbait}
+{0 'The Independent',1 1,2 91,3 80.097647,6 0.588235,8 no-clickbait}
+{0 Yahoo,2 15,3 77.905,8 no-clickbait}
+{0 'Business Insider',1 2,2 76,3 69.993846,6 0.538462,8 no-clickbait}
+{1 2,2 78,3 83.099038,5 2,6 0.461538,7 1,8 no-clickbait}
+{0 Yahoo,1 2,2 102,3 82.39,6 0.375,8 no-clickbait}
+{0 ESPN,1 4,2 91,3 95.671667,6 0.5625,8 no-clickbait}
+{0 'ABC News',2 106,3 55.12,6 0.466667,8 no-clickbait}
+{0 'The Independent',2 88,3 63.486154,5 2,6 0.461538,7 1}
+{0 'ABC News',2 58,3 29.515,6 0.25,8 no-clickbait}
+{0 Forbes,1 4,2 109,3 42.865,6 0.5,8 no-clickbait}
+{0 'The Telegraph',1 2,2 70,3 44.405,6 0.5,8 no-clickbait}
+{0 'The New York Times',1 1,2 118,3 49.4375,6 0.1875,8 no-clickbait}
+{0 'The Independent',2 47,3 61.24,6 0.375}
+{2 94,3 69.5025,4 1,6 0.6,8 no-clickbait}
+{0 'Business Insider',1 4,2 105,3 72.325,6 0.6}
+{0 'The Guardian ',1 5,2 52,3 66.1,6 0.444444,8 no-clickbait}
+{0 ESPN,1 3,2 113,3 99.409848,6 0.636364}
+{0 'The Guardian ',1 4,2 65,3 49.48,6 0.1,8 no-clickbait}
+{0 'ABC News',1 5,2 88,3 52.695,6 0.083333,8 no-clickbait}
+{0 'The Independent',1 3,2 104,3 63.695,6 0.3125,8 no-clickbait}
+{0 'The Independent',1 3,2 63,3 93.579773,6 0.272727,8 no-clickbait}
+{0 'Huffington Post',1 3,2 56,3 75.5,6 0.444444,8 no-clickbait}
+{0 'Bleacher Report',1 5,2 70,3 57.233636,6 0.363636,8 no-clickbait}
+{0 'Business Insider',1 3,2 75,3 57.233636,6 0.272727,8 no-clickbait}
+{0 'ABC News',1 1,2 51,3 69.785,6 0.4,8 no-clickbait}
+{0 'ABC News',1 2,2 85,3 43.963077,6 0.384615,8 no-clickbait}
+{0 'Washington Post',1 2,2 68,3 67.755,6 0.25,8 no-clickbait}
+{0 'The Independent',1 7,2 118,3 53.971053,6 0.210526}
+{0 Yahoo,1 3,2 109,3 71.781579,6 0.578947}
+{0 'Business Insider',1 2,2 88,3 80.097647,6 0.764706,8 no-clickbait}
+{0 'The Independent',1 3,2 110,3 50.238824,6 0.117647,8 no-clickbait}
+{0 'The New York Times',1 1,2 68,3 27.485,6 0.2,8 no-clickbait}
+{0 'Business Insider',2 46,3 92.965,4 1,5 2,6 0.375,7 1}
+{1 4,2 88,3 61.89,6 0.533333,8 no-clickbait}
+{0 'The Guardian ',1 4,2 63,3 61.325,6 0.2,8 no-clickbait}
+{0 'ABC News',1 1,2 65,3 52.865,4 1,6 0.5,8 no-clickbait}
+{0 'The Independent',1 1,2 70,3 83.009231,4 1,5 2,6 0.769231,7 1}
+{0 'The Independent',2 67,3 74.805,5 2,6 0.416667,7 1}
+{0 ESPN,1 2,2 116,3 91.434643,6 0.619048}
+{0 'Daily Mail Online',2 70,3 52.865,6 0.3,8 no-clickbait}
+{0 'Huffington Post',1 2,2 70,3 35.945,6 0.3,8 no-clickbait}
+{0 'The Independent',2 52,3 95.688182,6 0.818182,8 no-clickbait}
+{0 'Huffington Post',2 50,3 66.1,5 3,6 0.444444,7 2}
+{1 2,2 109,3 66.365,6 0.555556,8 no-clickbait}
+{0 'The Independent',1 2,2 54,3 84.9,6 0.333333,8 no-clickbait}
+{0 BuzzFeed,1 3,2 64,3 47.3,6 0.333333,8 no-clickbait}
+{0 'The Telegraph',1 2,2 47,3 54.701429,6 0.714286,8 no-clickbait}
+{0 'Fox News',1 4,2 115,3 76.971447,6 0.263158,8 no-clickbait}
+{0 Mashable,1 3,2 76,3 50.470769,6 0.538462,8 no-clickbait}
+{0 'Business Insider',1 3,2 79,3 75.121176,6 0.647059,8 no-clickbait}
+{0 BuzzFeed,1 1,2 44,3 103.7,4 1,5 2,6 0.555556,7 1}
+{0 'The Independent',1 1,2 44,3 103.7,6 0.333333,8 no-clickbait}
+{0 'The Telegraph',1 3,2 87,3 39.555,4 1,6 0.333333,8 no-clickbait}
+{0 'Business Insider',1 1,2 77,3 76.501538,6 0.461538,8 no-clickbait}
+{0 'Business Insider',1 1,2 45,3 66.787143,6 0.571429,8 no-clickbait}
+{0 'The Guardian ',1 2,2 68,3 67.755,6 0.5,8 no-clickbait}
+{0 'Business Insider',2 59,3 56.7,4 1,6 0.555556,8 no-clickbait}
+{0 Mashable,1 3,2 80,3 77.810714,6 0.5}
+{0 'The Independent',2 46,3 82.39,6 0.75,8 no-clickbait}
+{0 'The New York Times',2 32,3 12.425,6 0.25,8 no-clickbait}
+{0 'The Independent',1 2,2 46,3 66.787143,6 0.428571}
+{0 'Huffington Post',1 2,2 73,3 81.855,6 0.75,8 no-clickbait}
+{0 'The Guardian ',1 4,2 67,3 19.1,6 0.222222,8 no-clickbait}
+{0 'The Telegraph',1 2,2 72,3 67.755,6 0.5,8 no-clickbait}
+{0 'Business Insider',1 1,2 72,3 95.73,6 0.866667}
+{2 75,3 62.816136,5 2,6 0.363636,7 1,8 no-clickbait}
+{0 'Huffington Post',2 41,3 113.1,6 0.666667}
+{0 'ABC News',1 1,2 84,3 63.486154,6 0.461538}
+{0 'The Guardian ',1 7,2 70,3 -37.995,6 0.25,8 no-clickbait}
+{0 'The Independent',1 1,2 57,3 87.997273,4 2,5 2,6 0.727273,7 1,8 no-clickbait}
+{0 'Bleacher Report',1 4,2 91,3 44.97,6 0.466667,8 no-clickbait}
+{0 'ABC News',1 2,2 88,3 63.486154,6 0.384615,8 no-clickbait}
+{0 Forbes,1 1,2 43,3 54.701429,6 0.428571,8 no-clickbait}
+{0 Forbes,2 49,3 56.7,4 1,6 0.333333}
+{0 'The Independent',2 67,3 96.024615,6 0.615385,8 no-clickbait}
+{0 'Bleacher Report',1 3,2 68,3 67.755,6 0.333333,8 no-clickbait}
+{0 'The Independent',2 46,3 82.39,6 0.75}
+{0 'ABC News',1 4,2 116,3 58.423684,6 0.578947,8 no-clickbait}
+{0 'The Independent',1 2,2 54,3 84.9,6 0.333333,8 no-clickbait}
+{0 'The Guardian ',1 1,2 62,3 52.865,6 0.3,8 no-clickbait}
+{0 'Fox News',1 2,2 82,3 26.47,6 0.363636}
+{0 'The Independent',1 4,2 75,3 103.3425,4 1,5 2,6 0.533333,7 1}
+{0 'The Independent',1 1,2 57,3 87.997273,4 2,5 2,6 0.727273,7 1}
+{0 'ABC News',1 1,2 108,3 37.2575,6 0.375,8 no-clickbait}
+{0 'The Telegraph',1 1,2 45,3 92.965,6 0.5,8 no-clickbait}
+{0 'The Telegraph',1 4,2 64,3 57.233636,6 0.181818,8 no-clickbait}
+{0 'The Independent',1 1,2 36,3 78.872857,6 0.285714,8 no-clickbait}
+{0 'Washington Post',2 121,3 61.325,4 1,6 0.6}
+{0 ESPN,1 4,2 97,3 78.772206,6 0.529412}
+{0 'Fox News',1 5,2 140,3 55.1775,6 0.285714,8 no-clickbait}
+{0 'NBC News',1 2,2 79,3 63.486154,6 0.384615,8 no-clickbait}
+{0 'Huffington Post',2 47,3 3.345,4 1,6 0.333333}
+{0 'The Independent',1 2,2 86,3 46.605,6 0.416667,8 no-clickbait}
+{0 'NBC News',2 56,3 47.3,4 1,6 0.666667}
+{0 'The Independent',1 2,2 67,3 28.5,6 0.222222,8 no-clickbait}
+{0 BuzzFeed,1 1,2 100,3 76.555,8 no-clickbait}
+{0 Forbes,2 110,3 42.545,6 0.625,8 no-clickbait}
+{0 'Washington Post',2 53,3 78.245,6 0.7}
+{0 'Bleacher Report',1 2,2 102,3 42.545,6 0.5,8 no-clickbait}
+{0 'Wall Street Journal',2 86,3 78.81,6 0.6,8 no-clickbait}
